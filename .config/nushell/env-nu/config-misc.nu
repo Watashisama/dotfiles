@@ -1,0 +1,10 @@
+$env.EDITOR = "nvim"
+$env.VISUAL = "nvim"
+$env.PATH = "/usr/local/bin"
+$env.PATH = ($env.PATH | append /usr/bin)
+$env.PATH = ($env.PATH | append ($env.HOME | path join ".cargo/bin"))
+$env.PATH = ($env.PATH | append ($env.HOME | path join ".local/bin"))
+$env.PATH = ($env.PATH | append ($env.HOME | path join "go/bin"))
+$env.TERM_PROGRAM = "tmux"
+$env.COLORTERM = "truecolor"
+$env.LANG = "en_US.UTF-8"

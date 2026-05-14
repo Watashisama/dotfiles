@@ -1,0 +1,288 @@
+{
+  "layer": "bottom",
+  "position": "bottom",
+  "margin-left": 120,
+  "margin-right": 120,
+  "margin-bottom": 10,
+  "margin-top": 0,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "passthrough": false,
+  "fixed-center": false,
+  "modules-left": [
+    "custom/padd",
+    "custom/cpucat",
+    "hyprland/workspaces",
+    "custom/padd",
+    "custom/kitty",
+    "custom/dolphin",
+    "custom/vscode",
+    "custom/zen",
+    "custom/padd",
+    "custom/lshape",
+    "clock",
+    "custom/padd"
+    //"custom/waycal"
+
+    // "clock#simpleclock"
+  ],
+  "modules-center": ["custom/cava"],
+  "modules-right": [
+    "custom/padd",
+    "custom/l_end",
+    "custom/lshape2",
+    "cpu",
+    "custom/padd",
+    "custom/lshape3",
+    "memory",
+    "custom/padd",
+    "battery",
+    "custom/padd",
+    "pulseaudio",
+    "backlight",
+     "tray",
+    "custom/padd"
+  ],
+  "custom/spotify": {
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-click-right": "spotifatius toggle-liked",
+    "on-click-middle": "playerctl -p spotify next",
+    "exec": "spotifatius monitor"
+  },
+  "mpris": {
+    "player": "spotify",
+    "dynamic-order": ["artist", "title"],
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "status-icons": {
+      "paused": ""
+    },
+    "player-icons": {
+      "default": ""
+    }
+  },
+
+"custom/waycal": {
+  "format": "󰃭 ",
+  "on-click": "pkill -x waycal || waycal",
+  "tooltip-format": "Calendar"
+},
+
+"custom/cpucat": {
+    "exec":"~/scripts/catloop.sh"
+},
+
+"network": {
+	"format": "{ifname}",
+	"format-wifi": "{bandwidthUpBytes}",
+	"format-ethernet": "{ifname} ",
+	"tooltip-format": "{ifname}",
+	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+	"tooltip-format-ethernet": "{ifname} ",
+	"tooltip-format-disconnected": "Disconnected"
+},
+
+
+  "custom/vscode": {
+      "format": " ",
+      "on-click": "/usr/bin/code",
+      "return-type": "text",
+      "interval": 1,
+      "tooltip": false
+  },
+
+
+  "custom/kitty": {
+      "format": " ",
+      "on-click": "/usr/bin/kitty",
+      "return-type": "text",
+      "interval": 1,
+      "tooltip": false
+  },
+
+  "custom/dolphin": {
+      "format": "󰝰 ",
+      "on-click": "/usr/bin/thunar",
+      "return-type": "text",
+      "interval": 1,
+      "tooltip": false
+  },
+
+  "custom/zen": {
+      "format": " ",
+      "on-click": "/usr/bin/min-browser",
+      "return-type": "text",
+      "interval": 1,
+      "tooltip": false
+  },
+
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "active": "󰮯",
+      "default": "󰊠",
+      "empty": "<span color='#ffffff'><b>󱙝</b></span>"
+    },
+    "persistent-workspaces": {
+      "*": 6
+    }
+  },
+
+  "hyprland/window": {
+    "format": " {}",
+    "rotate": 0,
+    "separate-outputs": true,
+    "rewrite": {
+      "ligichi@DeRune:(.*)": "$1 ",
+      "(.*) — Mozilla Firefox": "$1 󰈹",
+      "(.*)Mozilla Firefox": "Firefox 󰈹",
+      "(.*) - Visual Studio Code": "$1 󰨞",
+      "(.*)Visual Studio Code": "Code 󰨞",
+      "(.*) — Dolphin": "$1 󰉋",
+      "(.*)Spotify": "Spotify 󰓇",
+      "(.*)Steam": "Steam 󰓓"
+    },
+    "max-length": 30
+  },
+  "tray": {
+    "show-passive-items": true,
+    "icon-size": 24,
+    "spacing": 4
+  },
+  "backlight": {
+    "tooltip" : true,
+    "device": "intel_backlight",
+    "format": "<span color='#89B4FA'><b>{icon} </b></span> {percent}% ",
+    "format-icons": ["󰃟", "󰃝", "󰃠"],
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "min-length": 6
+    },
+  "clock#simpleclock": {
+    "tooltip": false,
+    "format": "<span color='#67B0E8'><b> </b></span> {:%I:%M %p}"
+  },
+"clock": {
+  // "format": "{:L%A, %d-%m-%Y}",
+  "format": "{:L%A %I:%M %p} ",
+  "calendar": {
+    "format": {
+      "days": "<span weight='normal' color='#dadada'>{}</span>",
+      "months": "<span color='#8ccf7e'><b>{}</b></span>",
+      "today": "<span color='#e57474' weight='700'><u>{}</u></span>",
+      "weekdays": "<span color='#e5c76b'><b>{}</b></span>",
+      "weeks": "<span color='#67b0e8'><b>W{}</b></span>"
+    },
+    "mode": "month",
+    "mode-mon-col": 1,
+    "on-scroll": 1
+  },
+  "on-click" : "pkill -x waycal || waycal",
+  "tooltip-format": "<span color='#dadada' font='Lexend 16'><tt><small>{calendar}</small></tt></span>"
+},
+  "cpu": {
+    "format": "{usage} %",
+    "tooltip": true,
+    "interval": 1
+  },
+  "memory": {
+    "format": "{used:0.1f} GiB"
+  },
+  "pulseaudio": {
+    "format": "<span color='#a6e3a1'><b>{icon}</b></span>  {volume}%",
+    "format-muted": "  muted",
+    "format-icons": {
+      "headphone": "",
+      "default": [""]
+    },
+    "on-click": "pavucontrol"
+  },
+  "custom/sep": {
+    "format": "|",
+    "tooltip": false
+  },
+
+  "custom/lshape": {
+    "format": " ",
+    "tooltip": false
+  },
+
+  "custom/lshape2": {
+    "format": " ",
+    "tooltip": false
+  },
+
+  "custom/lshape3": {
+    "format": " ",
+    "tooltip": false
+  },
+
+  "custom/lshape4": {
+    "format": " ",
+    "tooltip": false
+  },
+
+
+"custom/cava": {
+  "exec": "~/.config/waybar/custom-scripts/cava.sh",
+  "interval": "once",
+  "return-type": "json",
+  "format": "{}",
+  "tail": true
+},
+
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "logoutlaunch.sh 2",
+    "on-click-right": "logoutlaunch.sh 1",
+    "format": ""
+  },
+  "custom/notification": {
+    "escape": true,
+    "exec": "swaync-client -swb",
+    "exec-if": "which swaync-client",
+    "format": "{icon}",
+    "format-icons": {
+      "none": "󰅺",
+      "notification": "󰡟"
+    },
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "return-type": "json",
+    "tooltip": false
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "<span color='#94E2D5'><b>{icon}</b></span> {capacity}%",
+    "rotate": 0,
+    "format-charging": "<span color='#A6E3A1'><b>󱐋</b></span> <span color='#94E2D5'><b>{icon}</b></span>  {capacity}%",
+    "format-plugged": "<span color='#A6E3A1'><b>󱐋</b></span> <span color='#94E2D5'><b>{icon}</b></span>  {capacity}%",
+    // "format-alt": "{time} {icon}",
+    "format-icons": [" ", " ", " ", " ", " "]
+    // "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+  },
+  "custom/padd": {
+    "format": "  ",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/l_end": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/r_end": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false
+  }
+}

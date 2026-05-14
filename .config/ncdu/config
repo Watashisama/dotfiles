@@ -1,0 +1,6 @@
+--exclude /sys
+--exclude /proc
+--exclude /tmp
+--exclude /root
+--exclude /run
+--exclude /dev

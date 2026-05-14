@@ -1,0 +1,8 @@
+$env.XDG_DESKTOP_DIR = ($env.HOME | path join "Desktop")
+$env.XDG_DOCUMENTS_DIR = ($env.HOME | path join "Documents")
+$env.XDG_DOWNLOAD_DIR = ($env.HOME | path join "Downloads")
+$env.XDG_MUSIC_DIR = ($env.HOME | path join "Music")
+$env.XDG_PICTURES_DIR = ($env.HOME | path join "Pictures")
+$env.XDG_PUBLICSHARE_DIR = ($env.HOME | path join "Public")
+$env.XDG_TEMPLATES_DIR = ($env.HOME | path join "Templates")
+$env.XDG_VIDEOS_DIR = ($env.HOME | path join "Videos")

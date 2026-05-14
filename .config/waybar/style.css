@@ -1,0 +1,270 @@
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+#custom-cpucat {
+  font-family: "Waycat", monospace;
+  font-size: 32px;
+  font-weight: bold;
+  color: #94e2d5;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: #141b1e;
+}
+
+#workspaces {
+  font-size: 20px;
+  background: #232a2d;
+  padding: 0rem 0.9rem;
+  margin: 0.6rem 0rem;
+  border-radius: 16px;
+}
+
+#workspaces button {
+  font-size: 20px;
+  padding: 0.3rem 0.4rem;
+  margin: 0rem 0.25rem;
+  border-radius: 0px;
+  color: #6cbfbf;
+}
+
+#workspaces button.active {
+  color: #e57474;
+}
+
+#pulseaudio,
+#custom-logo,
+#custom-spotify,
+#custom-notification,
+#mpris {
+  padding: 0.3rem 0.6rem;
+  margin: 0.6rem 0.25rem;
+  border-radius: 16px;
+  background-color: #232a2d;
+}
+
+#battery {
+  margin: 0.6rem 0px;
+  font-size: 18px;
+}
+
+#mpris.playing {
+  color: #8ccf7e;
+}
+
+#mpris.paused {
+  color: #9399b2;
+}
+
+#custom-sep {
+  padding: 0px;
+  color: #585b70;
+}
+
+#cpu {
+  font-size: 16px;
+  font-weight : bold;
+  color: #ffffff;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #232a2d;
+  margin: 0.6rem 0px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+#memory {
+  font-size: 16px;
+  background-color: #232a2d;
+  color: #ffffff;
+  margin: 0.6rem 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight : bold;
+  border-radius: 0px 16px 16px 0px;
+}
+
+#clock {
+  font-size: 16px;
+  font-weight : bold;
+  margin: 0.6rem 0px;
+  background-color: #232a2d;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+#clock.simpleclock {
+  font-size: 16px;
+  font-weight : bold;
+  background-color: #232a2d;
+  margin: 0.6rem 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 16px 16px 16px 16px;
+}
+
+#window {
+  color: #cdd6f4;
+  margin: 0.6rem 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+#pulseaudio {
+  font-size: 18px;
+  background: #232a2d;
+  color: #ffffff;
+  border-radius: 0px;
+  margin: 0.6rem 0px;
+  padding-left: 16px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+#backlight {
+  font-size: 18px;
+  background-color: #232a2d;
+  color: #ffffff;
+  margin: 0.6rem 0px;
+  padding-left: 4px;
+  padding-right: 10px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+#network {
+  font-size: 16px;
+  background-color: #232a2d;
+  color: #ffffff;
+  margin: 0.6rem 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+#pulseaudio.muted {
+  color: #a6adc8;
+}
+
+#custom-logo {
+  color: #67b0e8;
+}
+
+#custom-zen{
+  background-color: #232a2d;
+  margin: 0.6rem 0px;
+  padding-left: 14px;
+  padding-right: 16px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+#custom-kitty{
+  background-color: #232a2d;
+  margin: 0.6rem 0px;
+  padding-left: 24px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+#custom-vscode{
+  background-color: #232a2d;
+  margin: 0.6rem 0px;
+  padding-left: 14px;
+  border-radius: 0px;
+}
+
+#custom-dolphin{
+  background-color: #232a2d;
+  margin: 0.6rem 0px;
+  padding-left: 14px;
+  border-radius: 0px;
+}
+
+
+#custom-lshape {
+  font-size: 20px;
+  color: #e5c76b;
+  background-color: #232a2d;
+  margin: 0.6rem 0px;
+  padding-left: 14px;
+  border-radius: 16px 0px 0px 16px;
+}
+#custom-lshape2 {
+  font-size: 21px;
+  background-color: #94e2d5;
+  color: #232a2d;
+  margin: 0.6rem 0px;
+  padding-left: 18px;
+  padding-right: 6px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+#custom-lshape3 {
+  font-size: 20px;
+  background-color: #e57474;
+  color: #232a2d;
+  margin: 0.6rem 0px;
+  padding-left: 20px;
+  padding-right: 8px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+#custom-lshape4 {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #67b0e8;
+  color: #232a2d;
+  margin: 0.6rem 0px;
+  padding-left: 16px;
+  padding-right: 8px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+#custom-power {
+  color: #232a2d;
+  font-size: 16px;
+  background-color: #e57474;
+  padding-right: 14px;
+  padding-left: 10px;
+  margin: 0.8rem 0rem;
+  border-radius: 1000px;
+}
+
+#custom-vscode {
+  font-size: 24px;
+  color: #67b0e8;
+}
+
+#custom-kitty {
+  font-size: 24px;
+  color: #8ccf7e;
+}
+
+#custom-dolphin {
+  font-size: 24px;
+  color: #e5c76b;
+}
+
+#custom-zen {
+  font-size: 24px;
+  color: #e57474;
+}
+
+#tray {
+  padding-left: 6px;
+  margin: 0.6rem 0.9rem;
+  border-radius: 16px 0px 0px 16px;
+}
+
+tooltip {
+  background-color: #232a2d;
+  border: 2px solid #67b0e8;
+}

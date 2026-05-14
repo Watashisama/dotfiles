@@ -1,0 +1,15 @@
+local M                = {}
+M.terminal             = "ghostty"
+M.fileManager          = "yazi"
+M.screenshot_window    = "hyprshot -m window -o ~/Pictures/Screenshots"
+M.screenshot_region    = "hyprshot -m region -o ~/Pictures/Screenshots"
+M.screenshot_output    = "hyprshot -m output -o ~/Pictures/Screenshots"
+M.screenrec_fullscreen = "~/.scripts/recording/main.nu"
+M.lock                 = "hyprlock"
+M.browser              = "firefox"
+M.sysmonitor           = "btop"
+M.color_picker         = "hyprpicker --autocopy"
+-- local menu        = "hyprlauncher"
+-- local screenshot_active = hl.dsp.exec_cmd("hyprshot", "-m", "active", "-o", "~/Pictures/Screenshots")
+--
+return M
