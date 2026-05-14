@@ -10,3 +10,6 @@ git clone https://github.com/Watashisama/dotfiles.git
 ```
 
 You can use any dotfile manager
+
+> [!NOTE]
+> Some configs my not be maintained (nvim-0.11.7 as an eg)
