@@ -14,5 +14,6 @@ You can use any dotfile manager
 > [!NOTE]
 > Some configs my not be maintained (nvim-0.11.7 as an eg)
 
-> [!TODO]
-> Add extern autocomplete for nushell
+## TODO
+- [x] Add extern autocomplete for nushell
+<!-- - [ ] -->
