@@ -12,7 +12,6 @@ alias q  = exit
 alias l = ls
 alias ll = ls -l
 alias la = ls -a
-alias cd-device = cd /run/user/1000/gvfs/
 alias v = nvim
 alias t = tmux
 alias ta = tmux attach
