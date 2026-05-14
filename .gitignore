@@ -1,4 +1,5 @@
 .config/mozilla
+.config/ibus
 pavucontrol.ini
 /mozc
 .config/gh
