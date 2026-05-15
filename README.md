@@ -15,5 +15,6 @@ You can use any dotfile manager
 > Some configs my not be maintained (nvim-0.11.7 as an eg)
 
 ## TODO
-- [x] Add extern autocomplete for nushell
+- [-] Add extern autocomplete for nushell
+    - To use function style autocomplete for nushell(for better control)
 <!-- - [ ] -->
