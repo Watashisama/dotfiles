@@ -17,4 +17,4 @@ You can use any dotfile manager
 ## TODO
 - [-] Add extern autocomplete for nushell
     - To use function style autocomplete for nushell(for better control)
-<!-- - [ ] -->
+        Use [this](https://www.nushell.sh/book/custom_commands.html)
