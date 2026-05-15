@@ -21,9 +21,3 @@ source extension-nu/prompt/prompt.nu
 source extension-nu/zoxide/zoxide.nu
 source extension-nu/yazi/yazi.nu
 source extension-nu/alias/alias.nu
-
-# Autocompletes
-source extension-nu/autocomplete/rustup/rustup-completions.nu
-source extension-nu/autocomplete/uv/uv-completions.nu
-source extension-nu/autocomplete/gh/gh-completions.nu
-source extension-nu/autocomplete/ssh/ssh-completions.nu
