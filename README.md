@@ -18,3 +18,4 @@ You can use any dotfile manager
 - [-] Add extern autocomplete for nushell
     - To use function style autocomplete for nushell(for better control)
         Use [this](https://www.nushell.sh/book/custom_commands.html)
+        This has been moved to [nu-autocomplete](https://github.com/Watashisama/nu-autocomplete)
