@@ -58,12 +58,12 @@
             "<S-Tab>":    PreviousTab,
             "gT":         PreviousTab,
             "1":          SwitchToTab("Queue"),
-            "2":          SwitchToTab("Directories"),
-            "3":          SwitchToTab("Artists"),
-            "4":          SwitchToTab("Album Artists"),
-            "5":          SwitchToTab("Albums"),
-            "6":          SwitchToTab("Playlists"),
-            "7":          SwitchToTab("Search"),
+//           "2":          SwitchToTab("Directories"),
+            "2":          SwitchToTab("Artists"),
+            "3":          SwitchToTab("Album Artists"),
+            "4":          SwitchToTab("Albums"),
+            "5":          SwitchToTab("Playlists"),
+            "6":          SwitchToTab("Search"),
             "<C-u>":      Update,
             "<C-U>":      Rescan,
             "R":          AddRandom,
@@ -209,16 +209,16 @@
                 ],
             ),
         ),
-        (
-            name: "Directories",
-            borders: "ALL",
-            border_symbols: Rounded,
-            pane: Split(
-                size: "100%",
-                direction: Vertical,
-                panes: [(pane: Pane(Directories), size: "100%", borders: "ALL", border_symbols: Rounded)],
-            )
-        ),
+//        (
+//            name: "Directories",
+//            borders: "ALL",
+//            border_symbols: Rounded,
+//            pane: Split(
+//                size: "100%",
+//                direction: Vertical,
+//                panes: [(pane: Pane(Directories), size: "100%", borders: "ALL", border_symbols: Rounded)],
+//            )
+//        ),
         (
             name: "Artists",
             borders: "ALL",
