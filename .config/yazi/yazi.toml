@@ -22,3 +22,6 @@ prepend_previewers = [
   # For mounted hard disk/drive.
   { url = "/run/media/USER_NAME/**/*", run = "noop" },
 ]
+
+[mgr]
+ratio = [0, 1, 1]
