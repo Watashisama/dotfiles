@@ -11,3 +11,4 @@ require("tokyonight").setup({
     functions = { italic = true },
   }
 })
+vim.cmd("colorscheme tokyonight-moon")
