@@ -3,4 +3,5 @@
 pavucontrol.ini
 .config/gh
 .config/mozc
+.config/nushell/history.txt
 /.scripts/make-music
