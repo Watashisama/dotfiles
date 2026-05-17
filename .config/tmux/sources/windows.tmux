@@ -12,7 +12,7 @@ set-option -g base-index 1
 set -g renumber-windows on
 set-window-option -g mode-keys vi
 set-option -g window-status-separator " "
-set-option -g window-status-format " \
+set-option -g window-status-format "\
 #[fg=WHITE]#I\
 #[fg=WHITE]:\
 #[fg=WHITE]#W\
@@ -38,7 +38,7 @@ set-option -g status-right-length 100
 # set-option -g status-left "\
 # #[bg=default,fg=YELLOW] ${TMUX_LOGO} #S\
 # "
-set-option -g status-left ""
+set-option -g status-left " "
 
 set-option -g status-right "\
 #[bg=default,fg=WHITE bold]${TMUX_LOGO}\
