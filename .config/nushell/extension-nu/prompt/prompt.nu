@@ -23,7 +23,7 @@ $env.PROMPT_COMMAND = {||
   } else {
     $gitb.stdout 
     | str substring 2.. 
-    | str replace "\n" "" 
+    | str replace "\n" ""  -ar
     | $" ($in)"
   })
   let git_branch = (ansi purple) + $git_branch + (ansi reset)
