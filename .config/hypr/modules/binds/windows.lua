@@ -1,4 +1,5 @@
-local mainMod = "SUPER" -- Sets "Windows" key as main modifier
+local mainMod = require("modules.binds.mod").super -- Sets "Windows" key as main modifier
+
 hl.bind(mainMod .. " + W", hl.dsp.window.close())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("fullscreen"))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen("maximize"))
