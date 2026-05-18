@@ -1,4 +1,4 @@
-local mainMod = "SUPER"
+local mainMod = require("modules.binds.mod").super
 local programs = require("modules.programs")
 
 hl.bind("ALT + SHIFT + Return", hl.dsp.exec_cmd(programs.terminal .. " -e tmux new-session -A"))

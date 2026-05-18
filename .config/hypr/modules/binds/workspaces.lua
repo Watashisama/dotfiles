@@ -1,4 +1,4 @@
-local mainMod = "SUPER"
+local mainMod = require("modules.binds.mod").super
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do

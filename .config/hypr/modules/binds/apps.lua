@@ -1,4 +1,4 @@
-local mainMod = "SUPER" -- Sets "Windows" key as main modifier
+local mainMod = require("modules.binds.mod").super
 local programs = require("modules.programs")
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(programs.terminal))
 hl.bind("ALT + Return", hl.dsp.exec_cmd(programs.terminal .. ' -e ' .. 'tmux'))
