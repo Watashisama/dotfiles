@@ -18,23 +18,26 @@ require("blink.cmp").setup({
   appearance = {
     nerd_font_variant = "mono",
   },
-  
+
   completion = { documentation = { auto_show = true } },
   sources = {
     default = { "snippets", "lsp", "path", "buffer" },
     providers = {
       path = {
-        score_offset = 100,
+        score_offset = 4,
       },
       snippets = {
-        score_offset = 90,
+        score_offset = 1,
       },
       lsp = {
-        score_offset = 95,
+        score_offset = 3,
+      },
+      buffer = {
+        score_offset = 2
       },
     },
   },
   fuzzy = {
-    implementation = "prefer_rust_with_warning",
+    implementation = "lua",
   },
 })
