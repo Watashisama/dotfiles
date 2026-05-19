@@ -1,6 +1,6 @@
-# let carapace_completer = {|spans|
-#     carapace $spans.0 nushell ...$spans | from json
-# }
+let carapace_completer = {|spans|
+    carapace $spans.0 nushell ...$spans | from json
+}
 
 $env.config.history = {
   max_size: 5000,
@@ -46,7 +46,7 @@ $env.config.completions = {
   external: {
     enable: true,
     max_results: 50,
-    # completer: null,
+    completer: $carapace_completer,
   },
   use_ls_colors: true
 }
