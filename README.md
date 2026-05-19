@@ -15,10 +15,7 @@ You can use any dotfile manager
 > Some configs my not be maintained (nvim-0.11.7 as an eg)
 
 ## TODO
-- [-] Add extern autocomplete for nushell
-    - To use function style autocomplete for nushell(for better control)
-        Use [this](https://www.nushell.sh/book/custom_commands.html)
-        This has been moved to [nu-autocomplete](https://github.com/Watashisama/nu-autocomplete)
-
-> [!CAUTION]
-> nu-autocomplete has been archived!
+- [ ] In built autocomplete with
+```lua
+vim.opt.autocomplete = true
+```
