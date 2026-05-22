@@ -60,7 +60,7 @@ $env.config.datetime_format = {
   table: null
 }
 $env.config.display_errors = {
-  exit_code: true,
+  exit_code: false,
   termination_signal: true
 }
 
