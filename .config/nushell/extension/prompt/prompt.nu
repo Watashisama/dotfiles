@@ -26,7 +26,7 @@ $env.PROMPT_COMMAND = {||
     | str replace "\n" ""  -ar
     | $" ($in)"
   })
-  let git_branch = (ansi purple) + $git_branch + (ansi reset)
+  let git_branch = (ansi blue) + $git_branch + (ansi reset)
   let git_status: any = if ($git.exit_code != 0)  or ($git.stdout == "") {
     ""
   } else {
