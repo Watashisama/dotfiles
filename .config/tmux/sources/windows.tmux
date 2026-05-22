@@ -41,9 +41,9 @@ set-option -g status-right-length 100
 set-option -g status-left " "
 
 set-option -g status-right "\
-#[bg=default,fg=WHITE bold]${TMUX_LOGO}\
-#[bg=default,fg=WHITE bold] #S \
-#[bg=default,fg=WHITE bold] %H:%M \
+#[bg=default,fg=GREEN bold]${TMUX_LOGO}\
+#[bg=default,fg=GREEN bold] #S \
+#[bg=default,fg=BLUE bold] %H:%M \
 "
 
 set -g message-style "bg=default,fg=YELLOW"
