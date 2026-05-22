@@ -6,15 +6,14 @@ function M.setup()
   vim.cmd("syntax reset")
 
   local hl_color = {
-    -- hl-group = { fg = color.lll, bg = color.ll, ... }
     Normal = { fg = colors.fg, bg = colors.bg },
     NormalFloat = { fg = colors.fg, bg = colors.bg },
     FloatBorder = { fg = colors.fg, bg = colors.bg },
-    CursorLine = { bg = colors.gray1 },
-    Visual = { bg = colors.gray },
-    Search = { fg = colors.bg, bg = colors.orange },
+    CursorLine = { bg = colors.black },
+    Visual = { bg = colors.visual },
+    Search = { fg = colors.bg, bg = colors.cyan },
     IncSearch = { fg = colors.bg, bg = colors.orange },
-    StatusLineNC = { bg = colors.orange },
+    -- StatusLineNC = { bg = colors.orange },
     VertSplit = { fg = colors.gray },
     WinSeparator = { fg = colors.gray },
     LineNr = { fg = colors.gray },
@@ -22,20 +21,36 @@ function M.setup()
     SignColumn = { bg = colors.bg },
     Folded = { fg = colors.gray, bg = colors.gray },
 
-    Pmenu = { fg = colors.fg, bg = colors.gray },
-    PmenuSel = { fg = colors.bg, bg = colors.orange },
-    PmenuSbar = { bg = colors.gray },
-    PmenuThumb = { bg = colors.orange },
+    Pmenu = { fg = colors.fg, bg = colors.black },
+    PmenuSel = { fg = colors.bg, bg = colors.purple },
+    PmenuSbar = { bg = colors.crimson },
+    PmenuBorder = { fg = colors.green },
+    PmenuThumb = { bg = colors.gray },
 
     Comment = { fg = colors.gray, italic = true },
-    Constant = { fg = colors.magenta },
+    Constant = { fg = colors.orange },
     String = { fg = colors.green },
-    Identifier = { fg = colors.blue },
+    Identifier = { fg = colors.orange },
     Function = { fg = colors.yellow },
     Statement = { fg = colors.red },
     Type = { fg = colors.cyan, bold = true },
     Special = { fg = colors.yellow },
-    Error = { fg = colors.red, bold = true },
+
+    Error = { sp = colors.red, undercurl = true },
+    Warn = { sp = colors.yellow, undercurl = true },
+    Info = { sp = colors.teal, undercurl = true },
+    Hint = { sp = colors.teal, undercurl = true },
+
+    DiagnosticUnderlineError = { sp = colors.red, undercurl = true },
+    DiagnosticUnderlineWarn = { sp = colors.yellow, undercurl = true },
+    DiagnosticUnderlineInfo = { sp = colors.teal, undercurl = true },
+    DiagnosticUnderlineHint = { sp = colors.teal, undercurl = true },
+
+    DiagnosticError = { fg = colors.red, },
+    DiagnosticWarn = { fg = colors.yellow, },
+    DiagnosticInfo = { fg = colors.teal, },
+    DiagnosticHint = { fg = colors.teal, },
+
     Keyword = { fg = colors.red },
     Variable = { fg = colors.fg },
     TSKeyword = { fg = colors.red },
@@ -45,23 +60,28 @@ function M.setup()
 
     StatusFile = { fg = colors.green, bold = true },
 
-    StatusNormal = { fg = colors.bg, bg = "#82aaff", bold = true },
-    StatusInsert = { fg = colors.bg, bg = "#c3e88d", bold = true },
-    StatusVisual = { fg = colors.bg, bg = "#fca7ea", bold = true },
-    StatusCommand = { fg = colors.bg, bg = "#ff966c", bold = true },
-    StatusTerminal = { fg = colors.bg, bg = "#4fd6be", bold = true },
-    StatusReplace = { fg = colors.bg, bg = "#ff757f", bold = true },
-    StatusSelect = { fg = colors.bg, bg = "#ffc777", bold = true },
-    StatusPending = { fg = colors.bg, bg = "#c099ff", bold = true },
-    StatusConfirm = { fg = colors.bg, bg = "#4fd6be", bold = true },
+    StatusNormal = { fg = colors.bg, bg = colors.cyan, bold = true },
+    StatusInsert = { fg = colors.bg, bg = colors.green, bold = true },
+    StatusVisual = { fg = colors.bg, bg = colors.pink, bold = true },
+    StatusCommand = { fg = colors.bg, bg = colors.orange, bold = true },
+    StatusTerminal = { fg = colors.bg, bg = colors.teal, bold = true },
+    StatusReplace = { fg = colors.bg, bg = colors.red, bold = true },
+    StatusSelect = { fg = colors.bg, bg = colors.yellow, bold = true },
+    StatusPending = { fg = colors.bg, bg = colors.purple, bold = true },
+    StatusConfirm = { fg = colors.bg, bg = colors.teal, bold = true },
 
-    StatusLine = { fg = colors.bg, bg = "#1e2030", bold = true },
-    StatusLineText = { fg = "#828bb8", bg = colors.bg, bold = true },
-    StatusLineText2 = { fg = "#828bb8", bg = colors.bg },
+    StatusLine = { fg = colors.bg, bg = colors.bg, bold = true },
+    StatusLineText = { fg = colors.fg, bg = colors.bg, bold = true },
+    StatusLineText2 = { fg = colors.gray1, bg = colors.bg },
 
-    StatusLineError = { fg = "#c53b53", bg = "#3b4261" },
-    StatusLineWarn = { fg = "#ffc777", bg = "#3b4261" },
-    StatusLineHint = { fg = "#4fd6be", bg = "#3b4261" },
+    StatusLineError = { fg = colors.crimson, bg = colors.gray1 },
+    StatusLineWarn = { fg = colors.yellow, bg = colors.gray1 },
+    StatusLineHint = { fg = colors.teal, bg = colors.gray1 },
+
+    WinBar = { bg = colors.bg },
+    WinBarSaved = { fg = colors.gray },
+    WinBarModified = { fg = colors.orange },
+    WinBarRecording = { fg = colors.red, bold = true },
   }
 
   for group, opts in pairs(hl_color) do

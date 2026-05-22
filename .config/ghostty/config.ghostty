@@ -1,8 +1,8 @@
 font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 14
 
-# theme = Monokai Remastered
-theme = TokyoNight Moon
+theme = Monokai Remastered
+# theme = TokyoNight Moon
 # background = "#222436"
 
 gtk-titlebar = false
