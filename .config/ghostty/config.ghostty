@@ -1,8 +1,9 @@
 font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 14
 
+# theme = Monokai Remastered
 theme = TokyoNight Moon
-background = "#222436"
+# background = "#222436"
 
 gtk-titlebar = false
 mouse-hide-while-typing = true
@@ -12,9 +13,8 @@ shell-integration = nushell
 
 # palette = 7=#444a73
 
-background = #1b1d2b
-foreground = #c8d3f5
-cursor-color = #c8d3f5
-selection-background = #2d3f76
-selection-foreground = #c8d3f5
-
+# background = #1b1d2b
+# foreground = #c8d3f5
+# cursor-color = #c8d3f5
+# selection-background = #2d3f76
+# selection-foreground = #c8d3f5
