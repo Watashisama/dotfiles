@@ -1,23 +1,23 @@
 # Config stuff
 
-# source config-nu/autostart.nu
-source config-nu/functions.nu
+# source config/autostart.nu
+source config/functions.nu
 
 
 # Env Stuff
 
-source env-nu/config-env.nu
-source env-nu/config-input.nu
-source env-nu/config-misc.nu
-source env-nu/config-xdg.nu
-# source env-nu/config-colorscheme.nu
+source env/env.nu
+source env/input.nu
+source env/misc.nu
+source env/xdg.nu
+# source env/colorscheme.nu
 
 
 # Extensions
 
-# source extension-nu/mise/mise.nu
-# source extension-nu/tv/tv.nu
-source extension-nu/prompt/prompt.nu
-source extension-nu/zoxide/zoxide.nu
-source extension-nu/yazi/yazi.nu
-source extension-nu/alias/alias.nu
+# source extension/mise/mise.nu
+# source extension/tv/tv.nu
+source extension/prompt/prompt.nu
+source extension/zoxide/zoxide.nu
+source extension/yazi/yazi.nu
+source extension/alias/alias.nu

@@ -1,5 +1,5 @@
 let carapace_completer = {|spans|
-    carapace $spans.0 nushell ...$spans | from json
+  carapace $spans.0 nushell ...$spans | from json
 }
 
 $env.config.history = {
@@ -60,7 +60,7 @@ $env.config.datetime_format = {
   table: null
 }
 $env.config.display_errors = {
-  exit_code: false,
+  exit_code: true,
   termination_signal: true
 }
 
@@ -73,7 +73,6 @@ $env.config.float_precision = 10
 $env.config.footer_mode = 25
 $env.config.highlight_resolved_externals = true
 $env.config.recursion_limit = 50
-$env.config.render_right_prompt_on_last_line = false
 $env.config.rm.always_trash = true
 $env.config.show_banner = false
 $env.config.show_hints = true
