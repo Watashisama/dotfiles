@@ -1,0 +1,19 @@
+local colors = require("experiments.colorschemes.isekai-remastered.colors")
+local M = {
+  Normal       = { fg = colors.fg, bg = colors.bg },
+  NormalFloat  = { fg = colors.fg, bg = colors.bg },
+  FloatBorder  = { fg = colors.fg, bg = colors.bg },
+  CursorLine   = { bg = colors.black },
+  Visual       = { bg = colors.visual },
+  Search       = { fg = colors.bg, bg = colors.cyan },
+  IncSearch    = { fg = colors.bg, bg = colors.orange },
+  -- StatusLineNC = { bg = colors.orange },
+  VertSplit    = { fg = colors.gray },
+  WinSeparator = { fg = colors.gray },
+  LineNr       = { fg = colors.gray },
+  CursorLineNr = { fg = colors.orange, bold = true },
+  SignColumn   = { bg = colors.bg },
+  Folded       = { fg = colors.gray, bg = colors.gray },
+}
+
+return M
