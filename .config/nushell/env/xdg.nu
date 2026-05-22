@@ -1,3 +1,4 @@
+$env.XDG_CONFIG_DIR = ($env.HOME | path join ".config" )
 $env.XDG_DESKTOP_DIR = ($env.HOME | path join "Desktop")
 $env.XDG_DOCUMENTS_DIR = ($env.HOME | path join "Documents")
 $env.XDG_DOWNLOAD_DIR = ($env.HOME | path join "Downloads")

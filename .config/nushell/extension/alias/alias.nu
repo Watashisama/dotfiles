@@ -27,7 +27,8 @@ alias record  = wl-screenrec --low-power=off
 
 alias lazy = lazygit
 alias music = rmpc
-alias : = start-hyprland
+alias s = start-hyprland
 alias bye = systemctl poweroff --now
+
 
 # alias qu = qutebrowser
