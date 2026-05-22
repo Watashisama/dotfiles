@@ -78,3 +78,4 @@ $env.TRANSIENT_PROMPT_COMMAND = {||
   }
   $arrow
 }
+$env.config.render_right_prompt_on_last_line = false
