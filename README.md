@@ -19,3 +19,4 @@ You can use any dotfile manager
 ```lua
 vim.opt.autocomplete = true
 ```
+- [x] A colorscheme (異世界-remastered)
