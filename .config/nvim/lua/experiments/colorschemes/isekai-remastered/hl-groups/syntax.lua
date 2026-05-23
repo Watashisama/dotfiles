@@ -1,20 +1,23 @@
 local colors = require("experiments.colorschemes.isekai-remastered.colors")
 local M = {
-  Comment                           = { fg = colors.comment, italic = true },
-  Constant                          = { fg = colors.orange },
-  String                            = { fg = colors.green },
-  Identifier                        = { fg = colors.cyan },
-  Function                          = { fg = colors.yellow },
-  Statement                         = { fg = colors.red },
-  Type                              = { fg = colors.cyan, bold = true },
-  Special                           = { fg = colors.yellow },
-  Keyword                           = { fg = colors.red },
-  Variable                          = { fg = colors.fg },
+  Comment    = { fg = colors.comment, italic = true },
+  Constant   = { fg = colors.orange },
+  String     = { fg = colors.green },
+  Identifier = { fg = colors.cyan },
+  Function   = { fg = colors.yellow },
+  Statement  = { fg = colors.red },
+  Type       = { fg = colors.cyan, bold = true },
+  Special    = { fg = colors.yellow },
+  Keyword    = { fg = colors.red },
+  Variable   = { fg = colors.fg },
+
+
+
 
   ["@keyword"]                      = { fg = colors.pink, italic = true },
   ["@keyword.conditional"]          = { fg = colors.teal },
   ["@keyword.coroutine"]            = { fg = colors.pink, italic = true },
-  ["@keyword.function"]             = { fg = colors.purple },
+  ["@keyword.function"]             = { fg = colors.red, italic = true },
   ["@keyword.import"]               = { fg = colors.teal },
   ["@keyword.operator"]             = { fg = colors.cyan },
   ["@keyword.return"]               = { fg = colors.yellow, italic = true, bold = true },
@@ -33,10 +36,11 @@ local M = {
   ["@function.method.call"]         = { fg = colors.cyan, bold = true },
 
   ["@variable"]                     = { fg = colors.fg, italic = true },
-  ["@variable.builtin"]             = { fg = colors.red, italic = true },
+  ["@variable.builtin"]             = { fg = colors.red, italic = true, bold = true },
   ["@variable.member"]              = { fg = colors.green },
   ["@variable.parameter"]           = { fg = colors.orange },
   ["@variable.parameter.builtin"]   = { fg = colors.fg, italic = true },
+  ["@property"]                     = { fg = colors.cyan, italic = true },
 
   ["@type"]                         = { fg = colors.cyan, bold = true },
 
@@ -50,9 +54,15 @@ local M = {
   ["@string"]                       = { fg = colors.green },
   ["@string.documentation"]         = { fg = colors.yellow },
   ["@string.escape"]                = { fg = colors.purple },
-  ["@string.regexp"]                = { fg = colors.bluedimmed },
+  ["@string.regexp"]                = { fg = colors.cyan },
 
-  ["@operator"]                     = { fg = colors.cyan },
+
+  ["@string.rust"]               = { fg = colors.teal },
+  ["@string.documentation.rust"] = { fg = colors.teal },
+  ["@string.escape.rust"]        = { fg = colors.purple },
+  ["@string.regexp.rust"]        = { fg = colors.teal },
+
+  ["@operator"]                  = { fg = colors.cyan },
 
 
   ["@markup"]                     = {},
@@ -75,12 +85,12 @@ local M = {
   ["@markup.strikethrough"]       = { strikethrough = true },
   ["@markup.strong"]              = { bold = true },
   ["@markup.underline"]           = { underline = true },
-  ["@markup.heading.1"]           = {},
-  ["@markup.heading.2"]           = {},
-  ["@markup.heading.3"]           = {},
-  ["@markup.heading.4"]           = {},
-  ["@markup.heading.5"]           = {},
-  ["@markup.heading.6"]           = {},
+  -- ["@markup.heading.1"]           = {},
+  -- ["@markup.heading.2"]           = {},
+  -- ["@markup.heading.3"]           = {},
+  -- ["@markup.heading.4"]           = {},
+  -- ["@markup.heading.5"]           = {},
+  -- ["@markup.heading.6"]           = {},
 
   -- ["@identifier"]                   = { fg = colors.orange },
 }
