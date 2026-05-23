@@ -14,13 +14,13 @@ local M = {
 
 
 
-  ["@keyword"]                      = { fg = colors.pink, italic = true },
-  ["@keyword.conditional"]          = { fg = colors.teal },
-  ["@keyword.coroutine"]            = { fg = colors.pink, italic = true },
-  ["@keyword.function"]             = { fg = colors.red, italic = true },
-  ["@keyword.import"]               = { fg = colors.teal },
-  ["@keyword.operator"]             = { fg = colors.cyan },
-  ["@keyword.return"]               = { fg = colors.yellow, italic = true, bold = true },
+  ["@keyword"]                    = { fg = colors.pink, italic = true },
+  ["@keyword.conditional"]        = { fg = colors.teal },
+  ["@keyword.coroutine"]          = { fg = colors.pink, italic = true },
+  ["@keyword.function"]           = { fg = colors.red, italic = true },
+  ["@keyword.import"]             = { fg = colors.teal },
+  ["@keyword.operator"]           = { fg = colors.cyan },
+  ["@keyword.return"]             = { fg = colors.yellow, italic = true, bold = true },
   -- ["@keyword.debug"]                = "Debug",
   -- ["@keyword.directive"]            = "PreProc",
   -- ["@keyword.directive.define"]     = "Define",
@@ -28,19 +28,24 @@ local M = {
   -- ["@keyword.repeat"]               = "Repeat",
   -- ["@keyword.storage"]              = "StorageClass",
 
-  ["@function"]                     = { fg = colors.yellow },
-  ["@function.builtin"]             = { fg = colors.red, bold = true },
-  ["@function.call"]                = { fg = colors.yellow },
-  ["@function.macro"]               = { fg = colors.orange },
-  ["@function.method"]              = { fg = colors.cyan, bold = true },
-  ["@function.method.call"]         = { fg = colors.cyan, bold = true },
+  ["@function"]                   = { fg = colors.yellow },
+  ["@function.builtin"]           = { fg = colors.red, bold = true },
+  ["@function.call"]              = { fg = colors.yellow },
+  ["@function.macro"]             = { fg = colors.orange },
+  ["@function.method"]            = { fg = colors.cyan, bold = true },
+  ["@function.method.call"]       = { fg = colors.cyan, bold = true },
 
-  ["@variable"]                     = { fg = colors.fg, italic = true },
-  ["@variable.builtin"]             = { fg = colors.red, italic = true, bold = true },
-  ["@variable.member"]              = { fg = colors.green },
-  ["@variable.parameter"]           = { fg = colors.orange },
-  ["@variable.parameter.builtin"]   = { fg = colors.fg, italic = true },
-  ["@property"]                     = { fg = colors.cyan, italic = true },
+  ["@variable"]                   = { fg = colors.fg, italic = true },
+  ["@variable.builtin"]           = { fg = colors.red, italic = true, bold = true },
+  ["@variable.member"]            = { fg = colors.green },
+  ["@variable.parameter"]         = { fg = colors.orange },
+  ["@variable.parameter.builtin"] = { fg = colors.fg, italic = true },
+  ["@property"]                   = { fg = colors.cyan, italic = true },
+
+  ["@constant"]                   = { fg = colors.orange },
+  ["@constant.builtin"]           = { fg = colors.pink, bold = true, italic = true },
+  ["@constant.macro"]             = { fg = colors.cyan, italic = true },
+
 
   ["@type"]                         = { fg = colors.cyan, bold = true },
 
