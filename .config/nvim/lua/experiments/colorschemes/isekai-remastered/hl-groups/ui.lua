@@ -13,7 +13,11 @@ local M = {
   LineNr       = { fg = colors.gray },
   CursorLineNr = { fg = colors.orange, bold = true },
   SignColumn   = { bg = colors.bg },
-  Folded       = { fg = colors.gray, bg = colors.gray },
+  Folded       = { bg = colors.visual },
+
+  DiffAdd      = { fg = colors.green },
+  DiffChange   = { fg = colors.cyan },
+  DiffDelete   = { fg = colors.crimson },
 }
 
 return M

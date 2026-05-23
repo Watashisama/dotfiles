@@ -1,12 +1,12 @@
 local M          = {}
 
-local ui         = require("experiments.colorschemes.isekai-remastered.hl-groups.ui")
-local syntax     = require("experiments.colorschemes.isekai-remastered.hl-groups.syntax")
 local lsp_ish    = require("experiments.colorschemes.isekai-remastered.hl-groups.lsp-ish")
+local plugins    = require("experiments.colorschemes.isekai-remastered.hl-groups.hl-plugins.plugin")
 local popup_menu = require("experiments.colorschemes.isekai-remastered.hl-groups.popup-menu")
 local statusline = require("experiments.colorschemes.isekai-remastered.hl-groups.statusline")
+local syntax     = require("experiments.colorschemes.isekai-remastered.hl-groups.syntax")
+local ui         = require("experiments.colorschemes.isekai-remastered.hl-groups.ui")
 local winbar     = require("experiments.colorschemes.isekai-remastered.hl-groups.winbar")
-local plugins    = require("experiments.colorschemes.isekai-remastered.hl-groups.hl-plugins.plugin")
 
 function M.colorize(hl_colors)
   for group, opts in pairs(hl_colors) do
@@ -17,6 +17,8 @@ end
 function M.setup()
   vim.cmd("highlight clear")
   vim.cmd("syntax reset")
+  vim.opt.background = "dark";
+  vim.g.colors_name  = "isekai-remastered";
 
   M.colorize(ui)
   M.colorize(syntax)

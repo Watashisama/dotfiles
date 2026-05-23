@@ -1,4 +1,5 @@
 local colors = {
+  _name   = "isekai-remastered",
   fg      = "#f6f6ef",
   bg      = "#0c0c0c",
   orange  = "#fd971f",
