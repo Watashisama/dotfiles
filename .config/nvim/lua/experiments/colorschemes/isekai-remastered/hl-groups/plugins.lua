@@ -8,9 +8,16 @@ local M = {
   RenderMarkdownH5Bg       = { bg = colors.bg, fg = colors.orange, bold = true },
   RenderMarkdownH6Bg       = { bg = colors.bg, fg = colors.red, bold = true },
 
+  RenderMarkdownH1Fg       = { bg = colors.bg, fg = colors.purple, bold = true },
+  RenderMarkdownH2Fg       = { bg = colors.bg, fg = colors.cyan, bold = true },
+  RenderMarkdownH3Fg       = { bg = colors.bg, fg = colors.yellow, bold = true },
+  RenderMarkdownH4Fg       = { bg = colors.bg, fg = colors.teal, bold = true },
+  RenderMarkdownH5Fg       = { bg = colors.bg, fg = colors.orange, bold = true },
+  RenderMarkdownH6Fg       = { bg = colors.bg, fg = colors.red, bold = true },
+
   RenderMarkdownBullet     = { fg = colors.orange },
   RenderMarkdownCodeInline = { bg = colors.visual, fg = colors.cyan },
-  RenderMarkdownTableHead  = { fg = colors.orange },
+  RenderMarkdownTableHead  = { fg = colors.cyan },
   RenderMarkdownTableRow   = { fg = colors.cyan },
 
   GitSignsAdd              = { fg = colors.green },
