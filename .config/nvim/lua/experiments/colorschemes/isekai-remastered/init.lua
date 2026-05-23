@@ -6,8 +6,9 @@ local lsp_ish    = require("experiments.colorschemes.isekai-remastered.hl-groups
 local popup_menu = require("experiments.colorschemes.isekai-remastered.hl-groups.popup-menu")
 local statusline = require("experiments.colorschemes.isekai-remastered.hl-groups.statusline")
 local winbar     = require("experiments.colorschemes.isekai-remastered.hl-groups.winbar")
+local plugins    = require("experiments.colorschemes.isekai-remastered.hl-groups.hl-plugins.plugin")
 
-function colorize(hl_colors)
+function M.colorize(hl_colors)
   for group, opts in pairs(hl_colors) do
     vim.api.nvim_set_hl(0, group, opts)
   end
@@ -17,12 +18,13 @@ function M.setup()
   vim.cmd("highlight clear")
   vim.cmd("syntax reset")
 
-  colorize(ui)
-  colorize(syntax)
-  colorize(lsp_ish)
-  colorize(popup_menu)
-  colorize(statusline)
-  colorize(winbar)
+  M.colorize(ui)
+  M.colorize(syntax)
+  M.colorize(lsp_ish)
+  M.colorize(popup_menu)
+  M.colorize(statusline)
+  M.colorize(winbar)
+  M.colorize(plugins)
 end
 
 return M
