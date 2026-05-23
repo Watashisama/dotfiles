@@ -1,7 +1,7 @@
 local M          = {}
 
 local lsp_ish    = require("experiments.colorschemes.isekai-remastered.hl-groups.lsp-ish")
-local plugins    = require("experiments.colorschemes.isekai-remastered.hl-groups.hl-plugins.plugin")
+local plugins    = require("experiments.colorschemes.isekai-remastered.hl-groups.plugins")
 local popup_menu = require("experiments.colorschemes.isekai-remastered.hl-groups.popup-menu")
 local statusline = require("experiments.colorschemes.isekai-remastered.hl-groups.statusline")
 local syntax     = require("experiments.colorschemes.isekai-remastered.hl-groups.syntax")
