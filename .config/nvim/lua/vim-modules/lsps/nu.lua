@@ -3,4 +3,10 @@ vim.lsp.config("nu_lsp", {
   filetypes = { "nu" },
 })
 
+vim.lsp.config("nufmt", {
+  cmd = { "nufmt" },
+  filetypes = { "nu" }
+})
+
 vim.lsp.enable("nu_lsp")
+vim.lsp.enable("nufmt")
