@@ -24,6 +24,7 @@ alias tree = tree -C
 alias copy = wl-copy 
 alias paste = wl-paste 
 alias record  = wl-screenrec --low-power=off
+alias nufmt = nufmt --config ($nu.default-config-dir)/nufmt.nuon
 
 alias lazy = lazygit
 alias music = rmpc
