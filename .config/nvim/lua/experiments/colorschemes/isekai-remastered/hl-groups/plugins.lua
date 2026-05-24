@@ -24,41 +24,37 @@ local M = {
   GitSignsChange           = { fg = colors.cyan },
   GitSignsDelete           = { fg = colors.crimson },
 
-  BlinkCmpLabel            = { fg = colors.pink },
+  BlinkCmpLabel            = { fg = colors.fg },
+  BlinkCmpLabelMatch       = { fg = colors.pink },
   BlinkCmpLabelDeprecated  = { fg = colors.red },
-  BlinkCmpLabelDetail      = { fg = colors.fg },
-  BlinkCmpLabelDescription = { fg = colors.fg },
-  BlinkCmpKind             = { fg = colors.red },
+  BlinkCmpLabelDetail      = { fg = colors.red },
+  BlinkCmpLabelDescription = { fg = colors.green },
+
+  BlinkCmpKind             = { fg = colors.blue },
+  BlinkCmpKindBoolean      = { fg = colors.purple },
+  BlinkCmpKindClass        = { fg = colors.pink },
+  BlinkCmpKindColor        = { fg = colors.teal },
+  BlinkCmpKindConstant     = { fg = colors.orange },
+  BlinkCmpKindEnum         = { fg = colors.teal },
+  BlinkCmpKindEnumMember   = { fg = colors.green },
+  BlinkCmpKindFunction     = { fg = colors.red },
+  BlinkCmpKindFile         = { fg = colors.teal },
+  BlinkCmpKindFolder       = { fg = colors.cyan },
+  BlinkCmpKindKeyword      = { fg = colors.green },
+  BlinkCmpKindMethod       = { fg = colors.cyan },
+  BlinkCmpKindSnippet      = { fg = colors.purple },
+  BlinkCmpKindString       = { fg = colors.green },
+  BlinkCmpKindStruct       = { fg = colors.crimson },
+
+  BlinkCmpSource           = { fg = colors.crimson },
 
   -- BlinkCmpKindArray = "LspKindArray",
-  -- BlinkCmpKindBoolean = "LspKindBoolean",
-  -- BlinkCmpKindClass = "LspKindClass",
-  -- BlinkCmpKindCodeium = {
-  --   bg = "NONE",
-  --   fg = "#118c74"
-  -- },
-  -- BlinkCmpKindColor = "LspKindColor",
-  -- BlinkCmpKindConstant = "LspKindConstant",
+  -- BlinkCmpKindCodeium = { bg = "NONE", fg = "#118c74" },
   -- BlinkCmpKindConstructor = "LspKindConstructor",
-  -- BlinkCmpKindCopilot = {
-  --   bg = "NONE",
-  --   fg = "#118c74"
-  -- },
-  -- BlinkCmpKindDefault = {
-  --   bg = "NONE",
-  --   fg = "#6172b0"
-  -- },
-  -- BlinkCmpKindEnum = "LspKindEnum",
-  -- BlinkCmpKindEnumMember = "LspKindEnumMember",
   -- BlinkCmpKindEvent = "LspKindEvent",
   -- BlinkCmpKindField = "LspKindField",
-  -- BlinkCmpKindFile = "LspKindFile",
-  -- BlinkCmpKindFolder = "LspKindFolder",
-  -- BlinkCmpKindFunction = "LspKindFunction",
   -- BlinkCmpKindInterface = "LspKindInterface",
   -- BlinkCmpKindKey = "LspKindKey",
-  -- BlinkCmpKindKeyword = "LspKindKeyword",
-  -- BlinkCmpKindMethod = "LspKindMethod",
   -- BlinkCmpKindModule = "LspKindModule",
   -- BlinkCmpKindNamespace = "LspKindNamespace",
   -- BlinkCmpKindNull = "LspKindNull",
@@ -68,24 +64,14 @@ local M = {
   -- BlinkCmpKindPackage = "LspKindPackage",
   -- BlinkCmpKindProperty = "LspKindProperty",
   -- BlinkCmpKindReference = "LspKindReference",
-  -- BlinkCmpKindSnippet = "LspKindSnippet",
-  -- BlinkCmpKindString = "LspKindString",
-  -- BlinkCmpKindStruct = "LspKindStruct",
-  -- BlinkCmpKindSupermaven = {
-  --   bg = "NONE",
-  --   fg = "#118c74"
-  -- },
-  -- BlinkCmpKindTabNine = {
-  --   bg = "NONE",
-  --   fg = "#118c74"
-  -- },
+  -- BlinkCmpKindSupermaven = { bg = "NONE", fg = "#118c74" },
+  -- BlinkCmpKindTabNine = { bg = "NONE", fg = "#118c74" },
   -- BlinkCmpKindText = "LspKindText",
   -- BlinkCmpKindTypeParameter = "LspKindTypeParameter",
   -- BlinkCmpKindUnit = "LspKindUnit",
   -- BlinkCmpKindValue = "LspKindValue",
   -- BlinkCmpKindVariable = "LspKindVariable",
 
-  BlinkCmpSource           = { fg = colors.crimson },
   -- BlinkCmpGhostText
   -- BlinkCmpDoc
   -- BlinkCmpDocBorder
