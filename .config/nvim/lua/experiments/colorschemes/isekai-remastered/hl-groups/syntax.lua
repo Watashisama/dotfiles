@@ -28,8 +28,8 @@ local M = {
   -- ["@keyword.repeat"]               = "Repeat",
   -- ["@keyword.storage"]              = "StorageClass",
 
-  ["@function"]                   = { fg = colors.yellow },
-  ["@function.builtin"]           = { fg = colors.red, bold = true },
+  ["@function"]                   = { fg = colors.cyan },
+  ["@function.builtin"]           = { fg = colors.blue, bold = true },
   ["@function.call"]              = { fg = colors.yellow },
   ["@function.macro"]             = { fg = colors.orange },
   ["@function.method"]            = { fg = colors.cyan, bold = true },
