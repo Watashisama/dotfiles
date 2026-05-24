@@ -3,6 +3,7 @@
 def main [] {}
 
 def game [] {
+  clear
   loop {
     let cmptr = match (random int 1..3) {
       1 => "r",
@@ -10,18 +11,21 @@ def game [] {
       3 => "s"
     };
     print -n "Press [q] to quit.\nChoose one of [R]ock, [P]aper or [S]cissors: ";
-    let user_input = input listen --types [key];
 
-    if ($user_input.key_type == char) and ($user_input.code == q) {
-      print "\nBye!"
+    let user_input = input listen --types [key];
+    let key_type = $user_input.key_type;
+    let code = $user_input.code;
+
+    print "";
+
+    if ($key_type == char) and ($code == q) {
+      print "Bye!"
       break
-    }
-    if ($user_input.key_type == char) and ($user_input.code == r) {
-      
-    }
-    if ($user_input.key_type == char) and ($user_input.code == p) {
-    }
-    if ($user_input.key_type == char) and ($user_input.code == s) {
+    } else if ($key_type == char) {
+      if $code == $cmptr {
+        print "Draw!"
+      }
+      # if $user_input.code
     }
   }
 }
