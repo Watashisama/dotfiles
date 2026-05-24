@@ -1,5 +1,8 @@
 local colors = require("experiments.colorschemes.isekai-remastered.colors")
 local M = {
+  MiniIndentscopeSymbol    = { fg = colors.pink },
+  MiniIndentscopeSymbolOff = { fg = colors.purple },
+
   RenderMarkdownCode       = { bg = colors.black },
   RenderMarkdownH1Bg       = { bg = colors.bg, fg = colors.purple, bold = true },
   RenderMarkdownH2Bg       = { bg = colors.bg, fg = colors.cyan, bold = true },

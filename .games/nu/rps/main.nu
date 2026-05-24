@@ -49,7 +49,6 @@ def game [] {
           print 'Lose'
         }
       }
-      # if $user_input.code
     }
   }
 }
