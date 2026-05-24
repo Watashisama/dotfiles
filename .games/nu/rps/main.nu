@@ -25,6 +25,30 @@ def game [] {
       if $code == $cmptr {
         print "Draw!"
       }
+      if $code == r {
+        if $cmptr == s {
+          print 'Win'
+        }
+        if $cmptr == p {
+          print 'Lose'
+        }
+      }
+      if $code == s {
+        if $cmptr == r {
+          print 'Lose'
+        }
+        if $cmptr == p {
+          print 'Win'
+        }
+      }
+      if $code == p {
+        if $cmptr == r {
+          print 'Win'
+        }
+        if $cmptr == s {
+          print 'Lose'
+        }
+      }
       # if $user_input.code
     }
   }
