@@ -20,6 +20,7 @@ left = [
     "dashboard",
     "hyprland-workspaces",
     "battery",
+    "media",
 ]
 center = ["window-title"]
 right = [
@@ -71,7 +72,7 @@ icon-show = false
 label-show = false
 label-max-length = 25
 
-[modules.notification]
+[modules.notifications]
 popup-position = "top-center"
 popup-max-visible = 4
 
