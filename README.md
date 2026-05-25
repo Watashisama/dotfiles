@@ -1,5 +1,7 @@
 # My Dots
 This is where my dot files live
+![show case](./.show/showcase-1.png)
+![show case](./.show/showcase-2.png)
 
 To install;
 ```bash
