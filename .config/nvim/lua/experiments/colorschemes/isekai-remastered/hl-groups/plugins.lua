@@ -27,6 +27,9 @@ local M = {
   GitSignsChange           = { fg = colors.cyan },
   GitSignsDelete           = { fg = colors.crimson },
 
+  OilDir                   = { fg = colors.cyan },
+  OilDirHidden             = { fg = colors.comment },
+
   BlinkCmpLabel            = { fg = colors.fg },
   BlinkCmpLabelMatch       = { fg = colors.pink },
   BlinkCmpLabelDeprecated  = { fg = colors.red },

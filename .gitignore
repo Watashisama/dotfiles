@@ -5,4 +5,5 @@ pavucontrol.ini
 .config/mozc
 .config/nushell/history.txt
 .config/fcitx/dbus/
+.config/dconf/*
 /.scripts/make-music
