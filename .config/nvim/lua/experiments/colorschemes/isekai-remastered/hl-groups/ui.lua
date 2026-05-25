@@ -18,6 +18,8 @@ local M = {
   DiffAdd      = { fg = colors.green },
   DiffChange   = { fg = colors.cyan },
   DiffDelete   = { fg = colors.crimson },
+
+  EndOfBuffer  = { fg = colors.bg },
 }
 
 return M
