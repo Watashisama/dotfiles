@@ -5,6 +5,7 @@
 # TRIANGLE_CLOSE="#(printf '\uE0B0')"
 # ARCH_LINUX_LOGO="#(printf '\uF303')"
 TMUX_LOGO="#(printf '\uebc8')"
+CLOCK_LOGO="#(printf '\uf017')"
 # BAT0_ICON="#(printf '\uf240')"
 
 # Windows
@@ -41,9 +42,8 @@ set-option -g status-right-length 100
 set-option -g status-left " "
 
 set-option -g status-right "\
-#[bg=default,fg=GREEN bold]${TMUX_LOGO}\
-#[bg=default,fg=GREEN bold] #S \
-#[bg=default,fg=BLUE bold] %H:%M \
+#[bg=default,fg=GREEN bold]${TMUX_LOGO} #S  \
+#[bg=default,fg=BLUE bold]${CLOCK_LOGO} %H:%M \
 "
 
 set -g message-style "bg=default,fg=YELLOW"
