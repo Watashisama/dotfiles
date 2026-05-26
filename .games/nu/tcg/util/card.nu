@@ -1,4 +1,4 @@
-module card {
+export module card {
   # The make card func
   @example "How to make a card" {card-make 'Hu Tao' 10 10 0 false} --result { name: 'Hu Tao', energy: 10, hp: 10, mp: 0, isEnemy: false }
   export def card-make [

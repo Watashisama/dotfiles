@@ -16,6 +16,7 @@ vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.type_definition()<cr>", { desc =
 vim.keymap.set("n", "<esc>", "<cmd>lua vim.cmd('noh')<cr>", { desc = "Remove highlight" })
 vim.keymap.set("n", "<leader>-", "<cmd>horizontal split<cr>", { desc = "Split the editor horizontally" })
 vim.keymap.set("n", "<leader>\\", "<cmd>vertical split<cr>", { desc = "Split the editor vertically" })
+vim.keymap.set('n', '<leader>i', '<cmd>Inspect<cr>', { desc = "Inspect the hl groups under the cursor" })
 
 -- oil
 vim.keymap.set("n", "<leader>e", "<cmd>Oil<cr>", { desc = "Open files in Oil" })
