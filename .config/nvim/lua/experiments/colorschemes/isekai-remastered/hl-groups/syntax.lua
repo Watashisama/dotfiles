@@ -20,7 +20,7 @@ local M = {
   ["@keyword.function"]           = { fg = colors.red, italic = true },
   ["@keyword.import"]             = { fg = colors.teal },
   ["@keyword.operator"]           = { fg = colors.cyan },
-  ["@keyword.return"]             = { fg = colors.yellow, italic = true, bold = true },
+  ["@keyword.return"]             = { fg = colors.pink, italic = true, bold = true },
   -- ["@keyword.debug"]                = "Debug",
   -- ["@keyword.directive"]            = "PreProc",
   -- ["@keyword.directive.define"]     = "Define",
@@ -75,24 +75,24 @@ local M = {
   ["@operator.nu"]               = { fg = colors.cyan, bold = true },
 
 
-  ["@markup"]                     = {},
-  ["@markup.emphasis"]            = { italic = true },
-  ["@markup.environment"]         = { fg = colors.orange },
-  ["@markup.environment.name"]    = { fg = colors.cyan, bold = true },
-  ["@markup.heading"]             = {},
-  ["@markup.italic"]              = { italic = true },
-  ["@markup.link"]                = { fg = colors.teal },
-  ["@markup.link.url"]            = { underline = true },
-  ["@markup.list"]                = { fg = colors.cyan },  -- For special punctutation that does not fall in the categories before.
-  ["@markup.list.checked"]        = { fg = colors.green }, -- For brackets and parens.
-  ["@markup.list.markdown"]       = { fg = colors.orange, bold = true },
-  ["@markup.list.unchecked"]      = { fg = colors.cyan },  -- For brackets and parens.
-  ["@markup.math"]                = { fg = colors.yellow },
-  ["@markup.raw"]                 = { fg = colors.green },
-  ["@markup.raw.markdown_inline"] = { bg = colors.black, fg = colors.cyan },
-  ["@markup.strikethrough"]       = { strikethrough = true },
-  ["@markup.strong"]              = { bold = true },
-  ["@markup.underline"]           = { underline = true },
+  ["@markup"]                           = {},
+  ["@markup.emphasis"]                  = { italic = true },
+  ["@markup.environment"]               = { fg = colors.orange },
+  ["@markup.environment.name"]          = { fg = colors.cyan, bold = true },
+  ["@markup.heading"]                   = {},
+  ["@markup.italic"]                    = { italic = true },
+  ["@markup.link"]                      = { fg = colors.teal },
+  ["@markup.link.url"]                  = { underline = true },
+  ["@markup.list"]                      = { fg = colors.cyan }, -- For special punctutation that does not fall in the categories before.
+  ["@markup.list.checked"]              = { fg = colors.green }, -- For brackets and parens.
+  ["@markup.list.markdown"]             = { fg = colors.orange, bold = true },
+  ["@markup.list.unchecked"]            = { fg = colors.cyan }, -- For brackets and parens.
+  ["@markup.math"]                      = { fg = colors.yellow },
+  ["@markup.raw"]                       = { fg = colors.green },
+  ["@markup.raw.markdown_inline"]       = { bg = colors.black, fg = colors.cyan },
+  ["@markup.strikethrough"]             = { strikethrough = true },
+  ["@markup.strong"]                    = { bold = true },
+  ["@markup.underline"]                 = { underline = true },
   -- ["@markup.heading.1"]           = {},
   -- ["@markup.heading.2"]           = {},
   -- ["@markup.heading.3"]           = {},
@@ -102,10 +102,13 @@ local M = {
   -- ["@markup.link.label"]          = "SpecialChar",
   -- ["@markup.link.label.symbol"]   = "Identifier",
 
-  ["@attribute"]                  = { fg = colors.cyan, bold = true, italic = true },
-  ["@lsp.type.decorator"]         = { fg = colors.cyan, bold = true },
-  ["@lsp.type.deriveHelper"]      = { fg = colors.cyan, bold = true },
-  ["@tag.attribute"]              = { fg = colors.cyan, italic = true },
+  ["@attribute"]                        = { fg = colors.cyan, bold = true, italic = true },
+  ["@lsp.type.decorator"]               = { fg = colors.cyan, bold = true },
+  ["@lsp.type.deriveHelper"]            = { fg = colors.cyan, bold = true },
+  ["@tag.attribute"]                    = { fg = colors.cyan, italic = true },
+  ["@lsp.type.variable"]                = {},
+  ["@lsp.mod.declaration"]              = {},
+  ["@lsp.typemod.variable.declaration"] = {},
 }
 
 return M

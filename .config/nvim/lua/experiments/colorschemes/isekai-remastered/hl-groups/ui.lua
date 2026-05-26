@@ -7,7 +7,7 @@ local M = {
   Visual       = { bg = colors.visual },
   Search       = { fg = colors.bg, bg = colors.cyan },
   IncSearch    = { fg = colors.bg, bg = colors.orange },
-  -- StatusLineNC = { bg = colors.orange },
+  StatusLineNC = { bg = colors.bg },
   VertSplit    = { fg = colors.gray },
   WinSeparator = { fg = colors.gray },
   LineNr       = { fg = colors.gray },
