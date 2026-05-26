@@ -18,8 +18,6 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "rust_analyzer",
     "texlab",
-    -- "typos_lsp",
-    -- "codebook",
     "ruff",
   },
 })
