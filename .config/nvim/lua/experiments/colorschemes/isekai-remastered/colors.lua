@@ -17,6 +17,7 @@ local colors = {
   teal    = "#00ff87",
   pink    = "#ffafd7",
   comment = "#52522e",
+  bracket = "#96987c",
 }
 
 return colors

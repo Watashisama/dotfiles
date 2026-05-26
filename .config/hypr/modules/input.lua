@@ -6,7 +6,7 @@ hl.config({
     kb_options   = "caps:swapescape",
     kb_rules     = "",
     repeat_delay = 300,
-    repeat_rate  = 50,
+    repeat_rate  = 70,
     follow_mouse = 1,
     sensitivity  = 0, -- -1.0 - 1.0, 0 means no modification.
     touchpad     = {

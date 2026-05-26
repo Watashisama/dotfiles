@@ -47,12 +47,15 @@ local M = {
   ["@constant.macro"]             = { fg = colors.cyan, italic = true },
 
 
-  ["@type"]                         = { fg = colors.cyan, bold = true },
+  ["@type"]                         = { fg = colors.blue, bold = true },
+  ["@type.builtin"]                 = { fg = colors.cyan, bold = true },
+  ["@type.definition"]              = { fg = colors.fg, bold = true },
+  ["@type.qualifier"]               = { fg = colors.crimson, bold = true },
 
   ["@boolean"]                      = { fg = colors.purple },
 
   ["@punctuation.delimiter"]        = { fg = colors.gray },
-  ["@punctuation.bracket"]          = { fg = colors.yellow },
+  ["@punctuation.bracket"]          = { fg = colors.bracket },
   ["@punctuation.special"]          = { fg = colors.cyan },
   ["@punctuation.special.markdown"] = { fg = colors.cyan },
 
@@ -66,8 +69,10 @@ local M = {
   ["@string.documentation.rust"] = { fg = colors.teal },
   ["@string.escape.rust"]        = { fg = colors.purple },
   ["@string.regexp.rust"]        = { fg = colors.teal },
+  ["@punctuation.delimiter.nu"]  = { fg = colors.cyan, bold = true },
 
   ["@operator"]                  = { fg = colors.cyan },
+  ["@operator.nu"]               = { fg = colors.cyan, bold = true },
 
 
   ["@markup"]                     = {},
@@ -77,8 +82,6 @@ local M = {
   ["@markup.heading"]             = {},
   ["@markup.italic"]              = { italic = true },
   ["@markup.link"]                = { fg = colors.teal },
-  -- ["@markup.link.label"]          = "SpecialChar",
-  -- ["@markup.link.label.symbol"]   = "Identifier",
   ["@markup.link.url"]            = { underline = true },
   ["@markup.list"]                = { fg = colors.cyan },  -- For special punctutation that does not fall in the categories before.
   ["@markup.list.checked"]        = { fg = colors.green }, -- For brackets and parens.
@@ -96,8 +99,13 @@ local M = {
   -- ["@markup.heading.4"]           = {},
   -- ["@markup.heading.5"]           = {},
   -- ["@markup.heading.6"]           = {},
+  -- ["@markup.link.label"]          = "SpecialChar",
+  -- ["@markup.link.label.symbol"]   = "Identifier",
 
-  -- ["@identifier"]                   = { fg = colors.orange },
+  ["@attribute"]                  = { fg = colors.cyan, bold = true, italic = true },
+  ["@lsp.type.decorator"]         = { fg = colors.cyan, bold = true },
+  ["@lsp.type.deriveHelper"]      = { fg = colors.cyan, bold = true },
+  ["@tag.attribute"]              = { fg = colors.cyan, italic = true },
 }
 
 return M
