@@ -3,14 +3,16 @@ font-sans = "JetBrainsMono Nerd Font Mono"
 font-mono = "JetBrainsMono Nerd Font Mono"
 
 [bar]
-scale = 0.699999988079071
-inset-ends = 0.5
+scale = 0.75
+padding = 0.0
+padding-ends = 0.0
 location = "bottom"
-bg = "#222436"
-border-color = "#86e1fc"
+bg = "#0c0c0c"
+border-width = 0
+border-color = "#58d1eb"
 button-variant = "basic"
 button-bg-opacity = 0
-button-group-border-color = "#86e1fc"
+button-group-border-color = "#58d1eb"
 dropdown-shadow = false
 dropdown-freeze-label = false
 
@@ -33,20 +35,21 @@ right = [
 ]
 
 [styling]
+rounding = "md"
 theming-monitor = "eDP-1"
 matugen-scheme = "expressive"
 
 [styling.palette]
-bg = "#16161e"
-surface = "#1e2030"
-elevated = "#222436"
-fg = "#c8d3f5"
-fg-muted = "#828bb8"
-primary = "#82aaff"
-red = "#ff757f"
-yellow = "#ffc777"
-green = "#c3e88d"
-blue = "#86e1fc"
+bg = "#1a1a1a"
+surface = "#0c0c0c"
+elevated = "#000000"
+fg = "#f6f6ef"
+fg-muted = "#c4c5b5"
+primary = "#127f98"
+red = "#ff5f5f"
+yellow = "#e0d561"
+green = "#98e024"
+blue = "#58d1eb"
 
 [modules.battery]
 border-color = "status-success"
@@ -55,8 +58,6 @@ icon-bg-color = "status-success"
 label-color = "status-success"
 
 [modules.clock]
-format = " %a %b %d %I:%M %p"
-icon-show = false
 icon-bg-color = "status-info"
 label-color = "status-info"
 
