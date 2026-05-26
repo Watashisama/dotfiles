@@ -9,7 +9,7 @@ hovered         = { bg = "black" }
 preview_hovered = { bg = "black" }
 
 # Find
-find_keyword  = { fg = "gray", bg = "cyan", bold = true }
+find_keyword  = { fg = "#1a1a1a", bg = "cyan", bold = true }
 find_position = { fg = "blue", bg = "black", bold = true }
 
 # Marker
@@ -19,9 +19,9 @@ marker_marked   = { fg = "blue", bg = "blue" }
 marker_selected = { fg = "blue", bg = "blue" }
 
 # Count
-count_copied   = { fg = "gray", bg = "green" }
-count_cut      = { fg = "gray", bg = "red" }
-count_selected = { fg = "gray", bg = "blue" }
+count_copied   = { fg = "#1a1a1a", bg = "green" }
+count_cut      = { fg = "#1a1a1a", bg = "red" }
+count_selected = { fg = "#1a1a1a", bg = "blue" }
 
 # Border
 border_symbol = "│"
@@ -30,17 +30,17 @@ border_style  = { fg = "cyan" }
 # Tab
 [tabs]
 active   = { fg = "black", bg = "blue" }
-inactive = { fg = "blue", bg = "gray" }
+inactive = { fg = "blue", bg = "#1a1a1a" }
 
 [mode]
 normal_main = { fg = "black", bg = "blue", bold = true }
-normal_alt  = { fg = "blue", bg = "gray" }
+normal_alt  = { fg = "blue", bg = "#1a1a1a" }
 
 select_main = { fg = "black", bg = "blue", bold = true }
-select_alt  = { fg = "blue", bg = "gray" }
+select_alt  = { fg = "blue", bg = "#1a1a1a" }
 
 unset_main  = { fg = "black", bg = "red", bold = true }
-unset_alt   = { fg = "red", bg = "gray" }
+unset_alt   = { fg = "red", bg = "#1a1a1a" }
 
 [status]
 overall   = { fg = 'white', bg = 'black' }
@@ -51,15 +51,15 @@ sep_right = { open = "", close = "" }
 #
 # Progress
 progress_label  = { fg = 'white', bold = true }
-progress_normal = { fg = 'blue', bg = "gray" }
-progress_error  = { fg = 'red', bg = "gray" }
+progress_normal = { fg = 'blue', bg = "#1a1a1a" }
+progress_error  = { fg = 'red', bg = "#1a1a1a" }
 #
 # Permissions
 perm_type  = { fg = 'blue' }
 perm_read  = { fg = 'yellow' }
 perm_write = { fg = 'red' }
 perm_exec  = { fg = 'green' }
-perm_sep   = { fg = 'gray' }
+perm_sep   = { fg = '#1a1a1a' }
 #
 # [pick]
 # border   = { fg = "cyan" }
@@ -92,7 +92,7 @@ perm_sep   = { fg = 'gray' }
 # # Which
 # [which]
 # cols            = 3
-# mask            = { bg = "gray" }
+# mask            = { bg = "#1a1a1a" }
 # cand            = { fg = "#86e1fc" }
 # rest            = { fg = "blue" }
 # desc            = { fg = "blue" }
