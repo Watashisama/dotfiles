@@ -3,12 +3,13 @@ font-sans = "JetBrainsMono Nerd Font Mono"
 font-mono = "JetBrainsMono Nerd Font Mono"
 
 [bar]
-scale = 0.6000000238418579
+scale = 0.699999988079071
 inset-ends = 0.5
+location = "bottom"
 bg = "#222436"
-background-opacity = 0
 border-color = "#86e1fc"
 button-variant = "basic"
+button-bg-opacity = 0
 button-group-border-color = "#86e1fc"
 dropdown-shadow = false
 dropdown-freeze-label = false
