@@ -2,8 +2,4 @@
 
 source game.nu
 
-def main [] {
-  game;
-}
-
-main
+game

@@ -13,14 +13,15 @@ def game [] {
     };
     print -n $"Press [q] to quit.\nWin: ($env.WIN),Lose: ($env.LOSE),Draw: ($env.DRAW)\nChoose one of [R]ock, [P]aper or [S]cissors: ";
 
-    let user_input = match (random int 1..3) {
-      1 => "r",
-      2 => "p",
-      3 => "s"
-    };
+    # let user_input = match (random int 1..3) {
+    #   1 => "r",
+    #   2 => "p",
+    #   3 => "s"
+    # };
 
-    let key_type = 'char';
-    let code = $user_input;
+    let user_input = input listen -t [key];
+    let key_type = $user_input.key_type;
+    let code = $user_input.code;
 
     print "";
 
