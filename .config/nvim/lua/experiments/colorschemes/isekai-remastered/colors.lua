@@ -14,6 +14,7 @@ local colors = {
   gray    = "#c4c5b5",
   gray1   = "#625e4c",
   yellow  = "#e0d561",
+  yellow1 = "#ffef42",
   teal    = "#00ff87",
   pink    = "#ffafd7",
   comment = "#52522e",
