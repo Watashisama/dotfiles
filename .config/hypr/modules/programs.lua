@@ -1,4 +1,5 @@
 local M                = {}
+M.music_player         = "rmpc"
 M.terminal             = "ghostty"
 M.fileManager          = "yazi"
 M.screenshot_window    = "hyprshot -m window -o ~/Pictures/Screenshots"
