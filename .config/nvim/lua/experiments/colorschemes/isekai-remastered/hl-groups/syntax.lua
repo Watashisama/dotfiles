@@ -30,19 +30,19 @@ local M = {
 
   ["@function"]                   = { fg = colors.cyan },
   ["@function.builtin"]           = { fg = colors.blue, bold = true },
-  ["@function.call"]              = { fg = colors.yellow },
+  ["@function.call"]              = { fg = colors.cyan },
   ["@function.macro"]             = { fg = colors.orange },
   ["@function.method"]            = { fg = colors.cyan, bold = true },
   ["@function.method.call"]       = { fg = colors.cyan, bold = true },
 
   ["@variable"]                   = { fg = colors.fg, italic = true },
   ["@variable.builtin"]           = { fg = colors.red, italic = true, bold = true },
-  ["@variable.member"]            = { fg = colors.green },
-  ["@variable.parameter"]         = { fg = colors.orange },
+  ["@variable.member"]            = { fg = colors.cyan },
+  ["@variable.parameter"]         = { fg = colors.yellow1 },
   ["@variable.parameter.builtin"] = { fg = colors.fg, italic = true },
   ["@property"]                   = { fg = colors.cyan, italic = true },
 
-  ["@constant"]                   = { fg = colors.orange },
+  ["@constant"]                   = { fg = colors.orange, nocombine = true, bold = true },
   ["@constant.builtin"]           = { fg = colors.pink, bold = true, italic = true },
   ["@constant.macro"]             = { fg = colors.cyan, italic = true },
 
@@ -83,22 +83,22 @@ local M = {
   ["@markup.italic"]                    = { italic = true },
   ["@markup.link"]                      = { fg = colors.teal },
   ["@markup.link.url"]                  = { underline = true },
-  ["@markup.list"]                      = { fg = colors.cyan }, -- For special punctutation that does not fall in the categories before.
+  ["@markup.list"]                      = { fg = colors.cyan },  -- For special punctutation that does not fall in the categories before.
   ["@markup.list.checked"]              = { fg = colors.green }, -- For brackets and parens.
   ["@markup.list.markdown"]             = { fg = colors.orange, bold = true },
-  ["@markup.list.unchecked"]            = { fg = colors.cyan }, -- For brackets and parens.
+  ["@markup.list.unchecked"]            = { fg = colors.cyan },  -- For brackets and parens.
   ["@markup.math"]                      = { fg = colors.yellow },
   ["@markup.raw"]                       = { fg = colors.green },
   ["@markup.raw.markdown_inline"]       = { bg = colors.black, fg = colors.cyan },
   ["@markup.strikethrough"]             = { strikethrough = true },
   ["@markup.strong"]                    = { bold = true },
   ["@markup.underline"]                 = { underline = true },
-  -- ["@markup.heading.1"]           = {},
-  -- ["@markup.heading.2"]           = {},
-  -- ["@markup.heading.3"]           = {},
-  -- ["@markup.heading.4"]           = {},
-  -- ["@markup.heading.5"]           = {},
-  -- ["@markup.heading.6"]           = {},
+  ["@markup.heading.1"]                 = { bg = colors.bg, fg = colors.purple, bold = true },
+  ["@markup.heading.2"]                 = { bg = colors.bg, fg = colors.cyan, bold = true },
+  ["@markup.heading.3"]                 = { bg = colors.bg, fg = colors.yellow, bold = true },
+  ["@markup.heading.4"]                 = { bg = colors.bg, fg = colors.teal, bold = true },
+  ["@markup.heading.5"]                 = { bg = colors.bg, fg = colors.orange, bold = true },
+  ["@markup.heading.6"]                 = { bg = colors.bg, fg = colors.red, bold = true },
   -- ["@markup.link.label"]          = "SpecialChar",
   -- ["@markup.link.label.symbol"]   = "Identifier",
 
@@ -109,6 +109,7 @@ local M = {
   ["@lsp.type.variable"]                = {},
   ["@lsp.mod.declaration"]              = {},
   ["@lsp.typemod.variable.declaration"] = {},
+  ["@lsp"]                              = {},
 }
 
 return M
