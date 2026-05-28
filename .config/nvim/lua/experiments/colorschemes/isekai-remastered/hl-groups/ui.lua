@@ -1,6 +1,7 @@
 local colors = require("experiments.colorschemes.isekai-remastered.colors")
 local M = {
   Normal       = { fg = colors.fg, bg = colors.bg },
+  Bold         = { bold = true },
   NormalFloat  = { fg = colors.fg, bg = colors.bg },
   FloatBorder  = { fg = colors.fg, bg = colors.bg },
   CursorLine   = { bg = colors.black },
