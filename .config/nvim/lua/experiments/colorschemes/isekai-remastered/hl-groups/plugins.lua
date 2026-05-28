@@ -19,7 +19,7 @@ local M = {
   RenderMarkdownH6Fg       = { bg = colors.bg, fg = colors.red, bold = true },
 
   RenderMarkdownBullet     = { fg = colors.orange },
-  RenderMarkdownCodeInline = { bg = colors.visual, fg = colors.cyan },
+  RenderMarkdownCodeInline = { bg = colors.black, fg = colors.cyan, bold = true },
   RenderMarkdownTableHead  = { fg = colors.cyan },
   RenderMarkdownTableRow   = { fg = colors.cyan },
 
