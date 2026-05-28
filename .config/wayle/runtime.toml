@@ -60,6 +60,7 @@ label-color = "status-success"
 [modules.clock]
 icon-bg-color = "status-info"
 label-color = "status-info"
+right-click = ""
 
 [modules.hyprland-workspaces]
 min-workspace-count = 10
