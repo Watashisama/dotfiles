@@ -7,7 +7,8 @@
 
 hl.on("hyprland.start", function()
   hl.exec_cmd("hyprctl setcursor Banana-Mod 32")
-  hl.exec_cmd("wayle panel start &  hyprpaper &")
+  hl.exec_cmd("wayle panel start")
+  hl.exec_cmd("hyprpaper")
   hl.exec_cmd("dunst")
   hl.exec_cmd("systemctl --user start hyprpolkitagent")
   hl.exec_cmd("/usr/lib/xdg-desktop-portal-hyprland")
