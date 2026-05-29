@@ -1,4 +1,4 @@
-local colors = require("experiments.colorschemes.isekai-remastered.colors")
+local colors = require("vim-modules.colorschemes.isekai-remastered.colors")
 local M = {
   WinBar = { bg = colors.bg },
   WinBarSaved = { fg = colors.gray },

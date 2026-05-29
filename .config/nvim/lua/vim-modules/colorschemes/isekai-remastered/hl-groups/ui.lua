@@ -1,4 +1,4 @@
-local colors = require("experiments.colorschemes.isekai-remastered.colors")
+local colors = require("vim-modules.colorschemes.isekai-remastered.colors")
 local M = {
   Normal = { fg = colors.fg, bg = colors.bg },
   Bold = { bold = true },
@@ -8,7 +8,7 @@ local M = {
   Visual = { bg = colors.visual },
   Search = { fg = colors.bg, bg = colors.cyan },
   IncSearch = { fg = colors.bg, bg = colors.orange },
-  CurSearch = { link = 'IncSearch' },
+  CurSearch = { link = "IncSearch" },
   StatusLineNC = { bg = colors.bg },
   VertSplit = { fg = colors.gray },
   WinSeparator = { fg = colors.gray },

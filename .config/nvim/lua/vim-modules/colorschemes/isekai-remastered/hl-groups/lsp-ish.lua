@@ -1,4 +1,4 @@
-local colors = require("experiments.colorschemes.isekai-remastered.colors")
+local colors = require("vim-modules.colorschemes.isekai-remastered.colors")
 local M = {
   Error = { sp = colors.red, undercurl = true },
   Warn = { sp = colors.yellow, undercurl = true },
