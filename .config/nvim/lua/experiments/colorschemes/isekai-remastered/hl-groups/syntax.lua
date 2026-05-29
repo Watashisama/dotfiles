@@ -18,7 +18,7 @@ local M = {
   ["@keyword"]                    = { fg = colors.pink, italic = true },
   ["@keyword.conditional"]        = { link = '@keyword' },
   ["@keyword.coroutine"]          = { fg = colors.pink, italic = true },
-  ["@keyword.function"]           = { fg = colors.red, italic = true },
+  ["@keyword.function"]           = { fg = colors.red, bold = true },
   ["@keyword.import"]             = { fg = colors.teal },
   ["@keyword.operator"]           = { fg = colors.cyan },
   ["@keyword.return"]             = { fg = colors.pink, italic = true, bold = true },

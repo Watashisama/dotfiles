@@ -13,7 +13,6 @@ return {
   "bash",
   "fish",
   "git_config",
-  "html",
   "latex",
   "yaml",
   "ron",
