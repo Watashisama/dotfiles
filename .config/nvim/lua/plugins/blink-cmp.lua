@@ -2,8 +2,8 @@ vim.pack.add({
   {
     src = "https://github.com/saghen/blink.cmp",
     name = "blink.cmp",
-    version = "v1.10.2",
-  },
+    version = "v1.10.2"
+  }
 })
 
 require("plugins.dependency.blink-cmp")
@@ -12,32 +12,31 @@ require("blink.cmp").setup({
   keymap = {
     ["<Tab>"] = { "accept", "fallback" },
     ["<C-y>"] = {},
-    ["<C-n>"] = { "select_next", "fallback" },
-    ["<C-p>"] = { "select_prev", "fallback" },
+    ["<C-j>"] = { "select_next", "fallback" },
+    ["<C-k>"] = { "select_prev", "fallback" }
   },
   appearance = {
-    nerd_font_variant = "mono",
+    nerd_font_variant = "mono"
   },
-
   completion = { documentation = { auto_show = true } },
   sources = {
     default = { "snippets", "lsp", "path", "buffer" },
     providers = {
       path = {
-        score_offset = 4,
+        score_offset = 400
       },
       snippets = {
-        score_offset = 1,
+        score_offset = 1
       },
       lsp = {
-        score_offset = 3,
+        score_offset = 300
       },
       buffer = {
-        score_offset = 2
-      },
-    },
+        score_offset = 200
+      }
+    }
   },
   fuzzy = {
-    implementation = "lua",
-  },
+    implementation = "prefer_rust_with_warning"
+  }
 })
