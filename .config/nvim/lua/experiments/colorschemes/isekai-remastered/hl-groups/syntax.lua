@@ -4,18 +4,19 @@ local M = {
   Constant   = { fg = colors.orange },
   String     = { fg = colors.green },
   Identifier = { fg = colors.cyan },
-  Function   = { fg = colors.yellow },
+  Function   = { fg = colors.cyan },
   Statement  = { fg = colors.red },
   Type       = { fg = colors.cyan, bold = true },
-  Special    = { fg = colors.yellow },
+  Special    = {},
   Keyword    = { fg = colors.red },
   Variable   = { fg = colors.fg },
+  MatchParen = { fg = colors.orange, bg = colors.black, bold = true },
 
 
 
 
   ["@keyword"]                    = { fg = colors.pink, italic = true },
-  ["@keyword.conditional"]        = { fg = colors.teal },
+  ["@keyword.conditional"]        = { link = '@keyword' },
   ["@keyword.coroutine"]          = { fg = colors.pink, italic = true },
   ["@keyword.function"]           = { fg = colors.red, italic = true },
   ["@keyword.import"]             = { fg = colors.teal },
@@ -28,8 +29,8 @@ local M = {
   -- ["@keyword.repeat"]               = "Repeat",
   -- ["@keyword.storage"]              = "StorageClass",
 
-  ["@function"]                   = { fg = colors.cyan },
-  ["@function.builtin"]           = { fg = colors.blue, bold = true },
+  ["@function"]                   = { fg = colors.blue },
+  ["@function.builtin"]           = { fg = colors.cyan, bold = true },
   ["@function.call"]              = { fg = colors.cyan },
   ["@function.macro"]             = { fg = colors.orange },
   ["@function.method"]            = { fg = colors.cyan, bold = true },
@@ -54,9 +55,9 @@ local M = {
 
   ["@boolean"]                      = { fg = colors.purple },
 
-  ["@punctuation.delimiter"]        = { fg = colors.gray },
+  ["@punctuation.delimiter"]        = { fg = colors.cyan },
   ["@punctuation.bracket"]          = { fg = colors.bracket },
-  ["@punctuation.special"]          = { fg = colors.cyan },
+  ["@punctuation.special"]          = { fg = colors.cyan, bold = true },
   ["@punctuation.special.markdown"] = { fg = colors.cyan },
 
   ["@string"]                       = { fg = colors.green },
