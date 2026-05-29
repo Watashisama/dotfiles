@@ -13,11 +13,8 @@ require("mason").setup({
     }
   }
 })
--- require("mason-lspconfig").setup({
--- ensure_installed = { "emmylua_ls", "rust_analyzer", "texlab", "ruff" }
--- })
 
-local aldlf = { "emmylua_ls", "emmylua-codeformat", "rust-analyzer", "texlab", "ruff" }
+local aldlf = { "emmylua-codeformat", "emmylua_ls", "ruff", "rust-analyzer", "texlab" }
 
 for _, name in ipairs(aldlf) do
   local pkg = require("mason-registry").get_package(name)
