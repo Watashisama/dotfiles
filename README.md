@@ -1,10 +1,6 @@
 # My Dots
 This is where my dot files live
 
-![show case](./.show/showcase-1.png)
-![show case](./.show/showcase-2.png)
-![show case](./.show/showcase-3.png)
-![show case](./.show/showcase-4.png)
 
 To install;
 ```bash
@@ -19,9 +15,8 @@ You can use any dotfile manager
 > [!NOTE]
 > Some configs my not be maintained (nvim-0.11.7 as an eg)
 
+![show case](./.show/showcase.png)
+
 ## TODO
-- [ ] In built autocomplete with
-```lua
-vim.opt.autocomplete = true
-```
-- [x] A colorscheme (異世界-remastered)
+- [ ] In built autocomplete with `vim.opt.autocomplete = true` in nvim
+- [ ] Maybe, a qs conf?
