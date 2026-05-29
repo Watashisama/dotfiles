@@ -1,7 +1,7 @@
 require("plugins.blink-cmp")
 require("plugins.figdet")
 require("plugins.git-integration")
-require("plugins.lsp-conf")
+require("plugins.mason")
 require("plugins.markdown")
 require("plugins.mini.hipatterns")
 require("plugins.mini.indentscope")

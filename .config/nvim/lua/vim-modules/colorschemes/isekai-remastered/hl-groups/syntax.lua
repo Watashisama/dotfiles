@@ -1,4 +1,4 @@
-local colors = require("experiments.colorschemes.isekai-remastered.colors")
+local colors = require("vim-modules.colorschemes.isekai-remastered.colors")
 local M = {
   Comment = { fg = colors.comment, italic = true },
   Constant = { fg = colors.orange },
@@ -11,8 +11,10 @@ local M = {
   Keyword = { fg = colors.red },
   Variable = { fg = colors.fg },
   MatchParen = { fg = colors.orange, bg = colors.black, bold = true },
+  ["@module"] = { fg = colors.cyan, bold = true },
+  ["@module.builtin"] = { fg = colors.red, bold = true, italic = true },
   ["@keyword"] = { fg = colors.pink, italic = true },
-  ["@keyword.conditional"] = { link = '@keyword' },
+  ["@keyword.conditional"] = { link = "@keyword" },
   ["@keyword.coroutine"] = { fg = colors.pink, italic = true },
   ["@keyword.function"] = { fg = colors.red, bold = true },
   ["@keyword.import"] = { fg = colors.teal },
