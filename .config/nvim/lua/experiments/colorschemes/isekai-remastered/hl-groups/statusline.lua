@@ -1,7 +1,7 @@
 local colors = require("experiments.colorschemes.isekai-remastered.colors")
 local M = {
   StatusFile = { fg = colors.green, bold = true },
-  StatusNormal = { fg = colors.bg, bg = colors.cyan, bold = true },
+  StatusNormal = { fg = colors.bg, bg = colors.yellow1, bold = true },
   StatusInsert = { fg = colors.bg, bg = colors.green, bold = true },
   StatusVisual = { fg = colors.bg, bg = colors.pink, bold = true },
   StatusCommand = { fg = colors.bg, bg = colors.orange, bold = true },
