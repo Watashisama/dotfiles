@@ -3,7 +3,6 @@ vim.lsp.config("emmylua_ls", {
   filetypes = { "lua" },
   root_markers = { ".emmyrc.json", ".luarc.json", ".git" },
   settings = {
-    hint = { enable = false },
     emmylua = {
       runtime = { version = 'LuaJIT' },
       diagnostics = { globals = { 'vim' } },
