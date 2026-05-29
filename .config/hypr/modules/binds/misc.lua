@@ -1,7 +1,9 @@
 local mainMod = require("modules.binds.mod").super
+local alt = require("modules.binds.mod").alt
+local shift = require("modules.binds.mod").shift
 local programs = require("modules.programs")
 
-hl.bind("ALT + SHIFT + Return", hl.dsp.exec_cmd(programs.terminal .. " -e tmux new-session -A"))
+hl.bind(alt .. " + " .. shift .. " + Return", hl.dsp.exec_cmd(programs.terminal .. " -e tmux new-session -A"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(programs.terminal .. ' -e ' .. programs.sysmonitor))
 hl.bind("F1", hl.dsp.exec_cmd(programs.screenshot_window))
 hl.bind("F2", hl.dsp.exec_cmd(programs.screenshot_region))
