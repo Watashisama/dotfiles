@@ -14,11 +14,11 @@ local M = {
 
   StatusLine      = { fg = colors.bg, bg = colors.bg, bold = true },
   StatusLineText  = { fg = colors.fg, bg = colors.bg, bold = true },
-  StatusLineText2 = { fg = colors.gray1, bg = colors.bg },
+  StatusLineText2 = { fg = colors.black, bg = colors.bg },
 
-  StatusLineError = { fg = colors.crimson, bg = colors.gray1 },
-  StatusLineWarn  = { fg = colors.yellow, bg = colors.gray1 },
-  StatusLineHint  = { fg = colors.teal, bg = colors.gray1 },
+  StatusLineError = { fg = colors.crimson, bg = colors.black },
+  StatusLineWarn  = { fg = colors.yellow, bg = colors.black },
+  StatusLineHint  = { fg = colors.teal, bg = colors.black },
 }
 
 return M

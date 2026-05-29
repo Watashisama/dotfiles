@@ -40,5 +40,5 @@ loop {
   $last_total = $stats.total
   $last_idle  = $stats.idle
 
-    sleep 2sec
+  sleep 2sec
 }

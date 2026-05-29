@@ -1,5 +1,5 @@
+require("vim-modules.lsps.lsp")
 require("vim-modules.opts")
 require("vim-modules.keymaps")
-require("vim-modules.lsps.lsp")
 require("vim-modules.color-overrides")
 require("vim-modules.autocmd")

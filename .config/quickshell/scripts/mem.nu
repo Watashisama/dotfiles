@@ -3,9 +3,9 @@
 loop {
   let mem = (
     free
-      | rg Mem 
-      | str replace -ar '\s+' "\n"
-      | lines
+    | rg Mem 
+    | str replace -ar '\s+' "\n"
+    | lines
   )
   let totalmem = $mem.1 | into int
   let usedmem = $mem.2 | into int
