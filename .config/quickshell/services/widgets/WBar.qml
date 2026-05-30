@@ -1,5 +1,4 @@
 import Quickshell
-import Quickshell.Io
 import Quickshell.Hyprland
 
 import QtQuick
@@ -11,10 +10,10 @@ PanelWindow {
   screen: modelData
 
   anchors {
-    top: true
+    // top: true
     left: true
     right: true
-    // bottom: true
+    bottom: true
   }
 
 
