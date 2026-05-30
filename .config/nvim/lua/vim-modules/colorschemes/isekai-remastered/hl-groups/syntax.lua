@@ -88,7 +88,7 @@ local M = {
   ["@lsp.type.deriveHelper"] = { fg = colors.cyan, bold = true },
   ["@tag.attribute"] = { fg = colors.cyan, italic = true },
   ["@lsp.type.formatSpecifier.rust"] = { fg = colors.cyan },
-  ["@lsp.type.class.lua"] = { fg = colors.red, bold = true },
+  ["@lsp.type.class.lua"] = {},
   ["@lsp.type.variable"] = {},
   ["@lsp.mod.declaration"] = {},
   ["@lsp.typemod.variable.declaration"] = {},
