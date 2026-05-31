@@ -10,4 +10,4 @@ let wallpapers = (
 )
 let random_number = random int 1..($wallpapers)
 
-hyprctl hyprpaper wallpaper $"eDP-1, ~/.config/wallpapers/($random_number).png, [cover]"
+hyprctl hyprpaper wallpaper $"eDP-1, (ls $wallpaper_dir | get $random_number | get name), [cover]"
