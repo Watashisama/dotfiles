@@ -18,5 +18,5 @@ You can use any dotfile manager
 ![show case](./.show/showcase.png)
 
 ## TODO
-- [ ] In built autocomplete with `vim.opt.autocomplete = true` in nvim
-- [ ] Maybe, a qs conf?
+- [ ] In built autocomplete with `vim.opt.autocomplete = true` in nvim 0.13
+- [-] Maybe, a qs conf?
