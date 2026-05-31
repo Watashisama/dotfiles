@@ -15,22 +15,29 @@ vim.lsp.config("rust-analyzer", {
   end,
   -- root_dir = find_root,
   settings = {
-    ["rust-analyzer"] = {
-      assist = {
-        importPrefix = "by_self"
+    assist = {
+      importPrefix = "by_self"
+    },
+    imports = {
+      granularity = {
+        group = "module"
       },
-      imports = {
-        granularity = {
-          group = "module"
-        },
-        prefix = "self"
-      },
-      cargo = {
-        loadOutDirsFromCheck = true
-      },
-      procMacro = {
-        enable = true
-      }
+      prefix = "self"
+    },
+    cargo = {
+      allFeatures = true
+    },
+    procMacro = {
+      enable = true
+    },
+    closureReturnTypeHints = {
+      enable = "with_block"
+    },
+    lifetimeElisionHints = {
+      enable = "skip_trivial"
+    },
+    cachePriming = {
+      enable = false
     }
   }
 })
