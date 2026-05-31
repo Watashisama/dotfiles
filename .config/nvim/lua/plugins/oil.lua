@@ -1,7 +1,10 @@
-vim.pack.add({
-  'https://github.com/stevearc/oil.nvim',
-})
+return {
+  plugin = {
+    'https://github.com/stevearc/oil.nvim'
+  },
+  config = function ()
+    require("dependency.oil")
 
-require("plugins.dependency.oil")
-
-require("oil").setup()
+    require("oil").setup()
+  end
+}
