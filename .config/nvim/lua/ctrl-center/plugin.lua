@@ -5,10 +5,10 @@ local plugins = {
   require("plugins.which-key")
 }
 
-for _, spec in ipairs(plugins) do
-  vim.pack.add(spec.plugin)
+for _, plug in ipairs(plugins) do
+  vim.pack.add(plug.plugin)
 
-  if type(spec.config) == "function" then
-    spec.config()
+  if type(plug.config) == "function" then
+    plug.config()
   end
 end
