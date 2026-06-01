@@ -21,3 +21,4 @@ You can use any dotfile manager
 - [ ] In built autocomplete with `vim.opt.autocomplete = true` in nvim 0.13
 - [-] Maybe, a qs conf?
 - [-] Make a wallpaper-util in nu(.config/nushell)
+    * Add docs to each function.
