@@ -22,10 +22,23 @@ vim.lsp.config("rust-analyzer", {
       granularity = {
         group = "module"
       },
-      prefix = "self"
+      prefix = "create"
+    },
+    completion = {
+      fullFunctionSignatures = {
+        enable = true
+      }
+    },
+    check = {
+      command = "clippy",
+      allTargets = true
     },
     cargo = {
-      allFeatures = true
+      allFeatures = true,
+      loadOutDirsFromCheck = true,
+      buildScripts = {
+        enable = true
+      }
     },
     procMacro = {
       enable = true

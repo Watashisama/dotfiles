@@ -1,3 +1,4 @@
+# Configure nvim
 def "config nvim" [] {
   nvim $"($env.XDG_CONFIG_DIR)/nvim/init.lua"
 }
