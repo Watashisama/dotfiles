@@ -1,7 +1,7 @@
 # Config stuff
 
 # source config/autostart.nu
-source config/functions.nu
+source config/functions/functions.nu
 
 
 # Env Stuff
