@@ -1,5 +1,9 @@
-# A wallpaper util fro hyprland with hyprpaper
-def wallpaper [] {}
+# A wallpaper util from hyprland with hyprpaper
+def wallpaper [
+  --help(-h) #Print Help information
+] {
+  wallpaper --help
+}
 
 def "nu-complete wall-change" [] {
   ls ($env.XDG_CONFIG_DIR)/wallpapers 
