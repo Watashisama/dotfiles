@@ -1,8 +1,8 @@
 # A wallpaper util from hyprland with hyprpaper
 def wallpaper [
-  --help(-h) #Print Help information
+  # --help(-h) #Print help information
 ] {
-  wallpaper --help
+  help wallpaper
 }
 
 def "nu-complete wall-change" [] {
@@ -14,7 +14,7 @@ def "nu-complete wall-change" [] {
 
 # Changes wallpaper with optional settings
 def "wallpaper change" [
-  --random(-r),
+  --random(-r), # Show a random wallpaper
   wallpaper?: string@"nu-complete wall-change"
 ] {
   let wallpaper_dir = $env.XDG_CONFIG_DIR | path join wallpapers/;
@@ -24,7 +24,9 @@ def "wallpaper change" [
     | length
   );
 
-  if $random {
+  if $wallpaper == ()  {
+    help 'wallpaper change'
+  } else if $random {
     let random_number = random int 1..($wallpapers - 1);
 
     hyprctl hyprpaper wallpaper $"eDP-1, (ls -f  $wallpaper_dir | get $random_number | get name), [cover]";
