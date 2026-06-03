@@ -24,7 +24,7 @@ def "wallpaper change" [
     | length
   );
 
-  if $wallpaper == ()  {
+  if $wallpaper == () and not $random  {
     help 'wallpaper change'
   } else if $random {
     let random_number = random int 1..($wallpapers - 1);
