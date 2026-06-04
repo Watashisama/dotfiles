@@ -1,4 +1,5 @@
 .config/mozilla
+.config/net.imput.helium/
 .config/ibus
 pavucontrol.ini
 .config/gh

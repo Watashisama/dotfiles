@@ -1,7 +1,7 @@
 [mgr]
 prepend_keymap = [
     # Mount
-    { on = [ "M", "m" ], run = "plugin gvfs -- select-then-mount", desc = "Select device then mount" },
+    { on = [ "M", "M" ], run = "plugin gvfs -- select-then-mount", desc = "Select device then mount" },
     # or this if you want to jump to mountpoint after mounted
     { on = [ "M", "m" ], run = "plugin gvfs -- select-then-mount --jump", desc = "Select device to mount and jump to its mount point" },
 
