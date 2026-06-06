@@ -15,7 +15,7 @@ local M = {
   ["@module.builtin"] = { fg = colors.red, bold = true, italic = true },
   ["@keyword"] = { fg = colors.pink, italic = true },
   ["@keyword.conditional"] = { link = "@keyword" },
-  ["@keyword.coroutine"] = { fg = colors.pink, italic = true },
+  ["@keyword.coroutine"] = { fg = colors.teal, italic = true },
   ["@keyword.function"] = { fg = colors.red, bold = true },
   ["@keyword.import"] = { fg = colors.teal },
   ["@keyword.operator"] = { fg = colors.cyan },

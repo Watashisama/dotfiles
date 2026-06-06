@@ -7,3 +7,4 @@ $env.PATH = ($env.PATH | append ($env.HOME | path join ".local/bin"))
 # $env.TERM_PROGRAM = "tmux"
 $env.COLORTERM = "truecolor"
 $env.LANG = "en_US.UTF-8"
+$env.GH_TELEMETRY = false
