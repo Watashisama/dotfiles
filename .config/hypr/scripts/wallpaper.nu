@@ -9,5 +9,13 @@ let wallpapers = (
   | length
 )
 let random_number = random int 1..($wallpapers)
+let wall = (ls -f $wallpaper_dir | get name | get $random_number)
 
-hyprctl hyprpaper wallpaper $"eDP-1, (ls $wallpaper_dir | get $random_number | get name), [cover]"
+echo $"
+preload = ,($wall)
+splash = false
+wallpaper {
+    monitor = eDP-1
+    path = ($wall)
+    fit_mode = cover
+}" | save -f ~/.local/share/hyprpaper/hyprpaper.conf
