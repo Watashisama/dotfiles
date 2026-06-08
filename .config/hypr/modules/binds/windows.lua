@@ -1,8 +1,10 @@
 local mainMod = require("modules.binds.mod").super -- Sets "Windows" key as main modifier
+local shift = require("modules.binds.mod").shift
 
 hl.bind(mainMod .. " + W", hl.dsp.window.close())
+-- hl.bind(mainMod .. " + " .. shift .. " + W", hl.dsp.layout("swapwithmaster"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("fullscreen"))
-hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen("maximize"))
+hl.bind(mainMod .. " + " .. shift .. " + F", hl.dsp.window.fullscreen("maximize"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 -- hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 -- hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
