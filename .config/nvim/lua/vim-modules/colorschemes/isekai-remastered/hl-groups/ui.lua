@@ -4,7 +4,7 @@ local M = {
   Bold = { bold = true },
   NormalFloat = { fg = colors.fg, bg = colors.bg },
   FloatBorder = { fg = colors.fg, bg = colors.bg },
-  CursorLine = { bg = colors.black },
+  CursorLine = { bg = colors.cursorbg },
   Visual = { bg = colors.visual },
   Search = { fg = colors.bg, bg = colors.cyan },
   IncSearch = { fg = colors.bg, bg = colors.orange },

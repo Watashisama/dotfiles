@@ -3,7 +3,7 @@ font-size = 14
 
 theme = Monokai Remastered
 # theme = TokyoNight Moon
-# background = "#222436"
+background = "#1a1a1a"
 
 gtk-titlebar = false
 mouse-hide-while-typing = true
