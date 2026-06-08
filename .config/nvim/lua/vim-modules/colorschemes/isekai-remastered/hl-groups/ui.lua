@@ -12,7 +12,7 @@ local M = {
   StatusLineNC = { bg = colors.bg },
   VertSplit = { fg = colors.gray },
   WinSeparator = { fg = colors.gray },
-  LineNr = { fg = colors.gray },
+  LineNr = { fg = colors.comment },
   CursorLineNr = { fg = colors.orange, bold = true },
   SignColumn = { bg = colors.bg },
   Folded = { bg = colors.visual },
