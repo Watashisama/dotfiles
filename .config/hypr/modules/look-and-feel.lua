@@ -1,40 +1,41 @@
+local colors = require("modules.colorscheme")
 hl.config({
   general = {
-    gaps_in          = 0,
-    gaps_out         = 0,
-    border_size      = 4,
-    col              = {
-      active_border   = { colors = { "rgba(00000000)", "rgba(00000000)" }, angle = 45 },
-      inactive_border = "rgba(00000000)",
+    gaps_in = 4,
+    gaps_out = 8,
+    border_size = 2,
+    col = {
+      active_border = { colors = { colors.blue .. "ff)", colors.cyan .. "99)" }, angle = 45 },
+      inactive_border = colors.black .. "f0)"
     },
     -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
     resize_on_border = false,
     -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
-    allow_tearing    = false,
-    layout           = "scrolling",
+    allow_tearing = false,
+    layout = "scrolling"
   },
   decoration = {
-    rounding         = 15,
-    rounding_power   = 2,
+    rounding = 15,
+    rounding_power = 2,
     -- Change transparency of focused and unfocused windows
-    active_opacity   = 0.90,
+    active_opacity = 0.90,
     inactive_opacity = 0.70,
-    shadow           = {
-      enabled      = false,
-      range        = 4,
+    shadow = {
+      enabled = false,
+      range = 4,
       render_power = 3,
-      color        = 0x00000000,
+      color = 0x00000000
     },
-    blur             = {
-      enabled  = true,
-      size     = 10,
-      passes   = 2,
-      vibrancy = 0.96,
-    },
+    blur = {
+      enabled = true,
+      size = 10,
+      passes = 2,
+      vibrancy = 0.96
+    }
   },
   animations = {
-    enabled = true,
-  },
+    enabled = true
+  }
 })
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
@@ -86,21 +87,21 @@ hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" 
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config({
   dwindle = {
-    preserve_split = true, -- You probably want this
-  },
+    preserve_split = true -- You probably want this
+  }
 })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Master-Layout/ for more
 hl.config({
   master = {
-    new_status = "master",
-  },
+    new_status = "slave"
+  }
 })
 
 -- See https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/ for more
 hl.config({
   scrolling = {
     fullscreen_on_one_column = true,
-    column_width = 1,
-  },
+    column_width = 0.6
+  }
 })
