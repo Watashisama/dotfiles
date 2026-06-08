@@ -30,7 +30,7 @@ bind -n M-';' command-prompt
 bind -n M-v copy-mode
 bind -n M-S choose-tree
 bind -n M-s choose-session
-bind -n M-r source-file $HOME/.config/tmux/tmux.conf
+bind -n M-r source-file $HOME/.config/tmux/tmux.conf \; display "Config reloaded!"
 bind -n M-w kill-pane
 bind -n M-W kill-window
 bind -n M-d detach
