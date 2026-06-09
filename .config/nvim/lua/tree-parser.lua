@@ -1,20 +1,4 @@
 return {
-  "rust",
-  "python",
-  "lua",
-  "nu",
-  "hyprlang",
-  "toml",
-  "qmljs",
-  "diff",
-  "tmux",
-  "just",
-  "zsh",
-  "bash",
-  "fish",
-  "git_config",
-  "latex",
-  "yaml",
-  "ron",
-  "kdl",
+  "bash", "diff", "fish", "git_config", "html", "hyprlang", "just", "kdl", "latex", "lua", "nu", "python", "qmljs",
+  "ron", "rust", "tmux", "toml", "yaml", "zsh"
 }

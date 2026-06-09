@@ -68,10 +68,10 @@ local M = {
   ["@markup.italic"] = { italic = true },
   ["@markup.link"] = { fg = colors.teal },
   ["@markup.link.url"] = { underline = true },
-  ["@markup.list"] = { fg = colors.cyan },           -- For special punctutation that does not fall in the categories before.
-  ["@markup.list.checked"] = { fg = colors.green },  -- For brackets and parens.
+  ["@markup.list"] = { fg = colors.cyan },
+  ["@markup.list.checked"] = { fg = colors.green },
   ["@markup.list.markdown"] = { fg = colors.orange, bold = true },
-  ["@markup.list.unchecked"] = { fg = colors.cyan }, -- For brackets and parens.
+  ["@markup.list.unchecked"] = { fg = colors.cyan },
   ["@markup.math"] = { fg = colors.yellow },
   ["@markup.raw"] = { fg = colors.green },
   ["@markup.raw.markdown_inline"] = { bg = colors.black, fg = colors.cyan },
