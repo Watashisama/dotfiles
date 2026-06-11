@@ -12,10 +12,10 @@ hl.bind(mainMod .. " + comma", hl.dsp.layout("swapcol l"))
 hl.bind(mainMod .. " + period", hl.dsp.layout("swapcol r"))
 
 -- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }), { repeating = true })
+hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }), { repeating = true })
+hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }), { repeating = true })
+hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }), { repeating = true })
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
