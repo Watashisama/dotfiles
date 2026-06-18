@@ -11,6 +11,8 @@ let wallpapers = (
 let random_number = random int 1..($wallpapers)
 let wall = (ls -f $wallpaper_dir | get name | get $random_number)
 
+rm ~/.local/share/hyprpaper/hyprpaper.conf
+
 echo $"
 preload = ,($wall)
 splash = false
