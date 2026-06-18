@@ -10,7 +10,7 @@ local M = {
   Special = {},
   Keyword = { fg = colors.red },
   Variable = { fg = colors.fg },
-  MatchParen = { fg = colors.orange, bg = colors.black, bold = true },
+  MatchParen = { fg = colors.orange, bold = true },
   Added = { fg = colors.green },
   Changed = { fg = colors.cyan },
   Removed = { fg = colors.crimson },

@@ -2,19 +2,12 @@ font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 14
 
 theme = Monokai Remastered
-# theme = TokyoNight Moon
+
 background = "#1a1a1a"
+foreground = "#f6f6ef"
+
 
 gtk-titlebar = false
 mouse-hide-while-typing = true
 
-# initial-command = "sh -c tmux"
 shell-integration = nushell
-
-# palette = 7=#444a73
-
-# background = #1b1d2b
-# foreground = #c8d3f5
-# cursor-color = #c8d3f5
-# selection-background = #2d3f76
-# selection-foreground = #c8d3f5
