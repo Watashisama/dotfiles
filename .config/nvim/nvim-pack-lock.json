@@ -6,7 +6,7 @@
       "version": "'v1.10.2'"
     },
     "fidget.nvim": {
-      "rev": "82404b196e73a00b1727a91903beef5ddc319d22",
+      "rev": "6f793b2bcd2d35e201c09520f698bb763220908a",
       "src": "https://github.com/j-hui/fidget.nvim"
     },
     "friendly-snippets": {
@@ -19,15 +19,15 @@
       "version": "2.0.0 - 3.0.0"
     },
     "mason.nvim": {
-      "rev": "bb639d4bf385a4d89f478b83af4d770be05ab7eb",
+      "rev": "2a6940af80375532e5e9e7c1f2fc6319a1b7a69d",
       "src": "https://github.com/mason-org/mason.nvim"
     },
     "mini.hipatterns": {
-      "rev": "e25cf080aae092a651a92fa5e477f64a61adbebf",
+      "rev": "607d604e650cdf21d71f863d040c496a1d0cb320",
       "src": "https://github.com/nvim-mini/mini.hipatterns"
     },
     "mini.indentscope": {
-      "rev": "ad19b1f02223391f3d40440f7ff10607f0043585",
+      "rev": "942bc13ccc624c825b086373b8bd6787b98245c8",
       "src": "https://github.com/nvim-mini/mini.indentscope"
     },
     "nvim-treesitter": {
@@ -35,15 +35,15 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {
-      "rev": "dfbfaa967a6f7ec50789bead7ef87e336c1fa63c",
+      "rev": "dad71387de386a946b123079d0e53f23028f3abd",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
-      "rev": "b91ee5a77a6a9605d9c1aaf4fda74b66082c8297",
+      "rev": "b73018b75affd13fa38e2fc94ef753b465f770d7",
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "5adf0895310c1904e5abfaad40a2baad7fe44a07",
+      "rev": "f422cb5c6855f150e2ddcfaf44e7157b98b34f6a",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "trouble.nvim": {

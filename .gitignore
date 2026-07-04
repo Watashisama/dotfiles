@@ -8,3 +8,4 @@ pavucontrol.ini
 .config/fcitx/dbus/
 .config/dconf/*
 /.scripts/make-music
+.config/nvim/nvim-pack-lock.json
