@@ -1,5 +1,6 @@
 # Rebinding the prefix key
 unbind C-b
+unbind M-[
 set -g prefix C-s
 bind C-s send-prefix
 
