@@ -1,0 +1,26 @@
+keymap:
+  - remap:
+      Ctrl-1: F1
+      Ctrl-2: F2
+      Ctrl-3: F3
+      Ctrl-4: F4
+      Ctrl-5: F5
+      Ctrl-6: F6
+      Ctrl-7: F7
+      Ctrl-8: F8
+      Ctrl-9: F9
+      Ctrl-0: F10
+      Ctrl-KEY_MINUS: F11
+      Ctrl-KEY_EQUAL: F12
+      Shift-Ctrl-1: KEY_BRIGHTNESSDOWN
+      Shift-Ctrl-2: KEY_BRIGHTNESSUP
+      Shift-Ctrl-3: KEY_MICMUTE
+      Shift-Ctrl-4: KEY_SEARCH
+      Shift-Ctrl-5: KEY_KBDILLUMDOWN
+      Shift-Ctrl-6: KEY_KBDILLUMUP
+      Shift-Ctrl-7: KEY_PREVIOUSSONG
+      Shift-Ctrl-8: KEY_PLAYPAUSE
+      Shift-Ctrl-9: KEY_NEXTSONG
+      Shift-Ctrl-0: KEY_MUTE
+      Shift-Ctrl-KEY_MINUS: KEY_VOLUMEDOWN
+      Shift-Ctrl-KEY_EQUAL: KEY_VOLUMEUP

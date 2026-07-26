@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Xremap
+
+[Service]
+Type=simple
+ExecStart=%h/.cargo/bin/xremap %h/.config/xremap/config.yml
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
