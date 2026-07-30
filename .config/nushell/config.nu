@@ -10,7 +10,7 @@ source env/env.nu
 source env/input.nu
 source env/misc.nu
 source env/xdg.nu
-# source env/colorscheme.nu
+source env/colorscheme.nu
 
 
 # Extensions
