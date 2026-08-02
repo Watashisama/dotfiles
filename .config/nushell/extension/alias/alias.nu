@@ -4,6 +4,7 @@ alias arec = asciinema rec
 alias aplay = asciinema play
 alias mount = udisksctl mount
 alias unmount = udisksctl unmount
+alias nano = nvim
 # alias i-use-arch = pacman
 # alias i-use-arch-btw = sudo pacman
 alias e  = exit
