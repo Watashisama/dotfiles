@@ -1,0 +1,5 @@
+[default]
+mode = "center"
+
+[any]
+path = "~/.config/wallpapers/frieren.png"

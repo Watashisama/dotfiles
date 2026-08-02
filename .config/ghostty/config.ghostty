@@ -11,4 +11,4 @@ foreground = "#f6f6ef"
 gtk-titlebar = false
 mouse-hide-while-typing = true
 
-shell-integration = nushell
+shell-integration = none

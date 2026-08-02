@@ -95,7 +95,9 @@ local M = {
   ["@lsp.type.variable"] = {},
   ["@lsp.mod.declaration"] = {},
   ["@lsp.typemod.variable.declaration"] = {},
-  ["@lsp"] = {}
+  ["@lsp"] = {},
+  ["@tag.kdl"] = { fg = colors.cyan },
+  ["@property.kdl"] = { fg = colors.pink }
 }
 
 return M
