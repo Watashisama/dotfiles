@@ -29,6 +29,14 @@ PanelWindow {
 
 
       Battery {id : battery}
+      Rectangle {
+        Layout.preferredWidth: 16
+        Layout.preferredHeight: 1
+        Layout.alignment: Qt.AlignHCenter
+        Layout.topMargin: 16
+        // Layout.rightMargin: 8
+        color: theme.colGreen
+      }
       Item { Layout.fillHeight: true }
     } 
   }
