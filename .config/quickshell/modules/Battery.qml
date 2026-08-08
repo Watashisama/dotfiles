@@ -3,35 +3,53 @@ import QtQuick.Layouts
 import Quickshell.Services.UPower
 import "../services/theming"
 
-Item {
-  implicitHeight: batteryText.implicitHeight
-
-  Layout.topMargin: 20
-  Layout.fillWidth: true
-
   Text {
 
     id: batteryText
-    rotation: 90
-    anchors.centerIn: parent
     Theme {id: theme}
     Font { id: font}
 
-    text: `󰁹 ${Math.round(UPower.displayDevice.percentage * 100)}%`
-    color: theme.colGreen
+    text: {
+
+        switch (UPower.displayDevice.state) {
+        case UPowerDeviceState.Charging:
+        case UPowerDeviceState.PendingCharge:
+            return `󰂄 ${Math.round(UPower.displayDevice.percentage * 100)}%`
+
+        case UPowerDeviceState.Discharging:
+        case UPowerDeviceState.PendingDischarge:
+            return `󰁹 ${Math.round(UPower.displayDevice.percentage * 100)}%`
+
+        default:
+            return "--"
+        }
+      
+    }
+    color: {
+        switch (UPower.displayDevice.state) {
+        case UPowerDeviceState.Charging:
+        case UPowerDeviceState.PendingCharge:
+            return theme.colGreen
+
+        case UPowerDeviceState.Discharging:
+        case UPowerDeviceState.PendingDischarge:
+            return theme.colBlue
+        }
+    }
+    Layout.leftMargin: 8
 
     font {
       family: font.font
       pixelSize: font.fontsize
       bold: true
     }
-    Timer {
-      interval: 1000
-      running: true
-      repeat: true
-      onTriggered: {
-        batteryText.text = `󰁹 ${Math.round(UPower.displayDevice.percentage * 100)}%`
-      }
-    }
+    // Timer {
+    //   interval: 1000
+    //   running: true
+    //   repeat: true
+    //   onTriggered: {
+    //     batteryText.text = `󰁹 ${Math.round(UPower.displayDevice.percentage * 100)}%`
+    //   }
+    // }
   }
-}
+

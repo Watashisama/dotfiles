@@ -27,17 +27,22 @@ PanelWindow {
       anchors.fill: parent
       spacing: spacing.spacing_normal
 
+      Battery {
+        id: battery 
+      }
+
+      Rec {
+        id: rec_battery
+        color: battery.color
+      }
+
       Item {
         Layout.fillWidth: true
       }
 
-      Rectangle {
-        Layout.preferredWidth: 1
-        Layout.preferredHeight: 16
-        Layout.alignment: Qt.AlignVCenter
-        Layout.leftMargin: 8
-        Layout.rightMargin: 8
-        color: theme.colRed
+      Rec {
+        id: rec_clock
+        color: clock.color
       }
       Clock { id: clock }
 
