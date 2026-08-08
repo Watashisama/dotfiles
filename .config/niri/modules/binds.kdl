@@ -13,6 +13,7 @@ binds {
   // shows a list of important hotkeys.
   Mod+Shift+Slash { show-hotkey-overlay; }
   Mod+Q hotkey-overlay-title="Open browser: firefox" {spawn "firefox";}
+  Mod+Shift+M { spawn-sh "nu ~/.config/niri/scripts/helper-switch-audio-source.nu"; }
 
   // Suggested binds for running programs: terminal, app launcher, screen locker.
   Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
