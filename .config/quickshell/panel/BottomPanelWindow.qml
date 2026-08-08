@@ -39,12 +39,20 @@ PanelWindow {
       Item {
         Layout.fillWidth: true
       }
+      Rec {
+        id: rec_audio
+        color: audio.color
+      }
+      Audio { id: audio }
 
       Rec {
         id: rec_clock
         color: clock.color
       }
-      Clock { id: clock }
+      Clock { 
+        id: clock 
+        color: theme.colPink
+      }
 
     }
   }
