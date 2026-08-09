@@ -10,8 +10,8 @@ keymap:
       Ctrl-8: F8
       Ctrl-9: F9
       Ctrl-0: F10
-      Ctrl-KEY_MINUS: F11
-      Ctrl-KEY_EQUAL: F12
+      Ctrl-KEY_LEFTBRACE: F11
+      Ctrl-KEY_RIGHTBRACE: F12
       Shift-Ctrl-1: KEY_BRIGHTNESSDOWN
       Shift-Ctrl-2: KEY_BRIGHTNESSUP
       Shift-Ctrl-3: KEY_MICMUTE
@@ -22,5 +22,5 @@ keymap:
       Shift-Ctrl-8: KEY_PLAYPAUSE
       Shift-Ctrl-9: KEY_NEXTSONG
       Shift-Ctrl-0: KEY_MUTE
-      Shift-Ctrl-KEY_MINUS: KEY_VOLUMEDOWN
-      Shift-Ctrl-KEY_EQUAL: KEY_VOLUMEUP
+      Shift-Ctrl-KEY_LEFTBRACE: KEY_VOLUMEDOWN
+      Shift-Ctrl-KEY_RIGHTBRACE: KEY_VOLUMEUP
