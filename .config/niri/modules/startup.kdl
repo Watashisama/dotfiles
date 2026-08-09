@@ -1,2 +1,4 @@
 spawn-at-startup "quickshell"
-spawn-at-startup "wpaperd"
+spawn-sh-at-startup "nu ~/.config/niri/scripts/helper-wpaperctl-wallpaper.nu"
+spawn-sh-at-startup "wpaperd --config ~/.local/share/wpaperd/config.toml"
+spawn-sh-at-startup "fcitx5 -d"

@@ -19,4 +19,4 @@ let sink = (
 
 let sink = $sink | into int
 
-if $sink == 69 { wpctl set-default $"($sink - 1)" } else { wpctl set-default $"($sink + 1)" }
+if $sink == 57 { wpctl set-default $"($sink - 1)" } else { wpctl set-default $"($sink + 1)" }
