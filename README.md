@@ -24,3 +24,11 @@ You can use any dotfile manager
     - Started
 - [-] Make a wallpaper-util in nu(.config/nushell)
     * Add docs to each function.
+
+> [!INFO]
+> Here are my allegiances
+> - Window manager, Niri but was Hyprland
+> - Shell, Nushell
+> - Wallpaper Daemon, Wpaperd
+> - Terminal, Ghostty
+> - Editor, Neovim, not Emacs the worlds best OS with no good text editor
