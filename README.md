@@ -25,7 +25,7 @@ You can use any dotfile manager
 - [-] Make a wallpaper-util in nu(.config/nushell)
     * Add docs to each function.
 
-> [!INFO]
+> [!NOTE]
 > Here are my allegiances
 > - Window manager, Niri but was Hyprland
 > - Shell, Nushell
