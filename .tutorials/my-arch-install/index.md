@@ -52,7 +52,7 @@ Run the following
 iwctl device list # To list all the wifis
 iwctl station $name_of_station scan # To scan
 iwctl station $name_of_station get-networks
-iwctl station $name_of_network connect $name_of_network # $name_of_network is the name found in `iwctl device list`(like wlan0,...)
+iwctl station $name_of_station connect $name_of_network # $name_of_network is the name found in `iwctl device list`(like wlan0,...)
 ```
 
 The outputs look like this

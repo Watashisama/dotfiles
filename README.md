@@ -24,6 +24,7 @@ You can use any dotfile manager
     - Started
 - [-] Make a wallpaper-util in nu(.config/nushell)
     * Add docs to each function.
+- [ ] Audio swither
 
 > [!NOTE]
 > Here are my allegiances

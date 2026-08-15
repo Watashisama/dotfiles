@@ -14,6 +14,7 @@ local M = {
   Added = { fg = colors.green },
   Changed = { fg = colors.cyan },
   Removed = { fg = colors.crimson },
+  ModeMsg = { fg = colors.green },
   ["@module"] = { fg = colors.cyan, bold = true },
   ["@module.builtin"] = { fg = colors.red, bold = true, italic = true },
   ["@keyword"] = { fg = colors.pink, italic = true },
