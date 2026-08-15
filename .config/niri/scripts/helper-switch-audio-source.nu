@@ -1,22 +1,83 @@
 #!/usr/bin/nu
 
-let dsink = (
-  wpctl inspect @DEFAULT_SINK@
+let audio = (
+  wpctl status 
+  | lines 
+)
+let start: int = (
+  $audio
+  | each { if $in == ' ├─ Sinks:' { 1 } else { 0 } } 
+  | enumerate 
+  | where item == 1 
+  | get index
+  | $in.0
+)
+
+let end: int = (
+  $audio
+  | each { if $in == ' ├─ Sources:' { 1 } else { 0 } } 
+  | enumerate 
+  | where item == 1 
+  | get index
+  | $in.0
+)
+
+let range = (
+  wpctl status 
+  | lines 
+  | enumerate 
+  | where $start < ($it.index | into int) and ($it.index | into int) < $end - 1
+  | get item
+)
+
+let name = (
+  $range | each {
+    str replace * ' '
+    | str substring ($in | str index-of '.'| $in + 1)..
+    | str substring ..($in | str index-of '[' | $in - 1)
+    | str replace ' ' ''
+    | str replace -r '[ \t]+$' ''
+  }
+)
+
+let audio_devices = (
+  wpctl list audio sources
   | lines
-  | first 
-  | str replace 'id ' '' 
+  | each {
+    str replace 'audio/source' '' 
+    # | str replace -r '.+\s+' ''
+  }
+)
+let audio_device_ids = (
+  wpctl list audio sources
+  | lines
+  | each {
+    str replace -r '\s+.*' ''
+  }
 )
 
-let sdsink = (
-  $dsink
-  | str index-of ','
+let d = (
+  $audio_device_ids 
+  | wrap id 
+  | merge ( $audio_devices | wrap device )
+  | merge ( $name | wrap sink )
 )
 
-let sink = (
-  $dsink
-  | str substring 0..($sdsink - 1)
+let e = (
+  $d
+  | each {
+    if ($in.device | str index-of "*" | $in > 0) {
+      '*'
+    } else {
+      ' '
+    }
+  }
 )
 
-let sink = $sink | into int
-
-if $sink == 57 { wpctl set-default $"($sink - 1)" } else { wpctl set-default $"($sink + 1)" }
+clear
+$audio_device_ids
+| wrap id
+| merge ( $name | wrap sink )
+| merge ( $e | wrap selected )
+| input list
+| wpctl set-default $in.id
