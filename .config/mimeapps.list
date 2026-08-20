@@ -1,25 +1,25 @@
 [Default Applications]
-text/html=firefox.desktop
-x-scheme-handler/http=firefox.desktop
-x-scheme-handler/https=firefox.desktop
+text/html=userapp-Waterfox-IAQ6T3.desktop
+x-scheme-handler/http=userapp-Waterfox-IAQ6T3.desktop
+x-scheme-handler/https=userapp-Waterfox-IAQ6T3.desktop
 x-scheme-handler/about=helium.desktop
 x-scheme-handler/unknown=helium.desktop
-x-scheme-handler/chrome=firefox.desktop
-application/x-extension-htm=firefox.desktop
-application/x-extension-html=firefox.desktop
-application/x-extension-shtml=firefox.desktop
-application/xhtml+xml=firefox.desktop
-application/x-extension-xhtml=firefox.desktop
-application/x-extension-xht=firefox.desktop
+x-scheme-handler/chrome=userapp-Waterfox-IAQ6T3.desktop
+application/x-extension-htm=userapp-Waterfox-IAQ6T3.desktop
+application/x-extension-html=userapp-Waterfox-IAQ6T3.desktop
+application/x-extension-shtml=userapp-Waterfox-IAQ6T3.desktop
+application/xhtml+xml=userapp-Waterfox-IAQ6T3.desktop
+application/x-extension-xhtml=userapp-Waterfox-IAQ6T3.desktop
+application/x-extension-xht=userapp-Waterfox-IAQ6T3.desktop
 
 [Added Associations]
-x-scheme-handler/http=firefox.desktop;
-x-scheme-handler/https=firefox.desktop;
-x-scheme-handler/chrome=firefox.desktop;
-text/html=firefox.desktop;
-application/x-extension-htm=firefox.desktop;
-application/x-extension-html=firefox.desktop;
-application/x-extension-shtml=firefox.desktop;
-application/xhtml+xml=firefox.desktop;
-application/x-extension-xhtml=firefox.desktop;
-application/x-extension-xht=firefox.desktop;
+x-scheme-handler/http=userapp-Waterfox-IAQ6T3.desktop;firefox.desktop;
+x-scheme-handler/https=userapp-Waterfox-IAQ6T3.desktop;firefox.desktop;
+x-scheme-handler/chrome=userapp-Waterfox-IAQ6T3.desktop;firefox.desktop;
+text/html=firefox.desktop;userapp-Waterfox-IAQ6T3.desktop;
+application/x-extension-htm=firefox.desktop;userapp-Waterfox-IAQ6T3.desktop;
+application/x-extension-html=firefox.desktop;userapp-Waterfox-IAQ6T3.desktop;
+application/x-extension-shtml=firefox.desktop;userapp-Waterfox-IAQ6T3.desktop;
+application/xhtml+xml=firefox.desktop;userapp-Waterfox-IAQ6T3.desktop;
+application/x-extension-xhtml=firefox.desktop;userapp-Waterfox-IAQ6T3.desktop;
+application/x-extension-xht=firefox.desktop;userapp-Waterfox-IAQ6T3.desktop;

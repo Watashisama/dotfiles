@@ -41,15 +41,15 @@ let name = (
 )
 
 let audio_devices = (
-  wpctl list audio sources
+  wpctl list audio sinks
   | lines
   | each {
-    str replace 'audio/source' '' 
+    str replace 'audio/sink' '' 
     # | str replace -r '.+\s+' ''
   }
 )
 let audio_device_ids = (
-  wpctl list audio sources
+  wpctl list audio sinks
   | lines
   | each {
     str replace -r '\s+.*' ''
@@ -74,10 +74,9 @@ let e = (
   }
 )
 
-clear
 $audio_device_ids
 | wrap id
 | merge ( $name | wrap sink )
 | merge ( $e | wrap selected )
 | input list
-| wpctl set-default $in.id
+| if $in != () { wpctl set-default $in.id }
