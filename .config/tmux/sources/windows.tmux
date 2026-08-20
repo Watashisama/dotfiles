@@ -1,3 +1,4 @@
+# vim: ft=tmux
 # Nerdfont chars
 # HALF_ROUND_OPEN="#(printf '\uE0B6')"
 # HALF_ROUND_CLOSE="#(printf '\uE0B4')"

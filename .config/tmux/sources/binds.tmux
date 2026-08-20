@@ -1,3 +1,4 @@
+# vim: ft=tmux
 # Rebinding the prefix key
 unbind C-b
 unbind M-[
@@ -26,7 +27,7 @@ bind -n M-J switch-client -n
 
 bind -n M-t new-window
 bind -n M-'-' split-window -v -c "#{pane_current_path}"
-bind -n M-'\' split-window -h -c "#{pane_current_path}"
+bind -n M-'|' split-window -h -c "#{pane_current_path}"
 bind -n M-';' command-prompt
 bind -n M-v copy-mode
 bind -n M-S choose-tree

@@ -4,7 +4,7 @@ $env.PROMPT_COMMAND = {||
   } else {
     (ansi yellow) + $" ($env.CMD_DURATION_MS | into duration --unit ms)" + (ansi reset)
   }
-  let dir: string = if ((pwd) =~ ($nu.home-dir)) {
+  let dir: string = if ((pwd | str substring ..($nu.home-dir | str length | $in - 1)) == ($nu.home-dir)) {
     (ansi cyan) + ( (pwd) | str replace $nu.home-dir "~" ) + (ansi reset)
   } else {
     (ansi cyan) + (pwd) + (ansi reset)

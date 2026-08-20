@@ -21,7 +21,7 @@ import "../services/theming"
             return `󰁹 ${Math.round(UPower.displayDevice.percentage * 100)}%`
 
         default:
-            return "--"
+            return "100"
         }
       
     }

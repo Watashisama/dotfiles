@@ -1,26 +1,29 @@
+virtual_modifiers:
+  - FN
+
 keymap:
   - remap:
-      Ctrl-1: F1
-      Ctrl-2: F2
-      Ctrl-3: F3
-      Ctrl-4: F4
-      Ctrl-5: F5
-      Ctrl-6: F6
-      Ctrl-7: F7
-      Ctrl-8: F8
-      Ctrl-9: F9
-      Ctrl-0: F10
-      Ctrl-KEY_LEFTBRACE: F11
-      Ctrl-KEY_RIGHTBRACE: F12
-      Shift-Ctrl-1: KEY_BRIGHTNESSDOWN
-      Shift-Ctrl-2: KEY_BRIGHTNESSUP
-      Shift-Ctrl-3: KEY_MICMUTE
-      Shift-Ctrl-4: KEY_SEARCH
-      Shift-Ctrl-5: KEY_KBDILLUMDOWN
-      Shift-Ctrl-6: KEY_KBDILLUMUP
-      Shift-Ctrl-7: KEY_PREVIOUSSONG
-      Shift-Ctrl-8: KEY_PLAYPAUSE
-      Shift-Ctrl-9: KEY_NEXTSONG
-      Shift-Ctrl-0: KEY_MUTE
-      Shift-Ctrl-KEY_LEFTBRACE: KEY_VOLUMEDOWN
-      Shift-Ctrl-KEY_RIGHTBRACE: KEY_VOLUMEUP
+      KEY_FN-1: F1
+      KEY_FN-2: F2
+      KEY_FN-3: F3
+      KEY_FN-4: F4
+      KEY_FN-5: F5
+      KEY_FN-6: F6
+      KEY_FN-7: F7
+      KEY_FN-8: F8
+      KEY_FN-9: F9
+      KEY_FN-0: F10
+      KEY_FN-KEY_MINUS: F11
+      KEY_FN-KEY_EQUAL: F12
+      Shift-KEY_FN-1: KEY_BRIGHTNESSDOWN
+      Shift-KEY_FN-2: KEY_BRIGHTNESSUP
+      Shift-KEY_FN-3: KEY_MICMUTE
+      Shift-KEY_FN-4: KEY_SEARCH
+      Shift-KEY_FN-5: KEY_KBDILLUMDOWN
+      Shift-KEY_FN-6: KEY_KBDILLUMUP
+      Shift-KEY_FN-7: KEY_PREVIOUSSONG
+      Shift-KEY_FN-8: KEY_PLAYPAUSE
+      Shift-KEY_FN-9: KEY_NEXTSONG
+      Shift-KEY_FN-0: KEY_MUTE
+      Shift-KEY_FN-KEY_MINUS: KEY_VOLUMEDOWN
+      Shift-KEY_FN-KEY_EQUAL: KEY_VOLUMEUP
