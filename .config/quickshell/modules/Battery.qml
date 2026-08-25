@@ -21,7 +21,7 @@ import "../services/theming"
             return `󰁹 ${Math.round(UPower.displayDevice.percentage * 100)}%`
 
         default:
-            return "100"
+            return "󰁹 100%"
         }
       
     }
@@ -33,6 +33,9 @@ import "../services/theming"
 
         case UPowerDeviceState.Discharging:
         case UPowerDeviceState.PendingDischarge:
+            return theme.colBlue
+
+          default:
             return theme.colBlue
         }
     }
