@@ -1,5 +1,5 @@
 binds {
-  Mod+Q hotkey-overlay-title="Open browser: firefox" {spawn "firefox";}
+  Mod+Q hotkey-overlay-title="Open browser: waterfox" {spawn "waterfox";}
   Mod+Shift+M { spawn-sh "nu ~/.config/niri/scripts/helper-switch-audio-source.nu"; }
 
   Mod+Return hotkey-overlay-title="Open a Terminal with tmux" { spawn-sh "ghostty -e tmux"; }
