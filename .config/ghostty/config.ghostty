@@ -6,6 +6,8 @@ theme = Monokai Remastered
 
 background = "#1a1a1a"
 foreground = "#f6f6ef"
+cursor-color = cell-foreground
+cursor-text = cell-background
 
 
 gtk-titlebar = false
