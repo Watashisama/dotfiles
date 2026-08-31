@@ -8,5 +8,6 @@ binds {
   Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
 
   Mod+B { spawn-sh "ghostty -e btop"; }
-  Mod+Shift+C { spawn-sh "ghostty -e rmpc"; }
+  Mod+A { spawn-sh "ghostty -e rmpc"; }
+  Mod+I { spawn-sh "ghostty -e impala"; }
 }

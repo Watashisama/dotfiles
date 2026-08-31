@@ -27,7 +27,13 @@ return {
             score_offset = 400
           },
           snippets = {
-            score_offset = 1
+            score_offset = function ()
+              if vim.bo.filetype == "tex" then
+                return 399
+              else
+                return 1
+              end
+            end
           },
           lsp = {
             score_offset = 300
