@@ -10,3 +10,4 @@ pavucontrol.ini
 /.scripts/make-music
 .config/nvim/nvim-pack-lock.json
 .config/mimeapps.list
+.config/elephant

@@ -1,3 +1,3 @@
 vim.pack.add({
-  "https://github.com/rafamadriz/friendly-snippets"
+  "https://github.com/Watashisama/friendly-snippets"
 })
