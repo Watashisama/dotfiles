@@ -1,7 +1,8 @@
 -- Make it more user friendly
+-- Snippets?
 vim.opt.autocomplete = true
-vim.opt.complete:append('o')
-vim.opt.completeopt = { 'menuone', 'noselect', 'popup' }
+vim.opt.complete = { "w", ".", "b", "u", "t", 'o' }
+vim.opt.completeopt = { 'menuone', 'noselect', 'fuzzy' }
 vim.opt.pumheight = 9
 vim.opt.pumborder = 'rounded'
 

@@ -18,26 +18,52 @@ PanelWindow {
   color: "transparent"
   implicitWidth: 30
 
+  margins {
+    top: 0
+    bottom: -30
+    right: -4
+  }
+
   Rectangle {
     anchors.fill: parent
     color: theme.colBg
+    // border.width: 2
+    // border.color: theme.colVisual
+    radius: 0
+    
     
 
     ColumnLayout {
       anchors.fill: parent
-      spacing: spacing.spacing_normal
+      spacing: spacing.spacing_normal 
 
-
-      Battery {id : battery}
-      Rectangle {
-        Layout.preferredWidth: 16
-        Layout.preferredHeight: 1
-        Layout.alignment: Qt.AlignHCenter
-        Layout.topMargin: 16
-        // Layout.rightMargin: 8
-        color: theme.colGreen
+      Item {
+        implicitHeight: 4
       }
-      Item { Layout.fillHeight: true }
+
+      WorkspaceHyprland {
+        id: workspacehyprland
+      }
+      Item {
+        implicitHeight: 4
+      }
+
+      VRec {
+        id: rec_workspacehyprland
+        color: theme.colBlue
+      }
+
+      Item {
+        Layout.fillHeight: true
+      }
+
+      VRec {
+        id: rec_end
+        color: theme.colBlue
+      }
+      Item {
+        implicitHeight: 30
+      }
     } 
   }
 }

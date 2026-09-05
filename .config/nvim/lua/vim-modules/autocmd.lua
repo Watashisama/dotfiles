@@ -5,6 +5,11 @@ table.insert(pattern_old, "tex")
 vim.api.nvim_create_autocmd("FileType", {
   pattern = pattern_old,
   callback = function ()
+    if vim.bo.filetype == "tex" then
+      vim.opt.wrap = true
+    else
+      vim.opt.wrap = false
+    end
     vim.treesitter.start()
   end
 })
