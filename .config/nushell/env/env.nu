@@ -91,4 +91,10 @@ $env.config.show_banner = false
 $env.config.show_hints = true
 $env.config.use_ansi_coloring = "auto"
 $env.config.use_kitty_protocol = false
+
 $env.config.color_config.shape_external_resolved = 'yellow_bold'
+$env.config.color_config.shape_vardecl = "red_bold"
+$env.config.color_config.shape_variable = "purple_bold"
+$env.config.color_config.shape_int = "yellow_bold"
+$env.config.color_config.shape_float = $env.config.color_config.shape_int
+$env.config.color_config.shape_flag = "purple_bold"

@@ -40,7 +40,7 @@ PanelWindow {
 
       Rec {
         id: rec_begin
-        color: theme.colBlue
+        color: theme.colPink
         Layout.preferredHeight: 30
         Layout.leftMargin: 0
         Layout.rightMargin: 0

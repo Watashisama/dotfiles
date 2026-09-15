@@ -2,7 +2,25 @@ font-family = "JetBrainsMono Nerd Font Mono"
 font-family = IPAexMincho
 font-size = 14
 
-theme = Monokai Remastered
+palette = 0=#1a1a1a
+palette = 1=#ff5f5f
+palette = 2=#98e024
+palette = 3=#ff971f
+palette = 4=#2ac3e6
+palette = 5=#9d65ff
+palette = 6=#58d1eb
+palette = 7=#c4c5b5
+palette = 8=#625e4c
+palette = 9=#ff5f5f
+palette = 10=#98e024
+palette = 11=#ffef42
+palette = 12=#2ac3e6
+palette = 13=#9d65ff
+palette = 14=#58d1eb
+palette = 15=#f6f6ef
+
+selection-background = #343434
+selection-foreground = #f6f6ef
 
 background = "#1a1a1a"
 foreground = "#f6f6ef"

@@ -7,6 +7,7 @@ local statusline = require("vim-modules.colorschemes.isekai-remastered.hl-groups
 local syntax = require("vim-modules.colorschemes.isekai-remastered.hl-groups.syntax")
 local ui = require("vim-modules.colorschemes.isekai-remastered.hl-groups.ui")
 local winbar = require("vim-modules.colorschemes.isekai-remastered.hl-groups.winbar")
+local language = require("vim-modules.colorschemes.isekai-remastered.hl-groups.language-overrides")
 
 function M.colorize(hl_colors)
   for group, opts in pairs(hl_colors) do
@@ -27,6 +28,7 @@ function M.setup()
   M.colorize(statusline)
   M.colorize(winbar)
   M.colorize(plugins)
+  M.colorize(language)
 end
 
 return M

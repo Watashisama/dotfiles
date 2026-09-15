@@ -49,7 +49,7 @@ local M = {
   ["@type.builtin"] = { fg = colors.cyan, bold = true },
   ["@type.definition"] = { fg = colors.fg, bold = true },
   ["@type.qualifier"] = { fg = colors.crimson, bold = true },
-  ["@boolean"] = { fg = colors.purple },
+  ["@boolean"] = { fg = colors.pink, italic = true },
   ["@punctuation.delimiter"] = { fg = colors.cyan },
   ["@punctuation.bracket"] = { fg = colors.bracket },
   ["@punctuation.special"] = { fg = colors.cyan, bold = true },

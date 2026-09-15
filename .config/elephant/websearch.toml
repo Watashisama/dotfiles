@@ -1,0 +1,4 @@
+[[entries]]
+name = "ArSearch"
+url = "http://localhost:8087/search?q=%TERM%"
+default = true

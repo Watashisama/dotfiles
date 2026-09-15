@@ -59,7 +59,7 @@ PanelWindow {
 
       VRec {
         id: rec_end
-        color: theme.colBlue
+        color: theme.colPink
       }
       Item {
         implicitHeight: 30

@@ -14,3 +14,7 @@ def "config dotfiles" [] {
 def "config niri" [] {
   nvim $"($env.XDG_CONFIG_DIR)/niri/config.kdl"
 }
+
+def "config hypr" [] {
+  nvim $"($env.XDG_CONFIG_DIR)/hypr/"
+}
