@@ -23,6 +23,7 @@ alias tree = tree -C
 alias copy = wl-copy 
 alias paste = wl-paste 
 alias record  = wl-screenrec --low-power=off
+alias py = python
 
 # alias lazy = lazygit
 alias music = rmpc

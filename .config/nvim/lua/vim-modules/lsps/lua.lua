@@ -16,6 +16,7 @@ vim.lsp.config("emmylua_ls", {
   },
   on_attach = function (client, bufnr)
     vim.lsp.inlay_hint.enable(false, { bufnr = bufnr })
+    client.server_capabilities.semanticTokensProvider = nil
   end
 })
 

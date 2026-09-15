@@ -27,7 +27,7 @@ def "wallpaper change" [
   if $wallpaper == () and not $random  {
     help 'wallpaper change'
   } else if $random {
-    let random_number = random int 1..($wallpapers - 1);
+    let random_number = random int ..($wallpapers - 1);
 
     hyprctl hyprpaper wallpaper $"eDP-1, (ls -f  $wallpaper_dir | get $random_number | get name), [cover]";
   } else {
