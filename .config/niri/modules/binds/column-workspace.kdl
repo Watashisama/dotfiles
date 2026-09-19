@@ -73,8 +73,9 @@ binds {
   // Center all fully visible columns on screen.
   Mod+Ctrl+C { center-visible-columns; }
 
-  Mod+Minus { set-column-width "-5%"; }
-  Mod+Equal { set-column-width "+5%"; }
+  // Removed due to a bug (Hiting Mod+Equal and 100% column width leading to it going over 100%
+  // Mod+Minus { set-column-width "-5%"; }
+  // Mod+Equal { set-column-width "+5%"; }
 
   // Finer height adjustments when in column with other windows.
   Mod+Shift+Minus { set-window-height "-5%"; }

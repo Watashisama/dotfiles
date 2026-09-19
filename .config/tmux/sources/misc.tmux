@@ -15,8 +15,11 @@ set -g popup-border-lines rounded
 
 set-option -g set-titles on
 set-option -g set-titles-string "#{pane_title}"
-# set -ga terminal-overrides ",xterm-ghostty:RGB"
+# set -ga terminal-overrides ",xterm-rio:RGB"
 # set -g default-terminal "tmux-256color"
 setw -g aggressive-resize on
 # set -g default-terminal "$TERM"
-# set -ag terminal-overrides ",$TERM:Tc"
+# set -as terminal-features ',*:RGB'
+# set -as terminal-overrides ',rio:Smulx=\E[4:%p1%dm'
+# set -g default-terminal "rio"
+# set-option -ga terminal-overrides ",rio:Tc"

@@ -1,0 +1,13 @@
+{
+  "workspace": {
+    "library": [
+      "/usr/share/nvim/runtime/"
+    ]
+  },
+  "runtime": {
+    "version": "LuaJIT"
+  },
+  "diagnostics": {
+    "globals": ["vim"]
+  }
+}

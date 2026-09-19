@@ -17,5 +17,6 @@ return {
   "rust",
   "toml",
   "yaml",
-  "zsh"
+  "zsh",
+  "c"
 }

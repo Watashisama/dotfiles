@@ -2,18 +2,6 @@ vim.lsp.config("emmylua_ls", {
   cmd = { "emmylua_ls" },
   filetypes = { "lua" },
   root_markers = { ".emmyrc.json", ".luarc.json", ".git" },
-  settings = {
-    emmylua = {
-      runtime = { version = 'LuaJIT' },
-      diagnostics = { globals = { 'vim' } },
-      workspace = {
-        library = {
-          vim.env.VIMRUNTIME,
-          vim.api.nvim_get_runtime_file('lua/lspconfig', false)[1]
-        }
-      }
-    }
-  },
   on_attach = function (client, bufnr)
     vim.lsp.inlay_hint.enable(false, { bufnr = bufnr })
     client.server_capabilities.semanticTokensProvider = nil
