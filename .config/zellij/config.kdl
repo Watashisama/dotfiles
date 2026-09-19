@@ -16,6 +16,7 @@ show_startup_tips false
 theme "isekai-remastered"
 pane_frames true
 pane_frame_style "full"
+osc8_hyperlinks true
 // session_name "test"
 
 //layout
@@ -66,6 +67,10 @@ keybinds clear-defaults=true {
   scroll {
     bind "Alt a" { EditScrollback; SwitchToMode "normal"; }
     bind "s" { SwitchToMode "entersearch"; SearchInput 0; }
+    bind "j" { ScrollDown; }
+    bind "k" { ScrollUp; }
+    bind "Shift g" { ScrollToBottom; }
+    bind "Ctrl g" { ScrollToTop; }
   }
 
   search {
