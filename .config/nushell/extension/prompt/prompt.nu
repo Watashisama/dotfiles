@@ -1,21 +1,4 @@
-$env.PROMPT_COMMAND = {||
-  let duration: string = if (($env.CMD_DURATION_MS | into int) <= 1000) {
-    ""
-  } else {
-    (ansi yellow) + $" ($env.CMD_DURATION_MS | into duration --unit ms)" + (ansi reset)
-  }
-  let dir: string = if ((pwd | str substring ..($nu.home-dir | str length | $in - 1)) == ($nu.home-dir)) {
-    (ansi cyan) + ( (pwd) | str replace $nu.home-dir "~" ) + (ansi reset)
-  } else {
-    (ansi cyan) + (pwd) + (ansi reset)
-  }
-
-  let arrow: string = if $env.LAST_EXIT_CODE == 0 {
-    (ansi green_bold) + "-> " + (ansi reset)
-  } else {
-    (ansi red_bold) + "~> " + (ansi reset)
-  }
-
+def "get git" [] {
   let git = git status --short | complete 
   let gitb = git branch | complete 
   let git_branch: any = ($gitb | if $in.exit_code != 0 {
@@ -53,15 +36,48 @@ $env.PROMPT_COMMAND = {||
 
      (ansi green_bold) + $"($modified)" + (ansi red_bold) + $"($deleted)" + (ansi red) + $"($untracked)" + (ansi reset)
   }
+  $"($git_branch)($git_status)"
+}
+def "get duration" [] {
+  if (($env.CMD_DURATION_MS | into int) <= 1000) {
+    ""
+  } else {
+    (ansi yellow) + $" ($env.CMD_DURATION_MS | into duration --unit ms)" + (ansi reset)
+  }
+}
 
-  $"($dir)($duration)($git_branch)($git_status)\n($arrow)"
+
+$env.PROMPT_COMMAND = {||
+  let dir: string = if ((pwd | str substring ..($nu.home-dir | str length | $in - 1)) == ($nu.home-dir)) {
+    (ansi cyan) + ( (pwd) | str replace $nu.home-dir "~" ) + (ansi reset)
+  } else {
+    (ansi cyan) + (pwd) + (ansi reset)
+  }
+
+  let arrow: string = if $env.LAST_EXIT_CODE == 0 {
+    (ansi green_bold) + "-> " + (ansi reset)
+  } else {
+    (ansi red_bold) + "~> " + (ansi reset)
+  }
+
+
+  match $env.TERM {
+   "zellij" => $"($arrow)",
+   _ => $"($dir)((ansi yellow) + (get duration) + (ansi reset))(get git)\n($arrow)"
+  }
 }
 
 $env.PROMPT_COMMAND_RIGHT = {||
-  if $env.LAST_EXIT_CODE != 0 {
+  let error = if $env.LAST_EXIT_CODE != 0 {
     (ansi red) + $"($env.LAST_EXIT_CODE) :\(" + (ansi reset)
   } else {
     ""
+  }
+
+  match $env.TERM { 
+    "zellij" => $"($error) (get duration) (get git)",
+    _ => $error
+
   }
 }
 

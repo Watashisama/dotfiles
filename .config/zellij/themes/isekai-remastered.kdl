@@ -1,0 +1,120 @@
+themes {
+    isekai-remastered {
+        text_unselected {
+            base "#f6f6ef"
+            background "#272727"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#58d1eb"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#00ff87"
+        }
+        text_selected {
+            base "#f6f6ef"
+            background "#343434"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#58d1eb"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#00ff87"
+        }
+        ribbon_selected {
+            base "#f6f6ef"
+            background "#0c0c0c"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#58d1eb"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#00ff87"
+        }
+        ribbon_unselected {
+            base "#f6f6ef"
+            background "#0c0c0c"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#58d1eb"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#00ff87"
+        }
+        table_title {
+            base "#f6f6ef"
+            background "#1a1a1a"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#58d1eb"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#00ff87"
+        }
+        table_cell_selected {
+            base "#f6f6ef"
+            background "#1a1a1a"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#58d1eb"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#00ff87"
+        }
+        table_cell_unselected {
+            base "#f6f6ef"
+            background "#1a1a1a"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#58d1eb"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#00ff87"
+        }
+        list_selected {
+            base "#f6f6ef"
+            background "#1a1a1a"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#58d1eb"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#00ff87"
+        }
+        list_unselected {
+            base "#f6f6ef"
+            background "#1a1a1a"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#58d1eb"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#00ff87"
+        }
+        frame_selected {
+            base "#58d1ef"
+            background "#1a1a1a"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#ffef42"
+            emphasis_2 "#fd971f"
+            emphasis_3 "#1a1a1a"
+        }
+        frame_highlight {
+            base "#00ff87"
+            background "#1a1a1a"
+            emphasis_0 "#9d65ff"
+            emphasis_1 "#ffafd7"
+            emphasis_2 "#ffafd7"
+            emphasis_3 "#ffafd7"
+        }
+        exit_code_success {
+            base "#98e024"
+            background "#1a1a1a"
+            emphasis_0 "#98e024"
+            emphasis_1 "#98e024"
+            emphasis_2 "#98e024"
+            emphasis_3 "#98e024"
+        }
+        exit_code_error {
+            base "#f4005f"
+            background "#1a1a1a"
+            emphasis_0 "#ff5f5f"
+            emphasis_1 "#1a1a1a"
+            emphasis_2 "#1a1a1a"
+            emphasis_3 "#1a1a1a"
+        }
+        multiplayer_user_colors {
+            player_1 "#f6f6ef"
+            player_2 "#00ff87"
+            player_3 "#2ac3e6"
+            player_4 "#98e024"
+            player_5 "#9d65ff"
+            player_6 "#c4c5b5"
+            player_7 "#fd971f"
+            player_8 "#ff5f5f"
+            player_9 "#ffafd7"
+            player_10 "#ffef42"
+        }
+    }
+}

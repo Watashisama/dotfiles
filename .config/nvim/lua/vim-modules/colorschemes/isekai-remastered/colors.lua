@@ -18,6 +18,7 @@ local colors = {
   teal = "#00ff87",
   pink = "#ffafd7",
   comment = "#52522e",
+  hidden_char = "#31311c",
   bracket = "#96987c",
   cursorbg = "#161616"
 }

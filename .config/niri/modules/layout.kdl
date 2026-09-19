@@ -1,3 +1,4 @@
+prefer-no-csd
 layout {
   // Set gaps around windows in logical pixels.
   gaps 16

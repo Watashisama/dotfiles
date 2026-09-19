@@ -1,0 +1,107 @@
+# See the full configuration reference: https://rioterm.com/docs/config
+force-theme = "dark"
+confirm-before-quit = false
+[renderer]
+backend = "Webgpu"
+
+[navigation]
+mode = "Plain"
+
+[cursor]
+shape = 'block'
+
+
+[editor]
+program = "nvim"
+args = []
+
+[colors]
+# Regular colors
+background = '#1a1a1a'
+black = '#1a1a1a'
+blue = '#2ac3e6'
+cyan = '#58d1eb'
+foreground  = '#f6f6ef'
+green = '#98e024'
+magenta = '#9d65ff'
+red = '#ff5f5f'
+white = '#f6f6ef'
+yellow = '#fd971f'
+
+# Cursor
+cursor = '#f6f6ef'
+vi-cursor = '#58d1eb'
+
+# Navigation
+# tabs and tabs-active set the inactive/active tab title colors.
+# Tab island backgrounds are derived from the window background color.
+tabs = '#343434'
+tabs-active = '#f6f6ef'
+split = '#52522e'
+split-active = '#58d1eb'
+
+# Search
+search-match-background = '#58d1eb'
+search-match-foreground = '#f6f6ef'
+search-focused-match-background = '#fd971f'
+search-focused-match-foreground = '#f6f6ef'
+
+# Selection
+selection-foreground = '#f6f6ef'
+selection-background = '#343434'
+
+# Dim colors
+dim-background = '#1a1a1a'
+dim-black = '#1a1a1a'
+dim-blue = '#2ac3e6'
+dim-cyan = '#58d1eb'
+dim-foreground  = '#f6f6ef'
+dim-green = '#98e024'
+dim-magenta = '#9d65ff'
+dim-red = '#ff5f5f'
+dim-white = '#f6f6ef'
+dim-yellow = '#fd971f'
+
+# Light colors
+light-background = '#1a1a1a'
+light-black = '#625e4c'
+light-blue = '#2ac3e6'
+light-cyan = '#58d1eb'
+light-foreground  = '#f6f6ef'
+light-green = '#98e024'
+light-magenta = '#9d65ff'
+light-red = '#ff5f5f'
+light-white = '#f6f6ef'
+light-yellow = '#fd971f'
+
+[fonts]
+size = 19
+use-drawable-chars = true
+disable-warnings-not-found = false
+
+extras = [{ family = "IPAexGothic" }]
+
+symbol-map = [
+  { start = "3040", end = "309F", font-family = "IPAexGothic" },
+  { start = "30A0", end = "30FF", font-family = "IPAexGothic" },
+  { start = "31F0", end = "31FF", font-family = "IPAexGothic" },
+  { start = "4E00", end = "9FFF", font-family = "IPAexGothic" },
+  { start = "3000", end = "303F", font-family = "IPAexGothic" },
+  { start = "FF00", end = "FFEF", font-family = "IPAexGothic" },
+]
+
+[fonts.regular]
+family = "JetBrainsMono Nerd Font Mono"
+style = "default"
+
+[fonts.bold]
+family = "JetBrainsMono Nerd Font Mono"
+style = "default"
+
+[fonts.italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "default"
+
+[fonts.bold-italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "default"

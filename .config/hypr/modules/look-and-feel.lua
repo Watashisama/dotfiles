@@ -3,8 +3,8 @@ local theme = require("modules.theme")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
   general = {
-    gaps_in          = 5,
-    gaps_out         = 9,
+    gaps_in          = 2,
+    gaps_out         = 8,
     border_size      = 4,
     col              = {
       active_border   = {
@@ -22,7 +22,7 @@ hl.config({
   },
   decoration = {
     rounding         = 10,
-    rounding_power   = 2,
+    rounding_power   = 0,
     active_opacity   = 0.95,
     inactive_opacity = 0.90,
     shadow           = {

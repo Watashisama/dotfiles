@@ -18,7 +18,7 @@ ColumnLayout {
       color: theme.colVisual
       implicitHeight: column.height 
       implicitWidth: column.width
-      radius: 3
+      radius: 0
 
       ColumnLayout {
         spacing: 0
@@ -34,7 +34,7 @@ ColumnLayout {
 
             width: 20
             height: 20
-            radius: 3
+            radius: 0
             color: modelData.active ? theme.colOrange : "transparent" 
 
             Text {

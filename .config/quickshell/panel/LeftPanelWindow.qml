@@ -30,8 +30,6 @@ PanelWindow {
     // border.width: 2
     // border.color: theme.colVisual
     radius: 0
-    
-    
 
     ColumnLayout {
       anchors.fill: parent

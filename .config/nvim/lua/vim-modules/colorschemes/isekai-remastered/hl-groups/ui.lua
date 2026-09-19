@@ -19,7 +19,8 @@ local M = {
   DiffAdd = { fg = colors.green },
   DiffChange = { fg = colors.cyan },
   DiffDelete = { fg = colors.crimson },
-  EndOfBuffer = { fg = colors.bg }
+  EndOfBuffer = { fg = colors.bg },
+  NonText = { fg = colors.hidden_char }
 }
 
 return M
