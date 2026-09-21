@@ -18,6 +18,6 @@ source env/colorscheme.nu
 # source extension/mise/mise.nu
 # source extension/tv/tv.nu
 source extension/prompt/prompt.nu
-source extension/zoxide/zoxide.nu
+# source extension/zoxide/zoxide.nu
 source extension/yazi/yazi.nu
 source extension/alias/alias.nu

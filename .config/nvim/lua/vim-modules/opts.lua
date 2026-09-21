@@ -11,14 +11,14 @@ vim.opt.mouse = ""
 vim.opt.cursorline = true
 vim.opt.winborder = "single"
 vim.opt.swapfile = false
-vim.opt.guicursor = "i:block"
+vim.opt.guicursor = "n-v-c-sm-ci-ve-r-cr-o-i:block"
 vim.opt.list = true
 vim.opt.listchars = {
   -- Invisible chars
-  nbsp = '␣',
-  tab = '- ',
-  trail = '_',
-  eol = '<'
+  nbsp = '_',
+  tab = ' ',
+  trail = '␣',
+  eol = '󰌑'
 }
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"

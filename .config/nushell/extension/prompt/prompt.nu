@@ -61,7 +61,7 @@ $env.PROMPT_COMMAND = {||
   }
 
 
-  match $env.TERM {
+  match $env.PLUXER? {
    "zellij" => $"($arrow)",
    _ => $"($dir)((ansi yellow) + (get duration) + (ansi reset))(get git)\n($arrow)"
   }
@@ -74,7 +74,7 @@ $env.PROMPT_COMMAND_RIGHT = {||
     ""
   }
 
-  match $env.TERM { 
+  match $env.PLUXER? { 
     "zellij" => $"($error) (get duration) (get git)",
     _ => $error
 

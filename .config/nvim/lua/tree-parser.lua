@@ -18,5 +18,7 @@ return {
   "toml",
   "yaml",
   "zsh",
+  "css",
+  "json",
   "c"
 }

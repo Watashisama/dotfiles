@@ -4,7 +4,7 @@ ui {
   }
 }
 env {
-  TERM "zellij"
+  PLUXER "zellij"
 }
 
 // Options
@@ -36,6 +36,26 @@ keybinds clear-defaults=true {
     bind "Alt s" { SwitchToMode "locked"; }
     bind "Alt q" { SwitchToMode "pane"; }
     bind "Alt a" { SwitchToMode "scroll"; }
+    bind "Alt d" { Detach; }
+    bind "Alt f" { ToggleFloatingPanes; }
+    bind "Alt p" { TogglePanePinned; SwitchToMode "normal"; }
+    bind "Alt h" { MoveFocus "left"; }
+    bind "Alt l" { MoveFocus "right"; }
+    bind "Alt j" { MoveFocus "down"; }
+    bind "Alt k" { MoveFocus "up"; }
+    bind "Alt w" { CloseFocus; SwitchToMode "normal"; }
+    bind "Alt t" { SwitchToMode "tab"; }
+    bind "Alt Shift t" { NewTab; }
+    bind "Alt 0" { GoToTab 10; SwitchToMode "normal"; }
+    bind "Alt 1" { GoToTab 1; SwitchToMode "normal"; }
+    bind "Alt 2" { GoToTab 2; SwitchToMode "normal"; }
+    bind "Alt 3" { GoToTab 3; SwitchToMode "normal"; }
+    bind "Alt 4" { GoToTab 4; SwitchToMode "normal"; }
+    bind "Alt 5" { GoToTab 5; SwitchToMode "normal"; }
+    bind "Alt 6" { GoToTab 6; SwitchToMode "normal"; }
+    bind "Alt 7" { GoToTab 7; SwitchToMode "normal"; }
+    bind "Alt 8" { GoToTab 8; SwitchToMode "normal"; }
+    bind "Alt 9" { GoToTab 9; SwitchToMode "normal"; }
   }
 
   locked {
@@ -44,13 +64,7 @@ keybinds clear-defaults=true {
 
   pane {
     bind "Alt q" { SwitchToMode "normal"; }
-    bind "w" { CloseFocus; SwitchToMode "normal"; }
-    bind "h" { MoveFocus "left"; }
-    bind "l" { MoveFocus "right"; }
-    bind "j" { MoveFocus "down"; }
-    bind "k" { MoveFocus "up"; }
     bind "Enter" { SwitchToMode "normal"; }
-    bind "i" { TogglePanePinned; SwitchToMode "normal"; }
     bind "r" { SwitchToMode "renamepane"; PaneNameInput 0; }
     bind "Shift l" { NewPane "Right"; SwitchToMode "normal"; }
     bind "Shift j" { NewPane "Down"; SwitchToMode "normal"; }
@@ -65,7 +79,7 @@ keybinds clear-defaults=true {
   }
 
   scroll {
-    bind "Alt a" { EditScrollback; SwitchToMode "normal"; }
+    bind "Alt a" { SwitchToMode "normal"; }
     bind "s" { SwitchToMode "entersearch"; SearchInput 0; }
     bind "j" { ScrollDown; }
     bind "k" { ScrollUp; }
@@ -83,5 +97,18 @@ keybinds clear-defaults=true {
 
   entersearch {
     bind "Enter" { SwitchToMode "normal"; }
+  }
+
+  tab {
+    bind "Alt t" { SwitchToMode "normal"; }
+    bind "[" { BreakPaneLeft; SwitchToMode "normal"; }
+    bind "]" { BreakPaneRight; SwitchToMode "normal"; }
+    bind "b" { BreakPane; SwitchToMode "normal"; }
+    bind "h" { GoToPreviousTab; }
+    bind "j" { GoToNextTab; }
+    bind "k" { GoToPreviousTab; }
+    bind "l" { GoToNextTab; }
+    bind "n" { NewTab; SwitchToMode "normal"; }
+    bind "r" { SwitchToMode "renametab"; TabNameInput 0; }
   }
 }
