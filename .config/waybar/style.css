@@ -1,0 +1,96 @@
+@import "isekai-remasterd.css";
+
+* {
+  font-family: 'JetBrainsMono Nerd Font Mono';
+  font-size: 14px;
+  min-height: 0;
+  font-weight: bold;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+window#waybar {
+  background: @bg;
+}
+
+window#waybar > box {
+  background: @bg;
+  border-width: 4px;
+  border-style: solid;
+  border-color: @visual;
+}
+
+#workspaces {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#workspaces button {
+  background-color: @black;
+  color: @cyan;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#workspaces button.visible {
+  background-color: @orange;
+  color: @black;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+window#workspaces {
+  background: @bg;
+}
+
+#window {
+  background: @bg;
+  color: @pink;
+}
+
+window#network {
+  background: @bg;
+}
+
+#network {
+  color: @cyan;
+  padding-left: 8px;
+  border-left: 2px;
+  border-color: @cyan;
+  border-style: solid;
+}
+
+#network.disconnected {
+  background-color: @bg;
+  color: @red;
+}
+
+#battery {
+  color: @blue;
+  padding-left: 8px;
+  border-left: 2px;
+  border-color: @cyan;
+  border-style: solid;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#clock {
+  color: @pink;
+  padding-left: 8px;
+  border-left: 2px;
+  border-color: @cyan;
+  border-style: solid;
+}

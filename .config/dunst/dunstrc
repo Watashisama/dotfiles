@@ -1,35 +1,35 @@
 [global]
-  monitor = 0
-  follow = keyboard
-  width = (250, 500)
-  height = (0, 750)
-  offset = (17, 26)
-  padding = 5
-  horizontal_padding = 5
-  gap_size = 3
-  transparency = 35
-  frame_width = 1
-  frame_color = "#444a73"
-  font = JetBrainsMono Nerd Font Mono 11
-  corner_radius = 5
-  min_icon_size = 32
-  max_icon_size = 320
-  format = "<b>%s</b>\n%b"
-  browser = /bin/xdg-open
-  mouse_left_click = do_action
+monitor = 0
+follow = keyboard
+width = (250, 500)
+height = (0, 750)
+offset = (8,8)
+padding = 10
+horizontal_padding = 10
+gap_size = 8
+transparency = 0
+frame_width = 4
+frame_color = "#58d1eb"
+font = JetBrainsMono Nerd Font Mono 11
+corner_radius = 0
+min_icon_size = 32
+max_icon_size = 320
+format = "<b>%s</b>\n%b"
+browser = /bin/xdg-open
+mouse_left_click = do_action
 
 [urgency_low]
-background = "#222436"
-foreground = "#c8d3f5"
+background = "#1a1a1a"
+foreground = "#f6f6ef"
 timeout = 3
 
 [urgency_normal]
-background = "#222436"
-foreground = "#c8d3f5"
+background = "#1a1a1a"
+foreground = "#f6f6ef"
 timeout = 5
 
 [urgency_critical]
-background = "#222436"
-foreground = "#c8d3f5"
-frame_color = "#ff757f"
+background = "#1a1a1a"
+foreground = "#f6f6ef"
+frame_color = "#ff5f5f"
 timeout = 15

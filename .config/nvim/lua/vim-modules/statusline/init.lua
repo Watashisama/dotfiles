@@ -34,15 +34,14 @@ local mode_map = {
   ["no"] = { "O-PENDING", "StatusPending" },
   ["nov"] = { "O-PENDING", "StatusPending" },
   ["noV"] = { "O-PENDING", "StatusPending" },
-  ["no\22"] = { "O-PENDING", "StatusPending" },
+  ["no\22"] = { "O-PENDING", "StatusPending" }
 }
 
-local function get_mode_component()
+local function get_mode()
   local m = vim.api.nvim_get_mode().mode
   local mode_info = mode_map[m]
   return string.format("%%#%s#  %s  ", mode_info[2], mode_info[1])
 end
-
 
 local function get_line_column_numbers()
   local m = vim.api.nvim_get_mode().mode
@@ -50,7 +49,7 @@ local function get_line_column_numbers()
   return string.format("%%#%s# %s ", mode_info[2], "%l:%c")
 end
 
-_G.get_search_info = function()
+_G.get_search_info = function ()
   if vim.v.hlsearch == 0 or vim.fn.getreg("/") == "" then
     return ""
   end
@@ -63,7 +62,7 @@ _G.get_search_info = function()
   return ""
 end
 
-_G.Get_diagnostics = function(severity, label)
+_G.Get_diagnostics = function (severity, label)
   local count = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity[severity] })
   if count > 0 then
     return string.format(" %s %d ", label, count)
@@ -73,7 +72,7 @@ end
 
 function _G.status_line()
   return table.concat({
-    get_mode_component(),
+    get_mode(),
     -- "%#StatusFile#%%t",
     "%#StatusLineError#%{v:lua.Get_diagnostics('ERROR', '󰅚')}",
     "%#StatusLineWarn#%{v:lua.Get_diagnostics('WARN', '󰀪')}",
@@ -88,7 +87,7 @@ function _G.status_line()
     "%y ",
 
     "%e",
-    get_line_column_numbers(),
+    get_line_column_numbers()
   })
 end
 

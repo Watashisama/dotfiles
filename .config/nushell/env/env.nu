@@ -98,3 +98,4 @@ $env.config.color_config.shape_variable = "purple_bold"
 $env.config.color_config.shape_int = "yellow_bold"
 $env.config.color_config.shape_float = $env.config.color_config.shape_int
 $env.config.color_config.shape_flag = "purple_bold"
+$env.config.table.mode = "single"
