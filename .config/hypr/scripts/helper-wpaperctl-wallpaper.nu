@@ -12,7 +12,7 @@ let wall = (ls -f $wallpaper_dir | get name | get ($random_number - 1))
 rm -pf ~/.local/share/wpaperd/config.toml
 
 # wpaperctl set-wallpaper $wall
-mkdir ($env.XDG_CONFIG_DIR | path join wpaperd/)
+mkdir ~/.local/share/wpaperd
 echo $"[default]
 mode = 'center'
 

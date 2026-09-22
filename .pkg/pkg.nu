@@ -2,7 +2,7 @@
 
 let pkg =  [
   [pkg_name];
-  ['base-devel']
+# ['base-devel']
   ['brightnessctl']
   ['btop']
   ['chafa']
@@ -69,7 +69,9 @@ let pkg_groups = [
 #   ['RUST',',rio', 'rio']
 # ]
 
-sudo pacman -S --needed ( $pkg | get pkg_name | to text | str replace "\n" " " -a)
+for pg in $pkg.pkg_name {
+  sudo pacman -S --needed $pg --noconfirm
+}
 
 print -n $"(ansi green_bold)[INFO](ansi reset) Do you want the following pkgs-groups installed?\n(ansi bo)($pkg_groups | get groups | to text)(ansi reset)\n"
 input listen --types=['key'] | if $in.code == y { sudo pacman -S --noconfirm --needed ( $pkg_groups | get groups | to text | str replace "\n" " " -a) } else { print -n "Ok? i just\n" }
