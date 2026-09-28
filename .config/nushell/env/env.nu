@@ -1,8 +1,8 @@
 # let carapace_completer = {|spans|
 #   carapace $spans.0 nushell ...$spans | from json
 # }
-let fish_completer = {|spans|
-  fish --command $"complete '--do-complete=($spans | str replace --all "'" "\\'" | str join ' ')'"
+$env.config.completions.external.completer = {|place|
+  fish --command $"complete '--do-complete=($place.command | str replace --all "'" "\\'" | str join ' ')'"
   | from tsv --flexible --noheaders --no-infer
   | rename value description
   | update value {|row|
@@ -20,7 +20,7 @@ $env.config.history = {
   sync_on_enter: true,
   path: ($env.HOME | path join ".local/share/nushell"),
   file_format: sqlite,
-  isolation: false
+  isolation: true
 }
 $env.config.filesize = {
   unit: metric,
@@ -59,7 +59,7 @@ $env.config.completions = {
   external: {
     enable: true,
     max_results: 50,
-    completer: $fish_completer,
+    # completer: $fish_completer,
   },
   use_ls_colors: true
 }
@@ -99,3 +99,5 @@ $env.config.color_config.shape_int = "yellow_bold"
 $env.config.color_config.shape_float = $env.config.color_config.shape_int
 $env.config.color_config.shape_flag = "purple_bold"
 $env.config.table.mode = "single"
+
+$env.config.completions.persistent_menus = true

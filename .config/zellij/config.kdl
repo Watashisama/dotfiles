@@ -17,6 +17,7 @@ theme "isekai-remastered"
 pane_frames true
 pane_frame_style "full"
 osc8_hyperlinks true
+on_force_close "quit"
 // session_name "test"
 
 //layout

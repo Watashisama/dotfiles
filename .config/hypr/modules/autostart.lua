@@ -15,5 +15,6 @@
 hl.on("hyprland.start", function ()
   hl.exec_cmd("fcitx5 -d")
   hl.exec_cmd("waybar")
+  hl.exec_cmd("mpd-mpris")
   hl.exec_cmd("nu ~/.config/hypr/scripts/helper-wpaperctl-wallpaper.nu")
 end)

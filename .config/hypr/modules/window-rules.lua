@@ -65,10 +65,17 @@ hl.window_rule({
 })
 
 hl.window_rule({
-  name = "otter-launcher",
+  name = "launcher",
   match = {
     --
-    class = "otter-launcher"
+    class = "launcher"
   },
   float = true
+})
+hl.window_rule({
+  name    = "rio-blur",
+  match   = {
+    class = "rio"
+  },
+  opacity = 0.95
 })
