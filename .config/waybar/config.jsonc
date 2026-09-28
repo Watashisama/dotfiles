@@ -3,8 +3,8 @@
   "height": 34,
   "spacing": 8,
   "margin-top": 0,
-  "margin-left": 8,
-  "margin-right": 8,
+  "margin-left": 0,
+  "margin-right": 0,
   "modules-left": [
     "hyprland/workspaces"
   ],
@@ -14,6 +14,7 @@
   "modules-right": [
     "tray",
     "network",
+    "pulseaudio",
     "battery",
     "clock"
   ],
@@ -21,7 +22,8 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:%a, %b %d - %H:%M}"
+    "format": "{:%a, %b %d - %H:%M}",
+    "tooltip": false
   },
   "battery": {
     "states": {
@@ -37,7 +39,7 @@
   },
   "network": {
     "format-wifi": "{essid} ",
-    "format-ethernet": "󰤭 Disconnected",
+    "format-ethernet": " Connected",
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": " Disconnected",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
@@ -48,5 +50,13 @@
     },
     "format": "{id}",
     "all-outputs": true
+  },
+  "pulseaudio" : {
+    "format": "{volume}% {icon}",
+    "format-muted": "{volume}% 󰝟",
+    "format-icons" : {
+      "headphone": "",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    }
   }
 }
