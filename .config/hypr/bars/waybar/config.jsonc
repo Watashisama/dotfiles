@@ -52,8 +52,10 @@
     "all-outputs": true
   },
   "pulseaudio" : {
-    "format": "{volume}% {icon}",
-    "format-muted": "{volume}% 󰝟",
+    "format": "{volume}% {icon} {format_source}",
+    "format-muted": "{volume}% 󰝟 {format_source}",
+    "format-source": "󰍬",
+    "format-source-muted": "<span color='#ff5f5f'>󰍭</span>",
     "format-icons" : {
       "headphone": "",
       "default": ["󰕿", "󰖀", "󰕾"]

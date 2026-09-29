@@ -4,7 +4,10 @@ return {
   },
   config = function ()
     require("which-key").setup({
-      preset = "helix"
+      preset = "helix",
+      win = {
+        border = "single"
+      }
     })
   end
 }
