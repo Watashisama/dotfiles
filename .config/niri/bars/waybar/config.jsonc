@@ -1,0 +1,73 @@
+{
+  "position": "left",
+  // "height": 34,
+  "spacing": 8,
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "modules-left": [
+    "niri/workspaces",
+    "tray"
+  ],
+  "modules-center": [
+    "niri/window"
+  ],
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "battery",
+    "clock"
+  ],
+  "tray": {
+    "rotate": 270,
+    "spacing": 10
+  },
+  "clock": {
+    "rotate": 270,
+    "format": "{:%a, %b %d - %H:%M}",
+    "tooltip": false
+  },
+  "battery": {
+    "rotate": 270,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% 󰃨",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "niri/window": {
+    "rotate": 270,
+  },
+  "network": {
+    "rotate": 270,
+    "format-wifi": "{essid} ",
+    "format-ethernet": " Connected",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": " Disconnected",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+  },
+  "niri/workspaces": {
+    "rotate": 270,
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    "format": "{id}",
+    "all-outputs": true
+  },
+  "pulseaudio" : {
+    "rotate": 270,
+    "format": "{volume}% {icon} {format_source}",
+    "format-muted": "{volume}% 󰝟 {format_source}",
+    "format-source": "󰍬",
+    "format-source-muted": "<span color='#ff5f5f'>󰍭</span>",
+    "format-icons" : {
+      "headphone": "",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    }
+  }
+}

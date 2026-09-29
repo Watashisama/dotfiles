@@ -1,0 +1,152 @@
+@import "isekai-remasterd.css";
+
+* {
+  font-family: 'JetBrainsMono Nerd Font Mono';
+  font-size: 12px;
+  min-height: 0;
+  font-weight: bold;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+window#waybar {
+  background: @bg;
+}
+
+window#waybar > box {
+  background: @bg;
+  border-right: 6px;
+  border-style: solid;
+  border-color: @visual;
+}
+
+#workspaces {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#workspaces button {
+  background-color: @black;
+  color: @cyan;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#workspaces button.visible {
+  background-color: @orange;
+  color: @black;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+window#workspaces {
+  background: @bg;
+}
+
+#tray {
+  padding-top: 8px;
+  padding-bottom: 6px;
+  border-top: 2px;
+  border-bottom: 2px;
+  border-style: solid;
+}
+
+
+#window {
+  background: @bg;
+  color: @pink;
+}
+
+window#network {
+  background: @bg;
+}
+
+#network {
+  color: @cyan;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  border-top: 2px;
+  border-color: @cyan;
+  border-style: solid;
+}
+
+#network.disconnected {
+  background-color: @bg;
+  color: @red;
+  border-top: 2px;
+  border-color: @cyan;
+  border-style: solid;
+}
+
+#pulseaudio {
+  color: @green;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  border-top: 2px;
+  border-color: @green;
+  border-style: solid;
+}
+
+#pulseaudio.muted {
+  color: @visual;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  border-top: 2px;
+  border-color: @visual;
+  border-style: solid;
+}
+
+#battery {
+  color: @blue;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  border-top: 2px;
+  border-color: @cyan;
+  border-style: solid;
+}
+
+#battery.charging {
+  color: @green;
+  border-top: 2px;
+  border-color: @green;
+  border-style: solid;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+  border-top: 2px;
+  border-color: @red;
+  border-style: solid;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+  border-top: 2px;
+  border-color: @red;
+  border-style: solid;
+}
+
+#clock {
+  color: @pink;
+  padding-top: 8px;
+  border-top: 2px;
+  border-color: @pink;
+  border-style: solid;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+tooltip {
+  background: @bg;
+  opacity: 1;
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @visual;
+}
+
+tooltip label {
+  color: @fg;
+}

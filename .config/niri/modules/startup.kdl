@@ -1,4 +1,4 @@
-spawn-at-startup "quickshell"
+spawn-at-startup "waybar -c ~/.config/niri/bars/waybar/config.jsonc -s ~/.config/niri/bars/waybar/style.css"
 spawn-sh-at-startup "nu ~/.config/niri/scripts/helper-wpaperctl-wallpaper.nu"
 spawn-sh-at-startup "wpaperd --config ~/.local/share/wpaperd/config.toml"
 spawn-sh-at-startup "fcitx5 -d"
