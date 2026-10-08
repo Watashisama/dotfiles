@@ -1,6 +1,3 @@
-# Config stuff
-
-# source config/autostart.nu
 source config/functions/functions.nu
 
 
@@ -12,6 +9,9 @@ source env/misc.nu
 source env/xdg.nu
 source env/colorscheme.nu
 
+# Config stuff
+
+# source config/autostart.nu
 
 # Extensions
 

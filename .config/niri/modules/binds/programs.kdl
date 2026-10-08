@@ -1,13 +1,11 @@
 binds {
-  Mod+Q hotkey-overlay-title="Open browser: waterfox" {spawn "waterfox";}
-  Mod+Shift+M { spawn-sh "nu ~/.config/niri/scripts/helper-switch-audio-source.nu"; }
+  Mod+Q hotkey-overlay-title="Open browser: firefox" {spawn "firefox";}
 
   Mod+Return hotkey-overlay-title="Open a Terminal with tmux" { spawn-sh "ghostty -e tmux"; }
   Mod+Ctrl+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
   Mod+Shift+Return { spawn-sh "ghostty -e tmux new-session -A"; }
-  Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+  Mod+Space hotkey-overlay-title="Run an Application" { spawn-sh "ghostty --title=ec9a6e9fe278eb1a471fbab6f40367d8548078b651d9c71581c57c2a6ca379e0 -e ~/.scripts/launcher/apps.nu"; }
 
   Mod+B { spawn-sh "ghostty -e btop"; }
   Mod+A { spawn-sh "ghostty -e rmpc"; }
-  Mod+I { spawn-sh "ghostty -e impala"; }
 }

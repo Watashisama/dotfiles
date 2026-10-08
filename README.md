@@ -6,8 +6,7 @@ To install;
 ```bash
 cd
 mkdir dotfiles
-cd dotfiles
-git clone https://github.com/Watashisama/dotfiles.git
+git clone https://github.com/Watashisama/dotfiles.git dotfiles
 ```
 
 You can use any dotfile manager
@@ -23,12 +22,11 @@ You can use any dotfile manager
 - [ ] Try out `fish`
 - [-] Make a wallpaper-util in nu(.config/nushell)
     * Add docs to each function.
-- [ ] Audio swither
 
 > [!NOTE]
 > Here are my allegiances
 > - Window manager, Niri but was Hyprland
 > - Shell, Nushell
 > - Wallpaper Daemon, Wpaperd
-> - Terminal, Ghostty
+> - Terminal, Rio
 > - Editor, Neovim, not Emacs the worlds best OS with no good text editor

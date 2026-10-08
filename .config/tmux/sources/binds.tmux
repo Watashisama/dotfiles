@@ -29,8 +29,7 @@ bind -n M-t new-window
 bind -n M-'-' split-window -v -c "#{pane_current_path}"
 bind -n M-'|' split-window -h -c "#{pane_current_path}"
 bind -n M-';' command-prompt
-bind -n M-v copy-mode
-bind -n M-S choose-tree
+bind -n M-a copy-mode
 bind -n M-s choose-session
 bind -n M-r source-file $HOME/.config/tmux/tmux.conf \; display "Config reloaded!"
 bind -n M-w kill-pane

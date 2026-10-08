@@ -1,36 +1,45 @@
-# A wallpaper util from hyprland with hyprpaper
-def wallpaper [
-  # --help(-h) #Print help information
-] {
+let wall = $"($env.XDG_CONFIG_DIR? | default $'($env.HOME)/.config')/wallpapers/"
+
+def wallpaper [] {
   help wallpaper
 }
 
-def "nu-complete wall-change" [] {
-  ls ($env.XDG_CONFIG_DIR)/wallpapers 
+def "nu-complete gen-wallpapers" [token: record] {
+  ls -f ($env | get -o WALLPAPER_DIR | default $wall)
   | get name
-  | str replace ".png" "" -a
-  | str replace $"($env.XDG_CONFIG_DIR)/wallpapers/" "" 
+  | str replace $wall '' -a
+  | str replace '.png' '' -a
+  | where $it =~ $token.text
 }
 
-# Changes wallpaper with optional settings
-def "wallpaper change" [
-  --random(-r), # Show a random wallpaper
-  wallpaper?: string@"nu-complete wall-change"
-] {
-  let wallpaper_dir = $env.XDG_CONFIG_DIR | path join wallpapers/;
-  let wallpapers = (
-    ls $wallpaper_dir
-    | get index
-    | length
-  );
-
-  if $wallpaper == () and not $random  {
-    help 'wallpaper change'
-  } else if $random {
-    let random_number = random int ..($wallpapers - 1);
-
-    hyprctl hyprpaper wallpaper $"eDP-1, (ls -f  $wallpaper_dir | get $random_number | get name), [cover]";
+def 'wallpaper set' [path: string@"nu-complete gen-wallpapers", monitor?: string] {
+  if $monitor == () {
+    wpaperctl set-wallpaper $"($wall)($path).png"
   } else {
-    hyprctl hyprpaper wallpaper $"eDP-1, ($wallpaper_dir)/($wallpaper).png, [cover]";
-  };
+    wpaperctl set-wallpaper $"($wall)($path).png" $monitor
+  }
+}
+
+def 'wallpaper get' [--monitor(-m): string, --all(-a)] {
+  if $all {
+    wpaperctl all-wallpapers -j
+    | from json 
+  } else if $monitor != () {
+    wpaperctl get-wallpaper $monitor
+  } else {
+    help wallpaper get
+  }
+}
+
+def 'wallpaper status' [--monitor(-m): string] {
+  if $monitor == () {
+    wpaperctl status -j
+    | from json
+    | default 'null' 'duration_left'
+  } else {
+    wpaperctl status -j
+    | from json
+    | default 'null' 'duration_left'
+    | where display == $monitor
+  }
 }

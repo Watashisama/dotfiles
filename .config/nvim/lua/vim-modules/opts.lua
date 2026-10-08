@@ -24,11 +24,11 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Make background transparent
--- vim.cmd([[
---   highlight Normal guibg=NONE ctermbg=NONE
---   highlight NormalNC guibg=NONE ctermbg=NONE
--- ]])
--- vim.cmd(":hi statusline guibg=NONE")
+vim.cmd([[
+  highlight Normal guibg=NONE ctermbg=NONE
+  highlight NormalNC guibg=NONE ctermbg=NONE
+]])
+vim.cmd(":hi statusline guibg=NONE")
 
 vim.opt.winbar = table.concat({
   "%{%&modified ? '%#WinBarModified#' : '%#WinBarSaved#'%}",
@@ -37,3 +37,9 @@ vim.opt.winbar = table.concat({
   "%="
 })
 vim.o.cmdheight = 0
+
+vim.filetype.add({
+  extension = {
+    noun = 'nu'
+  }
+})

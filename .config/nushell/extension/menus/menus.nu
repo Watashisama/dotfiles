@@ -20,7 +20,7 @@ $env.config = {
         },
         cursor_offset: 0,
         description_mode: "prefer_right"
-        min_description_width: 15
+        min_description_width: 30
         max_description_width: 50
         max_description_height: 10
         description_offset: 1
