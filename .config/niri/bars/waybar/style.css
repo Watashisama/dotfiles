@@ -17,7 +17,7 @@ window#waybar {
 
 window#waybar > box {
   background: @bg;
-  border-right: 6px;
+  border-right: 3px;
   border-style: solid;
   border-color: @visual;
 }
@@ -34,7 +34,7 @@ window#waybar > box {
   padding-left: 0px;
 }
 
-#workspaces button.visible {
+#workspaces button.focused {
   background-color: @orange;
   color: @black;
   padding-right: 0px;
@@ -84,7 +84,7 @@ window#network {
   color: @green;
   padding-top: 8px;
   padding-bottom: 6px;
-  border-top: 2px;
+  border-bottom: 2px;
   border-color: @green;
   border-style: solid;
 }
@@ -93,7 +93,7 @@ window#network {
   color: @visual;
   padding-top: 8px;
   padding-bottom: 6px;
-  border-top: 2px;
+  border-bottom: 2px;
   border-color: @visual;
   border-style: solid;
 }
@@ -102,28 +102,28 @@ window#network {
   color: @blue;
   padding-top: 8px;
   padding-bottom: 6px;
-  border-top: 2px;
+  border-bottom: 2px;
   border-color: @cyan;
   border-style: solid;
 }
 
 #battery.charging {
   color: @green;
-  border-top: 2px;
+  border-bottom: 2px;
   border-color: @green;
   border-style: solid;
 }
 
 #battery.warning:not(.charging) {
   color: @red;
-  border-top: 2px;
+  border-bottom: 2px;
   border-color: @red;
   border-style: solid;
 }
 
 #battery.critical:not(.charging) {
   color: @red;
-  border-top: 2px;
+  border-bottom: 2px;
   border-color: @red;
   border-style: solid;
 }

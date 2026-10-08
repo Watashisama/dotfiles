@@ -2,6 +2,7 @@ local colors = require("vim-modules.colorschemes.isekai-remastered.colors")
 local M = {
   -- Rust
   ["@lsp.type.formatSpecifier.rust"] = { fg = colors.cyan },
+  ["@operator.rust"] = { fg = colors.cyan, bold = true, italic = true },
   -- Lua
   ["@lsp.type.class.lua"] = {},
   ["@keyword.function.lua"] = { fg = colors.pink, bold = true },

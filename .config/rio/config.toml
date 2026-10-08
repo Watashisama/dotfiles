@@ -19,7 +19,7 @@ args = []
 
 
 [fonts]
-size = 17
+size = 16
 use-drawable-chars = true
 disable-warnings-not-found = false
 

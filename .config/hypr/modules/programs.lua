@@ -1,6 +1,6 @@
 local M = {}
 
-M.terminal = "rio"
+M.terminal = "ghostty"
 M.fileManager = M.terminal .. " -e yazi"
 M.music = M.terminal .. " -e rmpc"
 M.sysmonitor = M.terminal .. " -e btop"

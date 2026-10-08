@@ -86,8 +86,6 @@ local M = {
   ["@markup.heading.4"] = { bg = colors.bg, fg = colors.teal, bold = true },
   ["@markup.heading.5"] = { bg = colors.bg, fg = colors.orange, bold = true },
   ["@markup.heading.6"] = { bg = colors.bg, fg = colors.red, bold = true },
-  -- ["@markup.link.label"]          = "SpecialChar",
-  -- ["@markup.link.label.symbol"]   = "Identifier",
   ["@attribute"] = { fg = colors.cyan, bold = true, italic = true },
   ["@lsp.type.decorator"] = { fg = colors.cyan, bold = true },
   ["@lsp.type.deriveHelper"] = { fg = colors.cyan, bold = true },
@@ -99,7 +97,8 @@ local M = {
   ["@lsp.typemod.variable.declaration"] = {},
   ["@lsp"] = {},
   ["@tag.kdl"] = { fg = colors.cyan },
-  ["@property.kdl"] = { fg = colors.pink }
+  ["@property.kdl"] = { fg = colors.pink },
+  ["@label"] = { fg = colors.pink, bold = true, italic = true, underline = true }
 }
 
 return M
