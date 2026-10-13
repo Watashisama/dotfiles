@@ -5,7 +5,7 @@ import '../services/theming/'
 Text {
     id: audio
     Theme { id: theme }
-    Font { id: font }
+    Font { id: font_ }
 
     PwObjectTracker {
         objects: [Pipewire.defaultAudioSink]
@@ -36,8 +36,8 @@ Text {
     }
 
     font {
-      family: font.font
-      pixelSize: font.fontsize
+      family: font_.font
+      pixelSize: font_.fontsize
       bold: true
     }
 }

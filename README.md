@@ -18,9 +18,9 @@ You can use any dotfile manager
 
 ## TODO
 - [ ] In built autocomplete with `vim.opt.autocomplete = true` in nvim 0.13
-- [-] Hyprland + Quickshell config
-- [ ] Try out `fish`
-- [-] Make a wallpaper-util in nu(.config/nushell)
+- [x] Hyprland + Quickshell config
+- [ ] Try out `fish` <-- Next
+- [x] Make a wallpaper-util in nu(.config/nushell)
     * Add docs to each function.
 
 > [!NOTE]

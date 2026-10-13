@@ -68,14 +68,17 @@ hl.window_rule({
   name = "launcher",
   match = {
     --
-    class = "launcher"
+    title = "launcher"
   },
   float = true
 })
-hl.window_rule({
-  name    = "rio-blur",
-  match   = {
-    class = "rio"
-  },
-  opacity = 0.95
-})
+
+-- hl.window_rule({
+--   -- name = 'terminal-blur',
+--   match = {
+--     -- class = "com.mitchellh.ghostty"
+--     focus = true
+--   },
+--   no_blur = false,
+--   opacity = "0.9"
+-- })

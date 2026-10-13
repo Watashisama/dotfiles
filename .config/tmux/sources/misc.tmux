@@ -23,3 +23,5 @@ setw -g aggressive-resize on
 # set -as terminal-overrides ',rio:Smulx=\E[4:%p1%dm'
 # set -g default-terminal "rio"
 # set-option -ga terminal-overrides ",rio:Tc"
+
+setenv -g PLUXER "tmux"

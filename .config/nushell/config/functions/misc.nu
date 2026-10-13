@@ -1,3 +1,3 @@
 def daemonize [command: string] {
-  echo $"($command) &" | bash
+  echo $"($command) & disown" | bash
 }

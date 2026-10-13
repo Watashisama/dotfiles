@@ -38,6 +38,7 @@ def "get git" [] {
   }
   $"($git_branch)($git_status)"
 }
+
 def "get duration" [] {
   if (($env.CMD_DURATION_MS | into int) <= 1000) {
     ""
@@ -62,7 +63,7 @@ $env.PROMPT_COMMAND = {||
 
 
   match $env.PLUXER? {
-   "zellij" => $"($arrow)",
+   "zellij" | "tmux" => $"($arrow)",
    _ => $"($dir)((ansi yellow) + (get duration) + (ansi reset))(get git)\n($arrow)"
   }
 }
@@ -75,7 +76,7 @@ $env.PROMPT_COMMAND_RIGHT = {||
   }
 
   match $env.PLUXER? { 
-    "zellij" => $"($error) (get duration) (get git)",
+    "zellij" | "tmux" => $"($error) (get duration) (get git)",
     _ => $error
 
   }

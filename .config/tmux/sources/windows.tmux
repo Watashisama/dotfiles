@@ -7,6 +7,7 @@
 # ARCH_LINUX_LOGO="#(printf '\uF303')"
 TMUX_LOGO="#(printf '\uebc8')"
 CLOCK_LOGO="#(printf '\uf017')"
+DIR_LOGO="#(printf '\ue5fe')"
 # BAT0_ICON="#(printf '\uf240')"
 
 # Windows
@@ -32,7 +33,7 @@ set -g pane-active-border-style fg=BLUE
 
 # Status Bar
 set-option -g status-position bottom
-set-option -g status-style bg=BLACK,fg=WHITE
+set-option -g status-style bg=BRIGHTBLACK,fg=WHITE
 set-option -g status-justify left
 set -g status-interval 1
 set-option -g status-left-length 100
@@ -43,8 +44,9 @@ set-option -g status-right-length 100
 set-option -g status-left " "
 
 set-option -g status-right "\
-#[bg=default,fg=GREEN bold]${TMUX_LOGO} #S  \
-#[bg=default,fg=BLUE bold]${CLOCK_LOGO} %H:%M \
+#[bg=default,fg=BLUE bold]${DIR_LOGO} #{s|^#{HOME}|~|:pane_current_path} \
+#[bg=default,fg=GREEN bold]| ${TMUX_LOGO} #S \
+#[bg=default,fg=BLUE bold]| ${CLOCK_LOGO} %H:%M \
 "
 
 set -g message-style "bg=default,fg=YELLOW"

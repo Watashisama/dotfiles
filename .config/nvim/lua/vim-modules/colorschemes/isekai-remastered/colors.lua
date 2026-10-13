@@ -22,6 +22,5 @@ local colors = {
   bracket = "#96987c",
   cursorbg = "#161616"
 }
-colors.bracket = colors.orange
 
 return colors

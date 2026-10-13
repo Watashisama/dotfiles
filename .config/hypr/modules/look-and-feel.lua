@@ -32,10 +32,11 @@ hl.config({
       color        = 0xee1a1a00
     },
     blur             = {
-      enabled  = true,
-      size     = 9,
-      passes   = 2,
-      vibrancy = 0.9696
+      enabled        = true,
+      size           = 9,
+      passes         = 4,
+      ignore_opacity = false,
+      vibrancy       = 0.9696
     }
   },
   animations = {

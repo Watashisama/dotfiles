@@ -1,3 +1,3 @@
 require("ctrl-center.vim-module")
 require("ctrl-center.plugin")
-require("ctrl-center.experiment")
+-- require("ctrl-center.experiment")

@@ -29,6 +29,15 @@ function M.setup()
   M.colorize(winbar)
   M.colorize(plugins)
   M.colorize(language)
+
+  -- Make background transparent
+  vim.cmd([[
+  highlight Normal guibg=NONE ctermbg=NONE
+  highlight NormalNC guibg=NONE ctermbg=NONE
+  ]])
+  vim.cmd([[
+  :hi statusline guibg=NONE
+  ]])
 end
 
 return M

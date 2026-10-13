@@ -15,7 +15,7 @@ return {
       }
     })
 
-    local aldlf = { "emmylua-codeformat", "emmylua_ls", "ruff", "texlab" }
+    local aldlf = { "emmylua-codeformat", "emmylua_ls", "texlab" }
 
     for _, name in ipairs(aldlf) do
       local pkg = require("mason-registry").get_package(name)
