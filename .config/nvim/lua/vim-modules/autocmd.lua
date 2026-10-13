@@ -3,6 +3,8 @@ table.insert(pattern_old, "qml")
 table.insert(pattern_old, "gitconfig")
 table.insert(pattern_old, "tex")
 table.insert(pattern_old, "jsonc")
+table.insert(pattern_old, "sh")
+table.insert(pattern_old, "bash")
 vim.api.nvim_create_autocmd("FileType", {
   pattern = pattern_old,
   callback = function ()

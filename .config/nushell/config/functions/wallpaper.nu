@@ -1,5 +1,6 @@
 let wall = $"($env.XDG_CONFIG_DIR? | default $'($env.HOME)/.config')/wallpapers/"
 
+# A wallpaper wrapper powered by wpaperd(https://github.com/danyspin97/wpaperd)
 def wallpaper [] {
   help wallpaper
 }
@@ -12,14 +13,12 @@ def "nu-complete gen-wallpapers" [token: record] {
   | where $it =~ $token.text
 }
 
-def 'wallpaper set' [path: string@"nu-complete gen-wallpapers", monitor?: string] {
-  if $monitor == () {
-    wpaperctl set-wallpaper $"($wall)($path).png"
-  } else {
-    wpaperctl set-wallpaper $"($wall)($path).png" $monitor
-  }
+# Set the wallpaer to the specified path on all monitors or specify the monitors you want
+def 'wallpaper set' [path: string@"nu-complete gen-wallpapers", ...monitors: string] {
+  wpaperctl set-wallpaper $"($wall)($path).png" ...$monitors
 }
 
+# Get the information relating to the wallpapers and monitors as structured data
 def 'wallpaper get' [--monitor(-m): string, --all(-a)] {
   if $all {
     wpaperctl all-wallpapers -j
@@ -31,6 +30,7 @@ def 'wallpaper get' [--monitor(-m): string, --all(-a)] {
   }
 }
 
+# Print out the status of the wwallpapers and monitors as structured data
 def 'wallpaper status' [--monitor(-m): string] {
   if $monitor == () {
     wpaperctl status -j

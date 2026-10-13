@@ -1,5 +1,4 @@
 import Quickshell
-import QtQuick
 import "./panel"
 
 ShellRoot {

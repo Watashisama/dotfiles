@@ -1,6 +1,9 @@
 font-family = "JetBrainsMono Nerd Font Mono"
 font-family = IPAexMincho
-font-size = 12
+font-size = 11
+#
+# background-opacity = 0.9
+# background-blur = 200
 
 palette = 0=#1a1a1a
 palette = 1=#ff5f5f
@@ -10,7 +13,7 @@ palette = 4=#2ac3e6
 palette = 5=#9d65ff
 palette = 6=#58d1eb
 palette = 7=#c4c5b5
-palette = 8=#625e4c
+palette = 8=#0c0c0c
 palette = 9=#ff5f5f
 palette = 10=#98e024
 palette = 11=#ffef42
