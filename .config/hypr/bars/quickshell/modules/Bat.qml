@@ -3,8 +3,6 @@ import Quickshell.Services.UPower
 import "../core/theme/isekai_remastered/"
 
 Text {
-  id: batteryText
-
   Theme { id: _theme }
   Font { id: _font }
 

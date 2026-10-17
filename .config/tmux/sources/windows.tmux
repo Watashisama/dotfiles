@@ -33,7 +33,7 @@ set -g pane-active-border-style fg=BLUE
 
 # Status Bar
 set-option -g status-position bottom
-set-option -g status-style bg=BRIGHTBLACK,fg=WHITE
+set-option -g status-style bg=default,fg=WHITE
 set-option -g status-justify left
 set -g status-interval 1
 set-option -g status-left-length 100

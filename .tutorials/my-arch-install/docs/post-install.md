@@ -6,8 +6,8 @@ Follow the table below to decide how to choose your de
 
 |Experience|Desktop Environment|
 |--------- | ----------------- |
-| Background in MacOSX   | GNOME   |
-| Background in Windows   | KDE Plazma   |
+| Familiar with MacOSX   | GNOME   |
+| Familiar with Windows   | KDE Plazma   |
 | Can tinker and is free to debug   | Window Managers   |
 | Want an OOTB Experience   | GNOME, KDE Plazma, XFCE, Matte, etc   |
 

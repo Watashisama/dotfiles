@@ -1,7 +1,6 @@
 # vim: ft=tmux
 # Rebinding the prefix key
 unbind C-b
-unbind M-[
 set -g prefix C-s
 bind C-s send-prefix
 
@@ -36,3 +35,8 @@ bind -n M-w kill-pane
 bind -n M-W kill-window
 bind -n M-d detach
 bind -n M-! break-pane
+
+bind -r h resize-pane -L 1
+bind -r l resize-pane -R 1
+bind -r j resize-pane -D 1
+bind -r k resize-pane -U 1

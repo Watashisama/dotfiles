@@ -3,7 +3,6 @@ import Quickshell.Services.Pipewire
 import "../core/theme/isekai_remastered"
 
 Text {
-  id: mic
   Theme { id: _theme }
   Font { id: _font }
 

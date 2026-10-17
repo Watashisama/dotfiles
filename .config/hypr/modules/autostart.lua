@@ -1,6 +1,6 @@
 hl.on("hyprland.start", function ()
   hl.exec_cmd("fcitx5 -d")
-  hl.exec_cmd("waybar -c ~/.config/hypr/bars/waybar/config.jsonc -s ~/.config/hypr/bars/waybar/style.css")
+  hl.exec_cmd("quickshell -p ~/.config/hypr/bars/quickshell/shell.qml")
   hl.exec_cmd("mpd-mpris")
-  hl.exec_cmd("nu ~/.config/hypr/scripts/helper-wpaperctl-wallpaper.nu")
+  hl.exec_cmd("nu ~/.config/hypr/scripts/wpaperctl.nu")
 end)
