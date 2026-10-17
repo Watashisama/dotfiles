@@ -3,8 +3,6 @@ import QtQuick
 import "../core/theme/isekai_remastered"
 
 Text {
-  id: _o
-
   Theme { id: _theme }
   Font { id: _font }
 

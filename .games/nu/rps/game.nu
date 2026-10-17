@@ -32,7 +32,7 @@ def --env game [] {
       if $code == $cmptr {
         clear
         $env.DRAW += 1
-        print -n $"Press [q] to quit.\nWin: ($env.WIN),Lose: ($env.LOSE),Draw: (ansi green_bold)($env.DRAW)(ansi reset)\nChoose one of [R]ock, [P]aper or [S]cissors: ";
+        print -n $"Press [q] to quit.\nWin: ($env.WIN),Lose: ($env.LOSE),Draw: (ansi attr_bold)($env.DRAW)(ansi reset)\nChoose one of [R]ock, [P]aper or [S]cissors: ";
       }
       if $code == r {
         if $cmptr == s {
@@ -44,14 +44,14 @@ def --env game [] {
           clear
           print 'Lose'
           $env.LOSE += 1
-          print -n $"Press [q] to quit.\nWin: ($env.WIN),Lose: (ansi green_bold)($env.LOSE)(ansi reset),Draw: ($env.DRAW)\nChoose one of [R]ock, [P]aper or [S]cissors: ";
+          print -n $"Press [q] to quit.\nWin: ($env.WIN),Lose: (ansi red_bold)($env.LOSE)(ansi reset),Draw: ($env.DRAW)\nChoose one of [R]ock, [P]aper or [S]cissors: ";
         }
       }
       if $code == s {
         if $cmptr == r {
           clear
           $env.LOSE += 1
-          print -n $"Press [q] to quit.\nWin: ($env.WIN),Lose: (ansi green_bold)($env.LOSE)(ansi reset),Draw: ($env.DRAW)\nChoose one of [R]ock, [P]aper or [S]cissors: ";
+          print -n $"Press [q] to quit.\nWin: ($env.WIN),Lose: (ansi red_bold)($env.LOSE)(ansi reset),Draw: ($env.DRAW)\nChoose one of [R]ock, [P]aper or [S]cissors: ";
         }
         if $cmptr == p {
           clear
@@ -68,7 +68,7 @@ def --env game [] {
         if $cmptr == s {
           clear
           $env.LOSE += 1
-          print -n $"Press [q] to quit.\nWin: ($env.WIN),Lose: (ansi green_bold)($env.LOSE)(ansi reset),Draw: ($env.DRAW)\nChoose one of [R]ock, [P]aper or [S]cissors: ";
+          print -n $"Press [q] to quit.\nWin: ($env.WIN),Lose: (ansi red_bold)($env.LOSE)(ansi reset),Draw: ($env.DRAW)\nChoose one of [R]ock, [P]aper or [S]cissors: ";
         }
       } 
     }

@@ -1,4 +1,4 @@
-import Quickshell; import QtQuick; import QtQuick.Layouts
+import Quickshell; import QtQuick; import QtQuick.Layouts;
 import "../../modules"
 import "../../core/theme/isekai_remastered"
 

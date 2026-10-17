@@ -6,7 +6,7 @@ def main [
   --region(-r)
 ] {
   let pic_dir = $"($env.HOME)/Pictures/Screenshots/"
-  let path = $"(date now | format date "%Y-%m-%d-%H-%M-%s").png"
+  let path = $"(date now | format date "%Y-%m-%d-%H-%M-%9f").png"
 
   mkdir $pic_dir
 

@@ -4,6 +4,7 @@ require("binds.workspace")
 require("binds.media")
 require("binds.light")
 require("binds.screenshot")
+require("binds.record")
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 

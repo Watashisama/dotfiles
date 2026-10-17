@@ -19,7 +19,6 @@ You can use any dotfile manager
 ## TODO
 - [ ] In built autocomplete with `vim.opt.autocomplete = true` in nvim 0.13
 - [x] Hyprland + Quickshell config
-- [ ] Try out `fish` <-- Next
 - [x] Make a wallpaper-util in nu(.config/nushell)
     * Add docs to each function.
 
@@ -28,5 +27,5 @@ You can use any dotfile manager
 > - Window manager, Niri but was Hyprland
 > - Shell, Nushell
 > - Wallpaper Daemon, Wpaperd
-> - Terminal, Rio
+> - Terminal, Ghostty
 > - Editor, Neovim, not Emacs the worlds best OS with no good text editor
