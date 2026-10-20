@@ -22,6 +22,12 @@ Text {
 
   }
   color: {
+    if (Math.round(UPower.displayDevice.percentage * 100) <= 20) {
+      if (UPower.displayDevice.state === UPowerDeviceState.Charging) {
+        return _theme.colGreen
+      }
+      return _theme.colRed
+    }
     switch (UPower.displayDevice.state) {
       case UPowerDeviceState.Charging:
       case UPowerDeviceState.PendingCharge:

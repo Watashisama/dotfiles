@@ -44,7 +44,7 @@ set-option -g status-right-length 100
 set-option -g status-left " "
 
 set-option -g status-right "\
-#[bg=default,fg=BLUE bold]${DIR_LOGO} #{s|^#{HOME}|~|:pane_current_path} \
+#[bg=default,fg=BLUE bold] | ${DIR_LOGO} #{s|^#{HOME}|~|:pane_current_path} \
 #[bg=default,fg=GREEN bold]| ${TMUX_LOGO} #S \
 #[bg=default,fg=BLUE bold]| ${CLOCK_LOGO} %H:%M \
 "
