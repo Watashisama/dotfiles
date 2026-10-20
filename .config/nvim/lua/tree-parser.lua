@@ -1,11 +1,14 @@
 return {
   -- treesitter parsers
   "bash",
+  "c",
+  "css",
   "diff",
   "fish",
   "git_config",
   "html",
   "hyprlang",
+  "json",
   "just",
   "kdl",
   "latex",
@@ -17,8 +20,5 @@ return {
   "rust",
   "toml",
   "yaml",
-  "zsh",
-  "css",
-  "json",
-  "c"
+  "zsh"
 }
