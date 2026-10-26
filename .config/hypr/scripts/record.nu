@@ -17,11 +17,11 @@ def main [
     if (open $save_file | is-empty) {
       echo "true\n" | save --force $save_file
       notify-send -u normal -t 2000  $"Recording at ($video)"
-      echo $"wl-screenrec --low-power=off -f ($video) & echo $! >> ($save_file)" | bash
+      echo $"wl-screenrec --audio --low-power=off -f ($video) & echo $! >> ($save_file)" | bash
     } else if (open $save_file | lines).0 == "false" {
       echo "true\n" | save --force $save_file
       notify-send -u normal -t 2000  $"Recording at ($video)"
-      echo $"wl-screenrec --low-power=off -f ($video) & echo $! >> ($save_file)" | bash
+      echo $"wl-screenrec --audio --low-power=off -f ($video) & echo $! >> ($save_file)" | bash
     } else {
       try {
         kill -s 2 (open $save_file | lines | $in.1 | into int)
@@ -31,13 +31,9 @@ def main [
     }
   }
   if $region {
-    if (open $save_file | is-empty) {
-      echo "true\n" | save --force $save_file
-      echo $"wl-screenrec --low-power=off --geometry=(slurp) -f ($video) & echo $! >> ($save_file)" | bash
-      notify-send -u normal -t 2000  $"Recording at ($video)"
-    } else if (open $save_file | lines).0 == "false" {
-      echo "true\n" | save --force $save_file
-      echo $"wl-screenrec --low-power=off --geometry=(slurp) -f ($video) & echo $! >> ($save_file)" | bash
+    if ((open $save_file | is-empty) or (open $save_file | lines).0 == "false") {
+      echo "true\n" | save --force $save_file;
+      bash -c $"wl-screenrec --audio --low-power=off --geometry='(slurp)' -f ($video) & echo $! >> ($save_file)"
       notify-send -u normal -t 2000  $"Recording at ($video)"
     } else {
       try {
@@ -48,14 +44,10 @@ def main [
     }
   }
   if $active_region {
-    if (open $save_file | is-empty) {
+    if ((open $save_file | is-empty) or (open $save_file | lines).0 == "false") {
       echo "true\n" | save --force $save_file
       notify-send -u normal -t 2000  $"Recording at ($video)"
-      echo $"wl-screenrec --low-power=off --geometry=(hyprctl activewindow -j | from json | $'($in.at.0),($in.at.1) ($in.size.0)x($in.size.1)') -f ($video) & echo $! >> ($save_file)" | bash
-    } else if (open $save_file | lines).0 == "false" {
-      echo "true\n" | save --force $save_file
-      notify-send -u normal -t 2000  $"Recording at ($video)"
-      echo $"wl-screenrec --low-power=off --geometry=(hyprctl activewindow -j | from json | $'($in.at.0),($in.at.1) ($in.size.0)x($in.size.1)') -f ($video) & echo $! >> ($save_file)" | bash
+      bash -c  $"wl-screenrec --audio --low-power=off --geometry=(hyprctl activewindow -j | from json | $'($in.at.0),($in.at.1) ($in.size.0)x($in.size.1)') -f ($video) & echo $! >> ($save_file)"
     } else {
       try {
         kill -s 2 (open $save_file | lines | $in.1 | into int)
