@@ -14,9 +14,15 @@ def "nu-complete gen-wallpapers" [token: record] {
 }
 
 # Set the wallpaer to the specified path on all monitors or specify the monitors you want
-def 'wallpaper set' [path: string@"nu-complete gen-wallpapers", ...monitors: string] {
-  wpaperctl set-wallpaper $"($wall)($path).png" ...$monitors
+def 'wallpaper set' [path?: string@"nu-complete gen-wallpapers", ...monitors: string, --random(-r)] {
+  if $random {
+    wpaperctl set-wallpaper $"(ls $wall | get name | shuffle | first)" ...$monitors
+  } else {
+    wpaperctl set-wallpaper $"($wall)($path | if ($in | is-empty) {error make -u { msg: "Missing required positional argument." }} else {$path}).png" ...$monitors
+  }
 }
+
+# def 'wallpaper set-random' [] {V}
 
 # Get the information relating to the wallpapers and monitors as structured data
 def 'wallpaper get' [--monitor(-m): string, --all(-a)] {
