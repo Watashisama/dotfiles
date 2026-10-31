@@ -90,6 +90,7 @@ local M = {
   ["@attribute"] = { fg = colors.cyan, bold = true, italic = true },
   ["@lsp.type.decorator"] = { fg = colors.cyan, bold = true },
   ["@lsp.type.deriveHelper"] = { fg = colors.cyan, bold = true },
+  ["@tag"] = { fg = colors.purple, bold = true, italic = true },
   ["@tag.attribute"] = { fg = colors.cyan, italic = true },
   ["@lsp.type.formatSpecifier.rust"] = { fg = colors.cyan },
   ["@lsp.type.class.lua"] = {},
