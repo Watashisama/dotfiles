@@ -1,58 +1,61 @@
-def "get git" [] {
-  let git = git status --short | complete 
-  let gitb = git branch | complete 
-  let git_branch: any = ($gitb | if $in.exit_code != 0 {
-    ""
-  } else {
-    $gitb.stdout 
-    | str substring 2.. 
-    | str replace "\n" ""  -ar
-    | $" ($in)"
-  })
-  let git_branch = (ansi purple) + $git_branch + (ansi reset)
-  let git_status: any = if ($git.exit_code != 0)  or ($git.stdout == "") {
-    ""
-  } else {
-    let gitstdout = $git.stdout | lines | str substring 0..1
-    let modified = $gitstdout
-    | each {
-      if $in == " M" {1} else {0}
-    } | math sum
+module get- {
+  export def "get git" [] {
+    let git = git status --short | complete 
+    let gitb = git branch | complete 
+    let git_branch: any = ($gitb | if $in.exit_code != 0 {
+      ""
+    } else {
+      $gitb.stdout 
+      | str substring 2.. 
+      | str replace "\n" ""  -ar
+      | $" ($in)"
+    })
+    let git_branch = (ansi purple) + $git_branch + (ansi reset)
+    let git_status: any = if ($git.exit_code != 0)  or ($git.stdout == "") {
+      ""
+    } else {
+      let gitstdout = $git.stdout | lines | str substring 0..1
+      let modified = $gitstdout
+      | each {
+        if $in == " M" {1} else {0}
+      } | math sum
 
-    let deleted = $gitstdout
-    | each {
-      if $in == " D" {1} else {0}
-    } | math sum
+      let deleted = $gitstdout
+      | each {
+        if $in == " D" {1} else {0}
+      } | math sum
 
-    let untracked = $gitstdout
-    | each {
-      if $in == '??' {1} else {0}
-    } | math sum
+      let untracked = $gitstdout
+      | each {
+        if $in == '??' {1} else {0}
+      } | math sum
 
-    let modified = if $modified != 0 { $" ($modified)M" } else { "" }
-    let deleted = if $deleted != 0 { $" ($deleted)D" } else { "" }
-    let untracked = if $untracked != 0 { $" ($untracked)??" } else { "" }
+      let modified = if $modified != 0 { $" ($modified)M" } else { "" }
+      let deleted = if $deleted != 0 { $" ($deleted)D" } else { "" }
+      let untracked = if $untracked != 0 { $" ($untracked)??" } else { "" }
 
 
-     (ansi green_bold) + $"($modified)" + (ansi red_bold) + $"($deleted)" + (ansi red) + $"($untracked)" + (ansi reset)
+      (ansi green_bold) + $"($modified)" + (ansi red_bold) + $"($deleted)" + (ansi red) + $"($untracked)" + (ansi reset)
+    }
+    $"($git_branch)($git_status)"
   }
-  $"($git_branch)($git_status)"
-}
 
-def "get duration" [] {
-  if (($env.CMD_DURATION_MS | into int) <= 1000) {
-    ""
-  } else {
-    (ansi yellow) + $" ($env.CMD_DURATION_MS | into duration --unit ms)" + (ansi reset)
+  export def "get duration" [] {
+    if (($env.CMD_DURATION_MS | into int) <= 1000) {
+      ""
+    } else {
+      (ansi yellow) + $" ($env.CMD_DURATION_MS | into duration --unit ms)" + (ansi reset)
+    }
   }
 }
 
 
 $env.PROMPT_COMMAND = {||
-  let dir: string = if ((pwd | str substring ..($nu.home-dir | str length | $in - 1)) == ($nu.home-dir)) {
-    (ansi cyan) + ( (pwd) | str replace $nu.home-dir "~" ) + (ansi reset)
+  use get- *
+  let dir: string = if (($env.PWD | str substring ..($nu.home-dir | str length | $in - 1)) == ($nu.home-dir)) {
+    (ansi cyan) + ( ($env.PWD) | str replace $nu.home-dir "~" ) + (ansi reset)
   } else {
-    (ansi cyan) + (pwd) + (ansi reset)
+    (ansi cyan) + ($env.PWD) + (ansi reset)
   }
 
   let arrow: string = if $env.LAST_EXIT_CODE == 0 {
@@ -61,7 +64,6 @@ $env.PROMPT_COMMAND = {||
     (ansi red_bold) + "~> " + (ansi reset)
   }
 
-
   match $env.PLUXER? {
    "zellij" | "tmux" => $"($arrow)",
    _ => $"($dir)((ansi yellow) + (get duration) + (ansi reset))(get git)\n($arrow)"
@@ -69,6 +71,7 @@ $env.PROMPT_COMMAND = {||
 }
 
 $env.PROMPT_COMMAND_RIGHT = {||
+  use get- *
   let error = if $env.LAST_EXIT_CODE != 0 {
     (ansi red) + $"($env.LAST_EXIT_CODE) :\(" + (ansi reset)
   } else {

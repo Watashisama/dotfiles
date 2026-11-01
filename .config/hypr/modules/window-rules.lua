@@ -73,12 +73,12 @@ hl.window_rule({
   float = true
 })
 
--- hl.window_rule({
---   -- name = 'terminal-blur',
---   match = {
---     -- class = "com.mitchellh.ghostty"
---     focus = true
---   },
---   no_blur = false,
---   opacity = "0.9"
--- })
+hl.window_rule({
+  name = 'terminal-blur',
+  match = {
+    class = "com.mitchellh.ghostty",
+    fullscreen = false
+  },
+  no_blur = false,
+  opacity = "0.9"
+})
