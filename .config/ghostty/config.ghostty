@@ -5,32 +5,33 @@ font-size = 12
 # background-opacity = 0.9
 # background-blur = 200
 
-palette = 0=#1a1a1a
-palette = 1=#ff5f5f
-palette = 2=#98e024
-palette = 3=#ff971f
-palette = 4=#2ac3e6
-palette = 5=#9d65ff
-palette = 6=#58d1eb
-palette = 7=#c4c5b5
-palette = 8=#625e4c
-palette = 9=#ff5f5f
-palette = 10=#98e024
-palette = 11=#ffef42
-palette = 12=#2ac3e6
-palette = 13=#9d65ff
-palette = 14=#58d1eb
-palette = 15=#f6f6ef
+palette = 0=#10171e
+palette = 1=#f5503d
+palette = 2=#56f53d
+palette = 3=#fd8c35
+palette = 4=#3d99f5
+palette = 5=#843df5
+palette = 6=#09ddec
+palette = 7=#939f9e
+
+palette = 8= #10171e
+palette = 9= #f5503d
+palette = 10=#56f53d
+palette = 11=#fd8c35
+palette = 12=#3d99f5
+palette = 13=#843df5
+palette = 14=#09ddec
+palette = 15=#ecf5fe
 
 selection-background = #343434
-selection-foreground = #f6f6ef
+selection-foreground = #ecf5fe
 
-background = "#1a1a1a"
-foreground = "#f6f6ef"
+background = "#10171e"
+foreground = "#ecf5fe"
 # cursor-color = cell-foreground
 # cursor-text = cell-background
-cursor-color = #ff971f 
-cursor-text = #1a1a1a 
+cursor-color = #fd8c35
+cursor-text = #10171e
 
 
 gtk-titlebar = false

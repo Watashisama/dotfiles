@@ -1,6 +1,6 @@
 import QtQuick
 import Quickshell.Services.Pipewire
-import "../core/theme/isekai_remastered"
+import "../core/theme/isekai_moto"
 
 Text {
   Theme { id: _theme }

@@ -1,6 +1,6 @@
 import QtQuick
 import QtQuick.Layouts
-import "../core/theme/isekai_remastered/"
+import "../core/theme/isekai_moto/"
 
 Rectangle {
   Theme { id : theme }

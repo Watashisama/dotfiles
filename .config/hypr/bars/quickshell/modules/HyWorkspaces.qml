@@ -1,6 +1,6 @@
 import QtQuick
 import Quickshell.Hyprland
-import "../core/theme/isekai_remastered"
+import "../core/theme/isekai_moto"
 pragma ComponentBehavior: Bound
 
 Row {
