@@ -30,12 +30,6 @@ function M.setup()
   M.colorize(plugins)
   M.colorize(language)
 
-  for _, group in ipairs(vim.fn.getcompletion("LspDocumentColor_", "highlight")) do
-    if group:match("_background$") then
-      vim.api.nvim_set_hl(0, group, { bg = "NONE" })
-    end
-  end
-
   -- Make background transparent
   vim.cmd([[
   highlight Normal guibg=NONE ctermbg=NONE

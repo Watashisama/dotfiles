@@ -23,7 +23,7 @@ $env.config.history = {
   isolation: true
 }
 $env.config.filesize = {
-  unit: metric,
+  unit: binary,
   show_unit: true,
   precision: 2
 }
