@@ -1,6 +1,6 @@
 import Quickshell.Hyprland
 import QtQuick
-import "../core/theme/isekai_remastered"
+import "../core/theme/isekai_moto"
 
 Text {
   Theme { id: _theme }

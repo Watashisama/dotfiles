@@ -10,7 +10,7 @@ horizontal_padding = 10
 gap_size = 8
 transparency = 0
 frame_width = 4
-frame_color = "#98e024"
+frame_color = "#56f53d"
 font = JetBrainsMono Nerd Font Mono 11
 corner_radius = 0
 min_icon_size = 32
@@ -20,18 +20,18 @@ browser = /bin/xdg-open
 mouse_left_click = do_action
 
 [urgency_low]
-background = "#1a1a1a"
-foreground = "#f6f6ef"
+background = "#10171e"
+foreground = "##ecf5fe"
 timeout = 3
 
 [urgency_normal]
-background = "#1a1a1a"
-foreground = "#f6f6ef"
+background = "#10171e"
+foreground = "##ecf5fe"
 timeout = 5
 
 [urgency_critical]
-background = "#1a1a1a"
-foreground = "#f6f6ef"
-frame_color = "#ff5f5f"
+background = "#10171e"
+foreground = "##ecf5fe"
+frame_color = "#f5503d"
 origin = top-right
 timeout = 15

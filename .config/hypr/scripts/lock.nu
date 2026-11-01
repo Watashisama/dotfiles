@@ -17,14 +17,14 @@ echo $"background {
 input-field {
   monitor =
   size = 20%, 5%
-  inner_color = rgba\(26,26,26,0.0\)
+  inner_color = rgba\(16,25,31,0.0\)
 
-  fail_color = rgba\(255,95,95,1.0\)
-  check_color = rgba\(152,224,36,1.0\)
+  fail_color = rgba\(245,85,61,1.0\)
+  check_color = rgba\(86,245,61,1.0\)
 
   fail_text = $FAIL <b>\($ATTEMPTS\)</b>
 
-  font_color = rgb\(253,151,31\)
+  font_color = rgb\(253,140,53\)
   font_family = JetBrainsMono Nerd Font Mono
   dots_size = 0.4
   dots_text_format = *

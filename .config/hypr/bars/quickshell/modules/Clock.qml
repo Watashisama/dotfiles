@@ -1,5 +1,5 @@
 import QtQuick
-import "../core/theme/isekai_remastered"
+import "../core/theme/isekai_moto"
 
 Text {
   id: clockText

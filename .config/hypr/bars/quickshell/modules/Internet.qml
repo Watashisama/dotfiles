@@ -1,6 +1,6 @@
 import QtQuick
 import Quickshell.Networking
-import "../core/theme/isekai_remastered"
+import "../core/theme/isekai_moto"
 
 Text {
   Font { id:_font }
