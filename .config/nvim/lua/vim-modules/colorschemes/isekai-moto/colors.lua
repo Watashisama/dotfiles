@@ -16,7 +16,7 @@ local colors = {
   pink = "#f8a0f4",
   purple = "#843df5",
   red = "#f5503d",
-  teal = "#3df5a5",
+  teal = "#00f58b",
   visual = "#343434",
   yellow = "#f4e61f"
 }
