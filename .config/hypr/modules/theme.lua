@@ -15,7 +15,7 @@ local col = {
   pink = "rgba(f8a0f4",
   purple = "rgba(843df5",
   red = "rgba(f5503d",
-  teal = "rgba(3df5a5",
+  teal = "rgba(#00f58b",
   visual = "rgba(343434",
   yellow = "rgba(f4e61f"
 }

@@ -22,7 +22,7 @@ local M = {
   GitSignsAdd = { fg = colors.green },
   GitSignsChange = { fg = colors.cyan },
   GitSignsDelete = { fg = colors.crimson },
-  OilDir = { fg = colors.cyan },
+  OilDir = { fg = colors.blue },
   OilDirHidden = { fg = colors.comment },
   BlinkCmpLabel = { fg = colors.fg },
   BlinkCmpLabelMatch = { fg = colors.pink },
@@ -45,37 +45,6 @@ local M = {
   BlinkCmpKindString = { fg = colors.green },
   BlinkCmpKindStruct = { fg = colors.crimson },
   BlinkCmpSource = { fg = colors.crimson }
-  -- BlinkCmpKindArray = "LspKindArray",
-  -- BlinkCmpKindCodeium = { bg = "NONE", fg = "#118c74" },
-  -- BlinkCmpKindConstructor = "LspKindConstructor",
-  -- BlinkCmpKindEvent = "LspKindEvent",
-  -- BlinkCmpKindField = "LspKindField",
-  -- BlinkCmpKindInterface = "LspKindInterface",
-  -- BlinkCmpKindKey = "LspKindKey",
-  -- BlinkCmpKindModule = "LspKindModule",
-  -- BlinkCmpKindNamespace = "LspKindNamespace",
-  -- BlinkCmpKindNull = "LspKindNull",
-  -- BlinkCmpKindNumber = "LspKindNumber",
-  -- BlinkCmpKindObject = "LspKindObject",
-  -- BlinkCmpKindOperator = "LspKindOperator",
-  -- BlinkCmpKindPackage = "LspKindPackage",
-  -- BlinkCmpKindProperty = "LspKindProperty",
-  -- BlinkCmpKindReference = "LspKindReference",
-  -- BlinkCmpKindSupermaven = { bg = "NONE", fg = "#118c74" },
-  -- BlinkCmpKindTabNine = { bg = "NONE", fg = "#118c74" },
-  -- BlinkCmpKindText = "LspKindText",
-  -- BlinkCmpKindTypeParameter = "LspKindTypeParameter",
-  -- BlinkCmpKindUnit = "LspKindUnit",
-  -- BlinkCmpKindValue = "LspKindValue",
-  -- BlinkCmpKindVariable = "LspKindVariable",
-  -- BlinkCmpGhostText
-  -- BlinkCmpDoc
-  -- BlinkCmpDocBorder
-  -- BlinkCmpDocSeparator
-  -- BlinkCmpDocCursorLine
-  -- BlinkCmpSignatureHelp
-  -- BlinkCmpSignatureHelpBorder
-  -- BlinkCmpSignatureHelpActiveParameter
 }
 
 return M

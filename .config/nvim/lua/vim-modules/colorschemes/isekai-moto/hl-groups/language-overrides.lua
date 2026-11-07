@@ -10,6 +10,7 @@ local M = {
   ["@operator.nu"] = { fg = colors.cyan, bold = true },
   -- Md
   ["@markup.list.markdown"] = { fg = colors.orange, bold = true },
+  ["@markup.raw.block.markdown"] = { fg = colors.comment, italic = true },
   -- KDL
   ["@tag.kdl"] = { fg = colors.cyan },
   ["@property.kdl"] = { fg = colors.pink },

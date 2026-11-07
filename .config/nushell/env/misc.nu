@@ -9,3 +9,4 @@ $env.COLORTERM = "truecolor"
 $env.LANG = "en_US.UTF-8"
 $env.GH_TELEMETRY = false
 $env.MANPAGER = "nvim +Man!"
+$env.GTK_THEME = "Adwaita:dark"
