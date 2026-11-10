@@ -5,6 +5,8 @@ module d {
   export def "nu-complete dot add" [
     token: record
   ] {
+
+
     git -C (dotfiles-dir-check) status --short 
     | lines
     | each {
@@ -13,10 +15,8 @@ module d {
     | where $it != ''
     | each {|it|
       match ($it | str substring ..1) {
-        ' M' => ({value: $"($it | str substring 3..)", description: 'Modified File', style: green})
         'MM' => ({value: $"($it | str substring 3..)", description: 'Modified File', style: green})
         'AM' => ({value: $"($it | str substring 3..)", description: 'Modified File', style: green})
-        ' D' => ({value: $"($it | str substring 3..)", description: 'Deleted File', style: red})
         "??" => ({value: $"($it | str substring 3..)", description: 'Untracked File', style: red_bold})
       }
     }
