@@ -123,8 +123,8 @@ def "dot commit" [
   --msg(-m): string
 ] {
   if ($msg | is-empty) {
-    git commit -m $"Updated\n (dot changes | where $it.status not-has ?? | $in.files | each { path split | last } | to text | str replace "\n" ", " -a | str substring ..-3)"
+    git -C (dotfiles-dir-check) commit -m $"Updated (dot changes | where $it.status not-has ?? | $in.files | each { path split | last } | to text | str replace "\n" ", " -a | str substring ..-3)"
   } else {
-    git commit -m $msg
+    git -C (dotfiles-dir-check)  commit -m $msg
   }
 }
