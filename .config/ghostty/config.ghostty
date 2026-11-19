@@ -22,7 +22,7 @@ palette = 14=#09ddec
 palette = 15=#ecf5fe
 
 selection-background = #343434
-selection-foreground = #ecf5fe
+selection-foreground = cell-foreground
 
 background = "#10171e"
 foreground = "#ecf5fe"

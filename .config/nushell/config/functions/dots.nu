@@ -101,7 +101,14 @@ module d {
     export def "dot rm" [
       ...files: string
     ] {
-      git -C (dotfiles-dir-check) rm ...$files
+      try {
+        git -C (dotfiles-dir-check) rm ...$files e> /dev/zero
+      } catch {
+        $files
+        | each {
+          rm -rf $in
+        }
+      }
     }
 
 # Go to dotfiles

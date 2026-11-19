@@ -45,7 +45,7 @@ def "desktop-files parse" [
   | to text
   | str substring 5..
   | lines
-  | $in.0
+  | $in.0?
   | to text
   | str replace "\n" "" --all 
   | str replace " %." "" -r
@@ -95,7 +95,7 @@ def launcher [
 let x = (
   launcher  
   $__preview 
-  ((desktop-files $__desktop_files) | each {desktop-files parse (open $in)}) 
+  ((desktop-files $__desktop_files) | each {|it| desktop-files parse (open $it)}) 
   "Search apps" 
   "Apps"
 );

@@ -85,7 +85,6 @@ function _G.status_line()
     "%{%reg_recording() != '' ? '%#WinBarRecording#@' . reg_recording() . ' %*' : ''%}",
     "%#StatusLineText#",
     "%y ",
-
     "%e",
     get_line_column_numbers()
   })

@@ -13,6 +13,7 @@ vim.opt.winborder = "single"
 vim.opt.swapfile = false
 vim.opt.guicursor = "n-v-c-sm-ci-ve-r-cr-o-i:block"
 vim.opt.list = true
+vim.opt.exrc = true
 vim.opt.listchars = {
   -- Invisible chars
   nbsp = '_',

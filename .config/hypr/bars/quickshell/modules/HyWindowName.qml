@@ -6,7 +6,10 @@ Text {
   Theme { id: _theme }
   Font { id: _font }
 
-  text: Hyprland.activeToplevel?.title
+  text: { 
+    const H = Hyprland.activeToplevel?.title;
+    return (H.length > 70 ? H.substring(0, 69) + "…" : H)
+  }
   color: _theme.colPink
 
   font {

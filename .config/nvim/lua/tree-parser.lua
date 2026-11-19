@@ -1,5 +1,6 @@
 return {
   -- treesitter parsers
+  "arduino",
   "bash",
   "c",
   "css",
