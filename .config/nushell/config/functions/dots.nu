@@ -14,7 +14,9 @@ module d {
     | each {|it|
       match ($it | str substring ..1) {
         'MM' => ({value: $"($it | str substring 3..)", description: 'Modified File', style: green})
+        ' M' => ({value: $"($it | str substring 3..)", description: 'Modified File', style: green})
         'AM' => ({value: $"($it | str substring 3..)", description: 'Modified File', style: green})
+        ' A' => ({value: $"($it | str substring 3..)", description: 'Modified File', style: green})
         "??" => ({value: $"($it | str substring 3..)", description: 'Untracked File', style: red_bold})
       }
     }

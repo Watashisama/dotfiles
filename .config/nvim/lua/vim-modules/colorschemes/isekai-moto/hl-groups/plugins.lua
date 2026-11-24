@@ -44,7 +44,8 @@ local M = {
   BlinkCmpKindSnippet = { fg = colors.purple },
   BlinkCmpKindString = { fg = colors.green },
   BlinkCmpKindStruct = { fg = colors.crimson },
-  BlinkCmpSource = { fg = colors.crimson }
+  BlinkCmpSource = { fg = colors.crimson },
+  TroubleIconDirectory = { fg = colors.blue }
 }
 
 return M

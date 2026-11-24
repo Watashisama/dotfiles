@@ -4,7 +4,7 @@ binds {
   Mod+Return hotkey-overlay-title="Open a Terminal with tmux" { spawn-sh "ghostty -e tmux"; }
   Mod+Ctrl+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
   Mod+Shift+Return { spawn-sh "ghostty -e tmux new-session -A"; }
-  Mod+Space hotkey-overlay-title="Run an Application" { spawn-sh "ghostty --title=ec9a6e9fe278eb1a471fbab6f40367d8548078b651d9c71581c57c2a6ca379e0 -e ~/.scripts/launcher/apps.nu"; }
+  Mod+Space hotkey-overlay-title="Run an Application" { spawn-sh "ghostty --title=ec9a6e9fe278eb1a471fbab6f40367d8548078b651d9c71581c57c2a6ca379e0 -e ~/.config/niri/scripts/helper-nu-launcher.nu"; }
 
   Mod+B { spawn-sh "ghostty -e btop"; }
   Mod+A { spawn-sh "ghostty -e rmpc"; }

@@ -34,7 +34,7 @@ blur {
 }
 
 window-rule {
-  match app-id=r#"^ghostty$"#
+  match app-id=r#"ghostty$"#
 
   background-effect {
     blur true

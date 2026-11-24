@@ -17,8 +17,7 @@ hl.config({
       inactive_border = theme.color.visual .. "ee)"
     },
     resize_on_border = false,
-    allow_tearing    = false,
-    layout           = "dwindle"
+    allow_tearing    = false
   },
   decoration = {
     rounding         = 1,

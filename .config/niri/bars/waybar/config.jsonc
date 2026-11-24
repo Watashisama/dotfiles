@@ -36,11 +36,11 @@
       "critical": 15
     },
     "format": "{capacity}% {icon}",
-    "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% 󰃨",
+    "format-full": "{capacity}% 󰁹",
+    "format-charging": "{capacity}% 󰂄",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": "󰁹"
   },
   "niri/window": {
     "rotate": 270,
@@ -60,12 +60,14 @@
   "pulseaudio" : {
     "rotate": 270,
     "format": "{volume}% {icon} {format_source}",
-    "format-muted": "{volume}% 󰝟 {format_source}",
+    "format-muted": "{volume}% {icon} {format_source}",
     "format-source": "󰍬",
-    "format-source-muted": "<span color='#ff5f5f'>󰍭</span>",
+    "format-source-muted": "<span color='#343434'>󰍭</span>",
     "format-icons" : {
       "headphone": "",
-      "default": ["󰕿", "󰖀", "󰕾"]
+      "headphone-muted": "󰟎",
+      "default": "󰕾",
+      "default-muted": "󰖁"
     }
   }
 }

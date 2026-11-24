@@ -35,6 +35,7 @@ vim.opt.winbar = table.concat({
   "%{%&modified ? '%#WinBarModified#' : '%#WinBarSaved#'%}",
   "%=",
   "%F",
+  ":%L",
   "%="
 })
 vim.o.cmdheight = 0
